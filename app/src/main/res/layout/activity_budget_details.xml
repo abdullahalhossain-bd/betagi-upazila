@@ -4,14 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#F2F6F9">
+    android:background="@color/premium_background">
 
-    <!-- Toolbar -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary"
+        android:layout_height="64dp"
+        android:background="@color/premium_primary"
+        android:elevation="4dp"
         android:title="উপজেলা উন্নয়ন বাজেট (UNO)"
         android:titleTextColor="@android:color/white"
         app:titleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
@@ -19,46 +19,46 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true">
+        android:fillViewport="true"
+        android:clipToPadding="false">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="20dp">
 
-            <!-- Budget Summary Card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                app:cardCornerRadius="14dp"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="20dp"
                 app:cardElevation="3dp"
-                app:cardBackgroundColor="@android:color/white">
+                app:cardBackgroundColor="@color/premium_surface"
+                app:cardUseCompatPadding="true">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="16dp">
+                    android:padding="18dp">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="বাজেট সারাংশ"
-                        android:textSize="18sp"
+                        android:textSize="19sp"
                         android:textStyle="bold"
-                        android:textColor="#0D47A1"
+                        android:textColor="@color/premium_primary"
                         android:fontFamily="@font/bnlatxf"
-                        android:layout_marginBottom="12dp" />
+                        android:layout_marginBottom="14dp" />
 
-                    <!-- Total Budget -->
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="মোট অনুমোদিত বাজেট"
                         android:textSize="14sp"
-                        android:textColor="#555"
+                        android:textColor="@color/premium_text_secondary"
                         android:fontFamily="@font/bnlatxf" />
 
                     <TextView
@@ -66,23 +66,22 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="৳ --"
-                        android:textSize="22sp"
+                        android:textSize="24sp"
                         android:textStyle="bold"
-                        android:textColor="#1B5E20"
+                        android:textColor="@color/premium_text"
                         android:fontFamily="@font/bnlatxf"
-                        android:layout_marginBottom="12dp" />
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="16dp" />
 
-                    <!-- Progress -->
                     <ProgressBar
                         android:id="@+id/overallProgressBar"
                         style="?android:attr/progressBarStyleHorizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="10dp"
-                        android:progressTint="#2E7D32"
-                        android:backgroundTint="#E0E0E0"
-                        android:layout_marginBottom="8dp" />
+                        android:layout_height="8dp"
+                        android:progressTint="@color/premium_primary"
+                        android:backgroundTint="@color/premium_border"
+                        android:layout_marginBottom="12dp" />
 
-                    <!-- Spent & Remaining -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -96,7 +95,7 @@
                             android:layout_weight="1"
                             android:text="ব্যয়িত: ৳ --"
                             android:textSize="14sp"
-                            android:textColor="#B71C1C"
+                            android:textColor="@color/premium_text_secondary"
                             android:fontFamily="@font/bnlatxf" />
 
                         <TextView
@@ -107,14 +106,12 @@
                             android:gravity="end"
                             android:text="অবশিষ্ট: ৳ --"
                             android:textSize="14sp"
-                            android:textColor="#1B5E20"
+                            android:textColor="@color/premium_primary"
                             android:fontFamily="@font/bnlatxf" />
                     </LinearLayout>
-
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Loading -->
             <ProgressBar
                 android:id="@+id/budgetDetailsLoading"
                 style="?android:attr/progressBarStyleLarge"
@@ -123,35 +120,34 @@
                 android:layout_gravity="center"
                 android:visibility="gone" />
 
-            <!-- Error -->
             <TextView
                 android:id="@+id/budgetDetailsError"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="বাজেট তথ্য লোড করা যায়নি"
-                android:textColor="@color/design_default_color_error"
+                android:textColor="@color/premium_text_secondary"
                 android:textSize="14sp"
                 android:gravity="center"
-                android:layout_marginBottom="12dp"
+                android:layout_marginBottom="16dp"
                 android:visibility="gone"
                 android:fontFamily="@font/bnlatxf" />
 
-            <!-- Category wise budget -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="খাতভিত্তিক বাজেট বিবরণ"
-                android:textSize="16sp"
+                android:textSize="17sp"
                 android:textStyle="bold"
-                android:textColor="#0D47A1"
+                android:textColor="@color/premium_text"
                 android:fontFamily="@font/bnlatxf"
-                android:layout_marginBottom="8dp" />
+                android:layout_marginBottom="10dp" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/categoryRecyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:nestedScrollingEnabled="false" />
+                android:nestedScrollingEnabled="false"
+                android:clipToPadding="false" />
 
         </LinearLayout>
     </ScrollView>
