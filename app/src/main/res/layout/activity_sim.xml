@@ -57,7 +57,7 @@
                 android:layout_height="30dp"
                 android:layout_gravity="right|center"
                 android:layout_margin="7dp"
-                app:cardBackgroundColor="@color/white"
+                app:cardBackgroundColor="@color/premium_surface"
                 app:cardCornerRadius="18dp"
                 app:cardElevation="10dp"
                 app:cardMaxElevation="15dp">
@@ -102,7 +102,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:focusable="true"
-                    app:cardBackgroundColor="@color/white"
+                    app:cardBackgroundColor="@color/premium_surface"
                     app:cardCornerRadius="18dp"
                     app:cardElevation="3dp"
                     app:rippleColor="?attr/colorControlHighlight">
@@ -139,7 +139,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:focusable="true"
-                    app:cardBackgroundColor="@color/white"
+                    app:cardBackgroundColor="@color/premium_surface"
                     app:cardCornerRadius="18dp"
                     app:cardElevation="3dp"
                     app:rippleColor="?attr/colorControlHighlight">
@@ -176,7 +176,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:focusable="true"
-                    app:cardBackgroundColor="@color/white"
+                    app:cardBackgroundColor="@color/premium_surface"
                     app:cardCornerRadius="18dp"
                     app:cardElevation="3dp"
                     app:rippleColor="?attr/colorControlHighlight">
@@ -221,7 +221,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:focusable="true"
-                    app:cardBackgroundColor="@color/white"
+                    app:cardBackgroundColor="@color/premium_surface"
                     app:cardCornerRadius="18dp"
                     app:cardElevation="3dp"
                     app:rippleColor="?attr/colorControlHighlight">
@@ -259,7 +259,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:focusable="true"
-                    app:cardBackgroundColor="@color/white"
+                    app:cardBackgroundColor="@color/premium_surface"
                     app:cardCornerRadius="18dp"
                     app:cardElevation="3dp"
                     app:rippleColor="?attr/colorControlHighlight">
@@ -296,7 +296,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:focusable="true"
-                    app:cardBackgroundColor="@color/white"
+                    app:cardBackgroundColor="@color/premium_surface"
                     app:cardCornerRadius="18dp"
                     app:cardElevation="3dp"
                     app:rippleColor="?attr/colorControlHighlight">
@@ -341,7 +341,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:focusable="true"
-                    app:cardBackgroundColor="@color/white"
+                    app:cardBackgroundColor="@color/premium_surface"
                     app:cardCornerRadius="18dp"
                     app:cardElevation="3dp"
                     app:rippleColor="?attr/colorControlHighlight">
@@ -378,7 +378,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:focusable="true"
-                    app:cardBackgroundColor="@color/white"
+                    app:cardBackgroundColor="@color/premium_surface"
                     app:cardCornerRadius="18dp"
                     app:cardElevation="3dp"
                     app:rippleColor="?attr/colorControlHighlight">
@@ -415,7 +415,7 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:focusable="true"
-                    app:cardBackgroundColor="@color/white"
+                    app:cardBackgroundColor="@color/premium_surface"
                     app:cardCornerRadius="18dp"
                     app:cardElevation="3dp"
                     app:rippleColor="?attr/colorControlHighlight">

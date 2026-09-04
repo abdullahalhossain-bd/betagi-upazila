@@ -53,7 +53,7 @@
                 android:layout_toStartOf="@id/filter_menu"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="8dp"
-                app:cardBackgroundColor="@color/white"
+                app:cardBackgroundColor="@color/premium_surface"
                 app:cardCornerRadius="18dp">
                 <ImageView
                     android:layout_width="match_parent"

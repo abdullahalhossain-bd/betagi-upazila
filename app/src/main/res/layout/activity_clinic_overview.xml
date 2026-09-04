@@ -15,7 +15,7 @@
         android:layout_height="60dp"
         android:paddingStart="6dp"
         android:paddingEnd="16dp"
-        android:elevation="4dp">
+        android:elevation="3dp">
 
         <TextView
             android:textSize="16sp"
@@ -222,7 +222,7 @@
             android:text="টেস্ট এবং ফি দেখুন"
             android:textAllCaps="false"
             android:fontFamily="@font/bnlatxf"
-            android:backgroundTint="#1eb1b1"
+            android:backgroundTint="@color/premium_primary"
             android:paddingHorizontal="16dp"
             android:paddingVertical="10dp"
             app:cornerRadius="8dp"/>
@@ -298,7 +298,7 @@
                 android:layout_weight="1"
                 android:textAllCaps="false"
                 android:fontFamily="@font/bnlatxf"
-                android:backgroundTint="#1eb1b1"
+                android:backgroundTint="@color/premium_primary"
                 android:paddingHorizontal="16dp"
                 android:paddingVertical="10dp"
                 app:cornerRadius="8dp"/>

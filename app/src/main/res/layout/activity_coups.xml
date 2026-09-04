@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/premium_primary"
-            android:elevation="4dp"
+            android:elevation="3dp"
             android:padding="16dp">
 
             <TextView
@@ -47,8 +47,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="6dp"
-            android:elevation="6dp"
-            app:cardBackgroundColor="@color/white"
+            android:elevation="3dp"
+            app:cardBackgroundColor="@color/premium_surface"
             app:cardCornerRadius="18dp">
 
             <LinearLayout
@@ -130,7 +130,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
             android:visibility="gone"
-            app:cardBackgroundColor="@color/white"
+            app:cardBackgroundColor="@color/premium_surface"
             app:cardCornerRadius="18dp"
             app:cardElevation="3dp">
 
@@ -346,8 +346,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="6dp"
-            android:elevation="6dp"
-            app:cardBackgroundColor="@color/white"
+            android:elevation="3dp"
+            app:cardBackgroundColor="@color/premium_surface"
             app:cardCornerRadius="18dp">
 
             <LinearLayout
@@ -429,7 +429,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
             android:visibility="gone"
-            app:cardBackgroundColor="@color/white"
+            app:cardBackgroundColor="@color/premium_surface"
             app:cardCornerRadius="18dp"
             app:cardElevation="3dp">
 
@@ -545,8 +545,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:elevation="6dp"
-            app:cardBackgroundColor="@color/white"
+            android:elevation="3dp"
+            app:cardBackgroundColor="@color/premium_surface"
             app:cardCornerRadius="18dp">
 
             <LinearLayout
@@ -627,7 +627,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
             android:visibility="gone"
-            app:cardBackgroundColor="@color/white"
+            app:cardBackgroundColor="@color/premium_surface"
             app:cardCornerRadius="18dp"
             app:cardElevation="3dp">
 

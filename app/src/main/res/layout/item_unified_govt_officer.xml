@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    android:elevation="4dp"
+    android:elevation="3dp"
     app:cardCornerRadius="18dp">
 
     <androidx.cardview.widget.CardView
@@ -46,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/btxf"
                 android:text="Agrifishaaf Officer Name"
-                android:textColor="@color/black"
+                android:textColor="@color/premium_text"
                 android:textSize="16sp"
                 />
 

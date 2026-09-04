@@ -249,7 +249,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:backgroundTint="#1eb1b1"
+            android:backgroundTint="@color/premium_primary"
             android:fontFamily="@font/bnlatxf"
             android:text="কল করুন"
             android:textAllCaps="false"
