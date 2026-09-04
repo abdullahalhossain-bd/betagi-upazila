@@ -32,6 +32,7 @@ jobs:
               'android:background="#FFFFFF"': 'android:background="@color/premium_background"',
               'android:background="#f5f5f5"': 'android:background="@color/premium_background"',
               'android:background="#F5F5F5"': 'android:background="@color/premium_background"',
+              'android:background="@color/white"': 'android:background="@color/premium_background"',
               'android:background="#1eb1b1"': 'android:background="@color/premium_primary"',
               'android:background="#009688"': 'android:background="@color/premium_primary"',
               'android:background="@color/bar"': 'android:background="@color/premium_primary"',
@@ -44,9 +45,12 @@ jobs:
               'app:cardCornerRadius="8dp"': 'app:cardCornerRadius="18dp"',
               'app:cardCornerRadius="10dp"': 'app:cardCornerRadius="18dp"',
               'app:cardCornerRadius="12dp"': 'app:cardCornerRadius="18dp"',
+              'app:cardCornerRadius="15dp"': 'app:cardCornerRadius="18dp"',
               'app:cardElevation="4dp"': 'app:cardElevation="3dp"',
               'app:cardElevation="6dp"': 'app:cardElevation="3dp"',
               'app:cardElevation="8dp"': 'app:cardElevation="3dp"',
+              'app:cardElevation="10dp"': 'app:cardElevation="3dp"',
+              'app:cardMaxElevation="15dp"': 'app:cardMaxElevation="4dp"',
               'android:elevation="4dp"': 'android:elevation="3dp"',
               'android:elevation="6dp"': 'android:elevation="3dp"',
               'android:elevation="8dp"': 'android:elevation="3dp"',
@@ -58,6 +62,7 @@ jobs:
               'android:textColor="#999999"': 'android:textColor="@color/premium_text_secondary"',
               'android:textColor="#999"': 'android:textColor="@color/premium_text_secondary"',
               'android:textColor="#bdbdbd"': 'android:textColor="@color/premium_text_secondary"',
+              'android:textColor="#BDBDBD"': 'android:textColor="@color/premium_text_secondary"',
               'android:textColor="#2196f3"': 'android:textColor="@color/premium_primary"',
               'android:textColor="#007aff"': 'android:textColor="@color/premium_primary"',
               'android:textColor="#1e88e5"': 'android:textColor="@color/premium_primary"',
@@ -87,10 +92,8 @@ jobs:
               for a, b in replacements.items():
                   s = s.replace(a, b)
 
-              # Keep legacy Bengali typography readable but unify it with the premium app font.
               s = s.replace('android:fontFamily="@font/kalpurush"', 'android:fontFamily="@font/bnlatxf"')
 
-              # Consistent premium page treatment without changing IDs, listeners, visibility, or data bindings.
               if 'android:background="@color/premium_background"' in s:
                   if 'android:clipToPadding="false"' not in s and '<ScrollView' in s:
                       s = s.replace('<ScrollView', '<ScrollView\n        android:clipToPadding="false"', 1)
