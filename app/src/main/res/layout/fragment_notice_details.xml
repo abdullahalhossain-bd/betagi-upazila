@@ -10,8 +10,8 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary"
+        android:layout_height="64dp"
+        android:background="@color/premium_primary"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:elevation="3dp"/>
 
@@ -33,13 +33,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="20dp">
 
-            <!-- Main Notice Card -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="18dp"
+                app:cardBackgroundColor="@color/premium_surface"
+                app:cardCornerRadius="20dp"
                 app:cardElevation="3dp"
                 android:layout_marginBottom="16dp">
 
@@ -47,26 +47,24 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="16dp">
+                    android:padding="20dp">
 
-                    <!-- Notice Type Badge -->
                     <TextView
                         android:id="@+id/typeText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="গুরুত্বপূর্ণ"
                         android:textSize="12sp"
-                        android:textColor="#fff"
-                        android:paddingStart="8dp"
-                        android:paddingEnd="8dp"
-                        android:paddingTop="4dp"
-                        android:paddingBottom="4dp"
+                        android:textColor="@android:color/white"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
                         android:background="@drawable/notice_type_important"
-                        android:layout_marginBottom="8dp"
+                        android:layout_marginBottom="10dp"
                         android:visibility="visible"
                         android:fontFamily="@font/bnlatxf" />
 
-                    <!-- Notice Title -->
                     <TextView
                         android:id="@+id/titleText"
                         android:layout_width="match_parent"
@@ -78,7 +76,6 @@
                         android:fontFamily="@font/bnlatxf"
                         android:layout_marginBottom="8dp"/>
 
-                    <!-- Notice Date -->
                     <TextView
                         android:id="@+id/dateText"
                         android:layout_width="match_parent"
@@ -89,7 +86,6 @@
                         android:fontFamily="@font/bnlatxf"
                         android:layout_marginBottom="8dp"/>
 
-                    <!-- Department -->
                     <TextView
                         android:id="@+id/departmentText"
                         android:layout_width="match_parent"
@@ -101,7 +97,6 @@
                         android:layout_marginBottom="16dp"
                         android:visibility="visible"/>
 
-                    <!-- Notice Image -->
                     <ImageView
                         android:id="@+id/noticeImage"
                         android:layout_width="match_parent"
@@ -111,27 +106,25 @@
                         android:layout_marginBottom="16dp"
                         android:visibility="gone"/>
 
-                    <!-- Notice Description -->
                     <TextView
                         android:id="@+id/descriptionText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="নোটিশের বিস্তারিত বিবরণ..."
                         android:textSize="16sp"
-                        android:textColor="#333"
+                        android:textColor="@color/premium_text"
                         android:lineSpacingExtra="4dp"
                         android:fontFamily="@font/bnlatxf"/>
 
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
 
-            <!-- Attachment Container -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/attachmentContainer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="18dp"
+                app:cardBackgroundColor="@color/premium_surface"
+                app:cardCornerRadius="20dp"
                 app:cardElevation="3dp"
                 android:layout_marginBottom="16dp"
                 android:visibility="gone">
@@ -140,9 +133,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="16dp">
+                    android:padding="20dp">
 
-                    <!-- Attachment Header -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -154,7 +146,7 @@
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:src="@drawable/ic_file"
-                            android:tint="@color/colorPrimary"
+                            android:tint="@color/premium_primary"
                             android:contentDescription="Attachments"/>
 
                         <TextView
@@ -167,28 +159,22 @@
                             android:textColor="@color/premium_text"
                             android:fontFamily="@font/bnlatxf"
                             android:layout_marginStart="8dp"/>
-
                     </LinearLayout>
 
-                    <!-- Divider -->
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:background="#E0E0E0"
+                        android:background="@color/premium_border"
                         android:layout_marginBottom="8dp"/>
 
-                    <!-- Attachment List Container -->
                     <LinearLayout
                         android:id="@+id/attachmentListContainer"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"/>
-
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
 
-            <!-- RecyclerView (kept for compatibility, hidden) -->
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/attachmentRecyclerView"
                 android:layout_width="match_parent"
@@ -196,7 +182,6 @@
                 android:visibility="gone"
                 android:nestedScrollingEnabled="false"/>
 
-            <!-- Empty State -->
             <LinearLayout
                 android:id="@+id/emptyStateLayout"
                 android:layout_width="match_parent"
@@ -210,7 +195,7 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:src="@drawable/ic_file"
-                    android:tint="#CCCCCC"
+                    android:tint="@color/premium_border"
                     android:contentDescription="No data"
                     android:layout_marginBottom="16dp"/>
 
@@ -222,11 +207,7 @@
                     android:textColor="@color/premium_text_secondary"
                     android:fontFamily="@font/bnlatxf"
                     android:gravity="center"/>
-
             </LinearLayout>
-
         </LinearLayout>
-
     </ScrollView>
-
 </LinearLayout>
