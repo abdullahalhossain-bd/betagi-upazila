@@ -6,112 +6,97 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
-    tools:context=".MainActivity">
+    android:background="@color/premium_background"
+    tools:context=".HomeActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        >
-
-
+        android:background="@color/premium_background">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
             android:id="@+id/bar"
-            android:background="@color/bar"
-            android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:background="@color/premium_primary">
 
             <ImageView
                 android:id="@+id/draw"
-                android:layout_width="30dp"
-                android:layout_height="20dp"
-                android:layout_margin="1dp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:scaleType="centerCrop"
-                app:tint="#fff"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:padding="10dp"
+                android:background="@drawable/premium_card_background"
+                android:backgroundTint="@color/premium_primary_dark"
+                android:contentDescription="মেনু"
                 android:src="@drawable/baseline_menu_24"
-                tools:ignore="MissingConstraints" />
+                app:tint="@android:color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
 
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="42dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/betagi"
+                android:contentDescription="বেতাগী ই-সেবা"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/notification"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_gravity="right|center"
-                android:layout_margin="7dp"
-                app:cardBackgroundColor="#F2F2F2"
-                app:cardCornerRadius="25dp"
-                app:cardElevation="10dp"
-                app:cardMaxElevation="15dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginEnd="2dp"
+                app:cardBackgroundColor="@color/premium_primary_dark"
+                app:cardCornerRadius="22dp"
+                app:cardElevation="0dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="MissingConstraints">
+                app:layout_constraintBottom_toBottomOf="parent">
 
                 <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/notifications"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:visibility="visible"
+                    android:padding="8dp"
+                    android:contentDescription="নোটিফিকেশন"
                     app:lottie_autoPlay="true"
-                    android:layout_gravity="center"
                     app:lottie_loop="true"
-                    app:lottie_rawRes="@raw/notification"
-                    />
-
-
-
-
+                    app:lottie_rawRes="@raw/notification" />
             </androidx.cardview.widget.CardView>
-
-
-
-            <ImageView
-                android:layout_width="160dp"
-                android:layout_height="40dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/betagi"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                tools:ignore="MissingConstraints" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <FrameLayout
             android:id="@+id/fragment_container"
             android:layout_width="match_parent"
-            android:layout_marginBottom="70dp"
-            android:layout_below="@id/bar"
             android:layout_height="match_parent"
-            />
+            android:layout_below="@id/bar"
+            android:layout_marginBottom="76dp" />
 
-        <!-- Custom Bottom Navigation -->
         <include
             android:id="@+id/bottom_navigation"
             layout="@layout/bottom_nav"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="76dp"
             android:layout_alignParentBottom="true" />
 
-
-
     </RelativeLayout>
+
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_view"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:background="@color/premium_surface"
+        app:itemTextColor="@color/premium_text"
+        app:itemIconTint="@color/premium_primary"
         app:menu="@menu/drawer_menu"
-        app:itemTextColor="#000"
-        app:headerLayout="@layout/nav_header"
-        android:background="#fff" />
-
+        app:headerLayout="@layout/nav_header" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
