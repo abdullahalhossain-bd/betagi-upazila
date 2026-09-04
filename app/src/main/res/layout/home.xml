@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:background="#F5F5F5"
+    android:background="@color/premium_background"
     android:layout_height="match_parent">
 
     <androidx.core.widget.NestedScrollView
@@ -16,16 +16,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingBottom="16dp">
+            android:paddingBottom="28dp">
 
             <!-- Notice Section -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="4dp"
-                app:cardBackgroundColor="#FF6B35">
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="3dp"
+                app:cardBackgroundColor="@color/premium_primary">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -60,6 +63,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <!-- PREMIUM_WEATHER_HERO -->
             <!-- Weather & Quick Actions Row -->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -71,6 +75,13 @@
                 >
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/premium_weather_hero"
+                    android:background="@drawable/premium_card_background"
+                    android:padding="14dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -212,7 +223,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="160dp"
                 android:layout_margin="8dp"
-                app:cardCornerRadius="12dp"
+                app:cardCornerRadius="18dp"
                 app:cardElevation="6dp">
 
                 <com.denzcoskun.imageslider.ImageSlider
@@ -275,8 +286,8 @@
                             android:layout_width="100dp"
                             android:layout_height="80dp"
                             android:layout_marginEnd="8dp"
-                            app:cardCornerRadius="8dp"
-                            app:cardElevation="4dp">
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="3dp">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -308,8 +319,8 @@
                             android:layout_width="100dp"
                             android:layout_height="80dp"
                             android:layout_marginEnd="8dp"
-                            app:cardCornerRadius="8dp"
-                            app:cardElevation="4dp">
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="3dp">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -341,8 +352,8 @@
                             android:layout_width="100dp"
                             android:layout_height="80dp"
                             android:layout_marginEnd="8dp"
-                            app:cardCornerRadius="8dp"
-                            app:cardElevation="4dp">
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="3dp">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -400,7 +411,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/baseline_double_arrow_24"
-                        app:tint="#FF6B35"/>
+                        app:tint="@color/premium_accent"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -415,8 +426,8 @@
                         android:layout_height="100dp"
                         android:layout_weight="1"
                         android:layout_margin="4dp"
-                        app:cardCornerRadius="8dp"
-                        app:cardElevation="4dp">
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="3dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -449,8 +460,8 @@
                         android:layout_height="100dp"
                         android:layout_weight="1"
                         android:layout_margin="4dp"
-                        app:cardCornerRadius="8dp"
-                        app:cardElevation="4dp">
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="3dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -490,8 +501,8 @@
                         android:layout_height="100dp"
                         android:layout_weight="1"
                         android:layout_margin="4dp"
-                        app:cardCornerRadius="8dp"
-                        app:cardElevation="4dp">
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="3dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -524,8 +535,8 @@
                         android:layout_height="100dp"
                         android:layout_weight="1"
                         android:layout_margin="4dp"
-                        app:cardCornerRadius="8dp"
-                        app:cardElevation="4dp">
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="3dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -559,7 +570,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="8dp"
-                android:background="#EDEDED"
+                android:background="@color/premium_border"
                 android:layout_marginTop="8dp"/>
 
             <!-- ============ Citizen Stat Strip ============ -->
@@ -592,7 +603,7 @@
                             android:layout_width="110dp"
                             android:layout_height="90dp"
                             android:layout_marginEnd="8dp"
-                            app:cardCornerRadius="12dp"
+                            app:cardCornerRadius="18dp"
                             app:cardElevation="2dp"
                             app:strokeWidth="0dp"
                             app:cardBackgroundColor="#FFF1EB">
@@ -611,7 +622,7 @@
                                     android:text="১২,৪৫০"
                                     android:textSize="18sp"
                                     android:textStyle="bold"
-                                    android:textColor="#FF6B35"
+                                    android:textColor="@color/premium_primary"
                                     android:fontFamily="@font/elcias"/>
 
                                 <TextView
@@ -630,7 +641,7 @@
                             android:layout_width="110dp"
                             android:layout_height="90dp"
                             android:layout_marginEnd="8dp"
-                            app:cardCornerRadius="12dp"
+                            app:cardCornerRadius="18dp"
                             app:cardElevation="2dp"
                             app:strokeWidth="0dp"
                             app:cardBackgroundColor="#EAF4EC">
@@ -649,7 +660,7 @@
                                     android:text="২১৪"
                                     android:textSize="18sp"
                                     android:textStyle="bold"
-                                    android:textColor="#2E7D32"
+                                    android:textColor="@color/premium_primary"
                                     android:fontFamily="@font/elcias"/>
 
                                 <TextView
@@ -668,7 +679,7 @@
                             android:layout_width="110dp"
                             android:layout_height="90dp"
                             android:layout_marginEnd="8dp"
-                            app:cardCornerRadius="12dp"
+                            app:cardCornerRadius="18dp"
                             app:cardElevation="2dp"
                             app:strokeWidth="0dp"
                             app:cardBackgroundColor="#FDECEC">
@@ -705,7 +716,7 @@
                         <com.google.android.material.card.MaterialCardView
                             android:layout_width="110dp"
                             android:layout_height="90dp"
-                            app:cardCornerRadius="12dp"
+                            app:cardCornerRadius="18dp"
                             app:cardElevation="2dp"
                             app:strokeWidth="0dp"
                             app:cardBackgroundColor="#EAF0FB">
@@ -724,7 +735,7 @@
                                     android:text="১৭"
                                     android:textSize="18sp"
                                     android:textStyle="bold"
-                                    android:textColor="#1565C0"
+                                    android:textColor="@color/premium_primary"
                                     android:fontFamily="@font/elcias"/>
 
                                 <TextView
@@ -771,7 +782,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/baseline_double_arrow_24"
-                        app:tint="#FF6B35"/>
+                        app:tint="@color/premium_accent"/>
                 </LinearLayout>
 
                 <!-- A. Budget Summary Hero Card -->
@@ -847,7 +858,7 @@
                                     android:text="৳ ৩,৩২,৮০,০০০"
                                     android:textSize="15sp"
                                     android:textStyle="bold"
-                                    android:textColor="#FF6B35"
+                                    android:textColor="@color/premium_primary"
                                     android:fontFamily="@font/bnlatxf"/>
                             </LinearLayout>
 
@@ -873,7 +884,7 @@
                                     android:text="৳ ১,৮৭,২০,০০০"
                                     android:textSize="15sp"
                                     android:textStyle="bold"
-                                    android:textColor="#2E7D32"
+                                    android:textColor="@color/premium_primary"
                                     android:fontFamily="@font/bnlatxf"/>
                             </LinearLayout>
                         </LinearLayout>
@@ -896,7 +907,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     app:cardCornerRadius="16dp"
-                    app:cardElevation="4dp">
+                    app:cardElevation="3dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -1027,7 +1038,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     app:cardCornerRadius="16dp"
-                    app:cardElevation="4dp">
+                    app:cardElevation="3dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -1086,7 +1097,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:cardCornerRadius="16dp"
-                    app:cardElevation="4dp"
+                    app:cardElevation="3dp"
                     app:strokeWidth="1dp"
                     app:strokeColor="#EEEEEE">
 
@@ -1254,7 +1265,7 @@
                             android:layout_height="wrap_content"
                             android:text="আরও দেখুন"
                             android:textSize="12sp"
-                            android:textColor="#FF6B35"
+                            android:textColor="@color/premium_primary"
                             android:fontFamily="@font/bnlatxf"
                             android:layout_marginTop="8dp"
                             android:background="?attr/selectableItemBackground"
@@ -1293,7 +1304,7 @@
                         android:layout_weight="1"
                         android:layout_height="90dp"
                         android:layout_margin="4dp"
-                        app:cardCornerRadius="12dp"
+                        app:cardCornerRadius="18dp"
                         app:cardElevation="2dp"
                         app:cardBackgroundColor="#FFF7F4">
 
@@ -1328,7 +1339,7 @@
                         android:layout_weight="1"
                         android:layout_height="90dp"
                         android:layout_margin="4dp"
-                        app:cardCornerRadius="12dp"
+                        app:cardCornerRadius="18dp"
                         app:cardElevation="2dp"
                         app:cardBackgroundColor="#FFF7F4">
 
@@ -1363,7 +1374,7 @@
                         android:layout_weight="1"
                         android:layout_height="90dp"
                         android:layout_margin="4dp"
-                        app:cardCornerRadius="12dp"
+                        app:cardCornerRadius="18dp"
                         app:cardElevation="2dp"
                         app:cardBackgroundColor="#FFF7F4">
 
@@ -1405,7 +1416,7 @@
                         android:layout_weight="1"
                         android:layout_height="90dp"
                         android:layout_margin="4dp"
-                        app:cardCornerRadius="12dp"
+                        app:cardCornerRadius="18dp"
                         app:cardElevation="2dp"
                         app:cardBackgroundColor="#FFF7F4">
 
@@ -1440,7 +1451,7 @@
                         android:layout_weight="1"
                         android:layout_height="90dp"
                         android:layout_margin="4dp"
-                        app:cardCornerRadius="12dp"
+                        app:cardCornerRadius="18dp"
                         app:cardElevation="2dp"
                         app:cardBackgroundColor="#FFF7F4">
 
@@ -1475,7 +1486,7 @@
                         android:layout_weight="1"
                         android:layout_height="90dp"
                         android:layout_margin="4dp"
-                        app:cardCornerRadius="12dp"
+                        app:cardCornerRadius="18dp"
                         app:cardElevation="2dp"
                         app:cardBackgroundColor="#FFF7F4">
 
@@ -1527,7 +1538,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    app:cardCornerRadius="12dp"
+                    app:cardCornerRadius="18dp"
                     app:cardElevation="2dp"
                     app:cardBackgroundColor="#FFF7F4">
 
@@ -1542,7 +1553,7 @@
                             android:layout_width="26dp"
                             android:layout_height="26dp"
                             android:src="@drawable/redistribute"
-                            app:tint="#FF6B35"/>
+                            app:tint="@color/premium_accent"/>
 
                         <TextView
                             android:id="@+id/tipOfTheDayText"
@@ -1562,7 +1573,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    app:cardCornerRadius="12dp"
+                    app:cardCornerRadius="18dp"
                     app:cardElevation="2dp">
 
                     <LinearLayout
@@ -1613,7 +1624,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    app:cardCornerRadius="12dp"
+                    app:cardCornerRadius="18dp"
                     app:cardElevation="2dp"
                     app:strokeWidth="1dp"
                     app:strokeColor="#EEEEEE">
@@ -1652,7 +1663,7 @@
                             android:layout_height="wrap_content"
                             android:text="সব দেখুন"
                             android:textSize="12sp"
-                            android:textColor="#FF6B35"
+                            android:textColor="@color/premium_primary"
                             android:fontFamily="@font/bnlatxf"
                             android:layout_marginTop="8dp"
                             android:background="?attr/selectableItemBackground"
@@ -1686,7 +1697,7 @@
                             android:layout_width="130dp"
                             android:layout_height="70dp"
                             android:layout_marginEnd="8dp"
-                            app:cardCornerRadius="10dp"
+                            app:cardCornerRadius="16dp"
                             app:cardElevation="2dp">
 
                             <LinearLayout
@@ -1698,7 +1709,7 @@
 
                                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                                     android:text="২২ জুলাই" android:textSize="12sp" android:textStyle="bold"
-                                    android:textColor="#FF6B35" android:fontFamily="@font/bnlatxf"/>
+                                    android:textColor="@color/premium_primary" android:fontFamily="@font/bnlatxf"/>
 
                                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                                     android:text="ইউনিয়ন সভা" android:textSize="11sp"
@@ -1709,7 +1720,7 @@
                         <com.google.android.material.card.MaterialCardView
                             android:layout_width="130dp"
                             android:layout_height="70dp"
-                            app:cardCornerRadius="10dp"
+                            app:cardCornerRadius="16dp"
                             app:cardElevation="2dp">
 
                             <LinearLayout
@@ -1721,7 +1732,7 @@
 
                                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                                     android:text="২৯ জুলাই" android:textSize="12sp" android:textStyle="bold"
-                                    android:textColor="#FF6B35" android:fontFamily="@font/bnlatxf"/>
+                                    android:textColor="@color/premium_primary" android:fontFamily="@font/bnlatxf"/>
 
                                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                                     android:text="স্বাস্থ্য ক্যাম্প" android:textSize="11sp"
@@ -1739,8 +1750,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 app:cardCornerRadius="14dp"
-                app:cardElevation="4dp"
-                app:cardBackgroundColor="#FF6B35">
+                app:cardElevation="3dp"
+                app:cardBackgroundColor="@color/premium_primary">
 
                 <LinearLayout
                     android:layout_width="match_parent"
