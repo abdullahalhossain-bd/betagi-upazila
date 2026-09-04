@@ -54,8 +54,8 @@
                 android:layout_height="100dp"
                 android:layout_marginBottom="12dp"
                 app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="4dp"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="3dp"
                 app:strokeColor="#e0e0e0"
                 app:strokeWidth="1dp">
 
@@ -70,7 +70,7 @@
                         android:id="@+id/textViewNewspaperName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:gravity="center_horizontal"
                         android:text="বাংলাদেশ প্রতিদিন"
                         android:textColor="@android:color/black"
@@ -85,8 +85,8 @@
                 android:layout_height="100dp"
                 android:layout_marginBottom="12dp"
                 app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="4dp"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="3dp"
                 app:strokeColor="#e0e0e0"
                 app:strokeWidth="1dp">
 
@@ -100,7 +100,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:gravity="center_horizontal"
                         android:text="বার্তা ২৪"
                         android:textColor="@android:color/black"
@@ -115,8 +115,8 @@
                 android:layout_height="100dp"
                 android:layout_marginBottom="12dp"
                 app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="4dp"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="3dp"
                 app:strokeColor="#e0e0e0"
                 app:strokeWidth="1dp">
 
@@ -130,7 +130,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:gravity="center_horizontal"
                         android:text="কালের কন্ঠ"
                         android:textColor="@android:color/black"

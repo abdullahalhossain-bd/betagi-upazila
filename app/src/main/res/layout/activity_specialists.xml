@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:fontFamily="@font/kalpurush"
+            android:fontFamily="@font/bnlatxf"
             android:text="বিশেষজ্ঞ ডাক্তারের তালিকা"
             android:textColor="@android:color/white"
             android:textSize="20sp"
@@ -52,8 +52,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 app:cardBackgroundColor="#009688"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="4dp">
+                app:cardCornerRadius="18dp"
+                app:cardElevation="3dp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -78,7 +78,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="12dp">
+                    app:cardCornerRadius="18dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -95,7 +95,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:text="গাইনি বিশেষজ্ঞ"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -109,7 +109,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="12dp">
+                    app:cardCornerRadius="18dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -126,7 +126,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:text="দন্ত চিকিৎসক"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -139,7 +139,7 @@
                     android:layout_height="120dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="12dp">
+                    app:cardCornerRadius="18dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -156,7 +156,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:text="অর্থপেডিক বিশেষজ্ঞ"
                             android:textSize="13sp"
                             android:textStyle="bold" />
@@ -178,7 +178,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="12dp">
+                    app:cardCornerRadius="18dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -195,7 +195,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:text="শিশু বিশেষজ্ঞ"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -209,7 +209,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="12dp">
+                    app:cardCornerRadius="18dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -226,7 +226,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:text="মনোরোগ বিশেষজ্ঞ"
                             android:textSize="14sp"
                             android:textStyle="bold" />
@@ -239,7 +239,7 @@
                     android:layout_height="120dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="12dp">
+                    app:cardCornerRadius="18dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -256,7 +256,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:text="চক্ষু বিশেষজ্ঞ"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -278,7 +278,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="12dp">
+                    app:cardCornerRadius="18dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -295,7 +295,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:text="নাক কান গলা"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -309,7 +309,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="12dp">
+                    app:cardCornerRadius="18dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -326,7 +326,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:text="কিডনি রোগ "
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -339,7 +339,7 @@
                     android:layout_height="120dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="12dp">
+                    app:cardCornerRadius="18dp">
 
                     <LinearLayout
                         android:layout_width="117dp"
@@ -356,7 +356,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:text="মেডিসিন বিশেষজ্ঞ"
                             android:textColor="@android:color/black"
                             android:textSize="15sp"
@@ -379,7 +379,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="12dp">
+                    app:cardCornerRadius="18dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -397,7 +397,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:text="নিউরোলজিস্ট"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -411,7 +411,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="12dp">
+                    app:cardCornerRadius="18dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -429,7 +429,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:text="চর্ম রোগ বিশেষজ্ঞ"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -442,7 +442,7 @@
                     android:layout_height="120dp"
                     android:layout_weight="1"
                     app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="12dp">
+                    app:cardCornerRadius="18dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -460,7 +460,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:text="হৃদরোগ বিশেষজ্ঞ"
                             android:textSize="16sp"
                             android:textStyle="bold" />

@@ -13,8 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginHorizontal="4dp"
-        app:cardCornerRadius="12dp"
-        app:cardElevation="4dp">
+        app:cardCornerRadius="18dp"
+        app:cardElevation="3dp">
         <LinearLayout
         android:orientation="vertical"
         android:background="@drawable/bgdg"
@@ -163,7 +163,7 @@
                 android:textStyle="bold"
                 android:textColor="#FFFFFF"
                 android:background="@drawable/btn_edit_bg"
-                android:fontFamily="@font/kalpurush"
+                android:fontFamily="@font/bnlatxf"
                 android:contentDescription="Edit"/>
 
             <!-- Delete Button -->
@@ -178,7 +178,7 @@
                 android:textStyle="bold"
                 android:textColor="#FFFFFF"
                 android:background="@drawable/btn_delete_bg"
-                android:fontFamily="@font/kalpurush"
+                android:fontFamily="@font/bnlatxf"
                 android:contentDescription="Delete"/>
         </LinearLayout>
         </LinearLayout>

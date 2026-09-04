@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         app:cardBackgroundColor="@color/bar"
-        app:cardElevation="6dp">
+        app:cardElevation="3dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -63,7 +63,7 @@
                 android:layout_marginBottom="8dp"
                 android:id="@+id/add"
                 app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="10dp"
+                app:cardCornerRadius="18dp"
                 app:cardElevation="10dp"
                 app:cardMaxElevation="15dp"
                 app:layout_constraintEnd_toEndOf="parent"

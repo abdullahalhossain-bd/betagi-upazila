@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="@color/premium_background"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             app:cardCornerRadius="16dp"
-            app:cardElevation="6dp"
+            app:cardElevation="3dp"
             app:cardUseCompatPadding="true">
 
             <LinearLayout
@@ -49,7 +50,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
                     android:text="ধরণ"
-                    android:textColor="#666666"
+                    android:textColor="@color/premium_text_secondary"
                     android:textSize="13sp"
                     android:textStyle="bold" android:fontFamily="@font/bnlatxf" />
                 <TextView
@@ -64,7 +65,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="শিরোনাম"
-                    android:textColor="#666666"
+                    android:textColor="@color/premium_text_secondary"
                     android:textSize="13sp"
                     android:textStyle="bold" android:fontFamily="@font/bnlatxf" />
                 <TextView
@@ -79,7 +80,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="বিস্তারিত / বর্ণনা"
-                    android:textColor="#666666"
+                    android:textColor="@color/premium_text_secondary"
                     android:textSize="13sp"
                     android:textStyle="bold" android:fontFamily="@font/bnlatxf" />
                 <TextView
@@ -94,7 +95,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="অবস্থান"
-                    android:textColor="#666666"
+                    android:textColor="@color/premium_text_secondary"
                     android:textSize="13sp"
                     android:textStyle="bold" android:fontFamily="@font/bnlatxf" />
                 <TextView
@@ -109,7 +110,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="বিভাগ"
-                    android:textColor="#666666"
+                    android:textColor="@color/premium_text_secondary"
                     android:textSize="13sp"
                     android:textStyle="bold" android:fontFamily="@font/bnlatxf" />
                 <TextView
@@ -124,7 +125,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="অগ্রাধিকার"
-                    android:textColor="#666666"
+                    android:textColor="@color/premium_text_secondary"
                     android:textSize="13sp"
                     android:textStyle="bold" android:fontFamily="@font/bnlatxf" />
                 <TextView
@@ -139,7 +140,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="যোগাযোগ নম্বর"
-                    android:textColor="#666666"
+                    android:textColor="@color/premium_text_secondary"
                     android:textSize="13sp"
                     android:textStyle="bold" android:fontFamily="@font/bnlatxf" />
                 <TextView
@@ -154,7 +155,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="ইমেইল"
-                    android:textColor="#666666"
+                    android:textColor="@color/premium_text_secondary"
                     android:textSize="13sp"
                     android:textStyle="bold" android:fontFamily="@font/bnlatxf" />
                 <TextView
@@ -169,7 +170,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="অভিযোগকারীর নাম"
-                    android:textColor="#666666"
+                    android:textColor="@color/premium_text_secondary"
                     android:textSize="13sp"
                     android:textStyle="bold" android:fontFamily="@font/bnlatxf" />
                 <TextView
@@ -184,7 +185,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="তারিখ"
-                    android:textColor="#666666"
+                    android:textColor="@color/premium_text_secondary"
                     android:textSize="13sp"
                     android:textStyle="bold" android:fontFamily="@font/bnlatxf" />
                 <TextView

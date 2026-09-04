@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
     android:elevation="4dp"
-    app:cardCornerRadius="8dp">
+    app:cardCornerRadius="18dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
             android:layout_toEndOf="@+id/img_emergency_icon"
-            android:fontFamily="@font/kalpurush"
+            android:fontFamily="@font/bnlatxf"
             android:text="Emergency Name"
             android:textColor="@android:color/black"
             android:textSize="16sp"
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_emergency_name"
             android:layout_toEndOf="@+id/img_emergency_icon"
-            android:fontFamily="@font/kalpurush"
+            android:fontFamily="@font/bnlatxf"
             android:text="12345"
             android:textColor="@android:color/holo_red_dark"
             android:textSize="14sp" />

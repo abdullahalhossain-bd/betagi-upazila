@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff">
+    android:background="@color/premium_background"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -48,8 +49,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="4dp">
+            app:cardCornerRadius="18dp"
+            app:cardElevation="3dp">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -68,9 +69,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/kalpurush"
+                android:fontFamily="@font/bnlatxf"
                 android:text="বেতাগী উপজেলা স্বাস্থ্য কমপ্লেক্স"
-                android:textColor="#000000"
+                android:textColor="@color/premium_text"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -78,16 +79,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:fontFamily="@font/kalpurush"
+                android:fontFamily="@font/bnlatxf"
                 android:text="জেনারেল হাসপাতাল"
-                android:textColor="#999999"
+                android:textColor="@color/premium_text_secondary"
                 android:textSize="14sp" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginVertical="8dp"
-                android:background="#eeeeee" />
+                android:background="@color/premium_border" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -103,9 +104,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:fontFamily="@font/kalpurush"
+                    android:fontFamily="@font/bnlatxf"
                     android:text="লঞ্চঘাট রোড, বেতাগী"
-                    android:textColor="#666666"
+                    android:textColor="@color/premium_text_secondary"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -124,9 +125,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:fontFamily="@font/kalpurush"
+                    android:fontFamily="@font/bnlatxf"
                     android:text="সকাল ৯টা - বিকাল ৫টা"
-                    android:textColor="#666666"
+                    android:textColor="@color/premium_text_secondary"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -150,14 +151,14 @@
                         android:layout_height="30dp"
                         android:background="?attr/selectableItemBackgroundBorderless"
                         android:src="@drawable/ic_website"
-                        android:tint="#2196f3" />
+                        android:tint="@color/premium_primary" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:text="ওয়েবসাইট"
-                        android:textColor="#000000"
+                        android:textColor="@color/premium_text"
                         android:textSize="14sp" />
                 </LinearLayout>
 
@@ -173,14 +174,14 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:src="@drawable/ic_email"
-                        android:tint="#2196f3" />
+                        android:tint="@color/premium_primary" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:text="ই-মেইল"
-                        android:textColor="#000000"
+                        android:textColor="@color/premium_text"
                         android:textSize="14sp" />
                 </LinearLayout>
 
@@ -196,14 +197,14 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:src="@drawable/ic_location"
-                        android:tint="#2196f3" />
+                        android:tint="@color/premium_primary" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:text="লোকেশন"
-                        android:textColor="#000000"
+                        android:textColor="@color/premium_text"
                         android:textSize="14sp" />
                 </LinearLayout>
             </LinearLayout>
@@ -212,10 +213,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/kalpurush"
+            android:fontFamily="@font/bnlatxf"
             android:padding="16dp"
             android:text="হাসপাতাল সম্পর্কে তথ্য"
-            android:textColor="#000000"
+            android:textColor="@color/premium_text"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -224,12 +225,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ellipsize="end"
-            android:fontFamily="@font/kalpurush"
+            android:fontFamily="@font/bnlatxf"
             android:lineSpacingExtra="5dp"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:text="বেতাগী উপজেলা স্বাস্থ্য কমপ্লেক্স বেতাগী উপজেলার অন্যতম গুরুত্বপূর্ণ একটি স্বাস্থ্যসেবা কেন্দ্র। এটি উপজেলা পর্যায়ে বিভিন্ন ধরনের প্রাথমিক ও জরুরি চিকিৎসা সেবা প্রদান করে থাকে..."
-            android:textColor="#666666"
+            android:textColor="@color/premium_text_secondary"
             android:textSize="16sp" />
 
         <TextView
@@ -237,9 +238,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:fontFamily="@font/kalpurush"
+            android:fontFamily="@font/bnlatxf"
             android:text="বিস্তারিত"
-            android:textColor="#007aff"
+            android:textColor="@color/premium_primary"
             android:textStyle="bold" />
 
         <Button
@@ -248,7 +249,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:backgroundTint="#1eb1b1"
-            android:fontFamily="@font/kalpurush"
+            android:fontFamily="@font/bnlatxf"
             android:text="কল করুন"
             android:textAllCaps="false"
             android:textColor="#ffffff"

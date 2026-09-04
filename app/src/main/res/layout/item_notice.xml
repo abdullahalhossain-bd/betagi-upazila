@@ -4,10 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="8dp"
-    app:cardCornerRadius="12dp"
-    app:cardElevation="4dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="3dp"
     app:strokeWidth="1dp"
-    app:cardBackgroundColor="#FFFFFF">
+    app:cardBackgroundColor="@color/premium_surface">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,7 +35,7 @@
                 android:paddingTop="4dp"
                 android:paddingBottom="4dp"
                 android:background="@drawable/notice_type_background"
-                android:fontFamily="@font/kalpurush"/>
+                android:fontFamily="@font/bnlatxf"/>
 
             <TextView
                 android:id="@+id/noticeDateText"
@@ -44,9 +44,9 @@
                 android:layout_weight="1"
                 android:text="২৫ জানুয়ারি, ২০২৫"
                 android:textSize="12sp"
-                android:textColor="#666"
+                android:textColor="@color/premium_text_secondary"
                 android:gravity="end"
-                android:fontFamily="@font/kalpurush"/>
+                android:fontFamily="@font/bnlatxf"/>
 
         </LinearLayout>
 
@@ -57,9 +57,9 @@
             android:layout_height="wrap_content"
             android:text="নোটিশের শিরোনাম"
             android:textSize="16sp"
-            android:textColor="#000"
+            android:textColor="@color/premium_text"
             android:textStyle="bold"
-            android:fontFamily="@font/kalpurush"
+            android:fontFamily="@font/bnlatxf"
             android:layout_marginBottom="8dp"/>
 
         <!-- Description -->
@@ -72,7 +72,7 @@
             android:textColor="#333"
             android:maxLines="3"
             android:ellipsize="end"
-            android:fontFamily="@font/kalpurush"
+            android:fontFamily="@font/bnlatxf"
             android:layout_marginBottom="8dp"/>
 
         <!-- Footer -->
@@ -89,8 +89,8 @@
                 android:layout_weight="1"
                 android:text="উপজেলা প্রশাসন"
                 android:textSize="12sp"
-                android:textColor="#666"
-                android:fontFamily="@font/kalpurush"/>
+                android:textColor="@color/premium_text_secondary"
+                android:fontFamily="@font/bnlatxf"/>
 
             <!-- Image Indicator -->
             <ImageView
@@ -112,7 +112,7 @@
                 android:textColor="#1976D2"
                 android:drawableStart="@drawable/ic_attachment"
                 android:drawablePadding="4dp"
-                android:fontFamily="@font/kalpurush"
+                android:fontFamily="@font/bnlatxf"
                 android:layout_marginEnd="8dp"/>
 
             <!-- Edit Button -->

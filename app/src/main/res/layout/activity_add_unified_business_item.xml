@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:background="#fff">
+    android:background="@color/premium_background"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_marginBottom="30dp"
             android:layout_height="match_parent"
-            android:background="#fff">
+            android:background="@color/premium_background">
 
             <!-- Top Background Image -->
             <ImageView
@@ -181,7 +182,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:layout_marginBottom="10dp"
-                        app:cardBackgroundColor="#fff"
+                        app:cardBackgroundColor="@color/premium_surface"
                         app:cardCornerRadius="20dp">
                         <TextView
                             android:layout_width="wrap_content"

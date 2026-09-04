@@ -51,7 +51,7 @@
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/white"
                 android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -72,7 +72,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="করুনা মোকামিয়া কামিল মাদ্রাসা"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -89,7 +89,7 @@
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/white"
                 android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -110,7 +110,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="রহমাতপুর আলিম মাদ্রাসা"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -127,7 +127,7 @@
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/white"
                 android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -148,7 +148,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="দারুল ইসলাম মহিলা আলিম মাদ্রাসা"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -165,7 +165,7 @@
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/white"
                 android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -186,7 +186,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="বেতাগী ছালেহিয়া আলিম মাদ্রাসা"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -203,7 +203,7 @@
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/white"
                 android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -224,7 +224,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="ছোপখালী জহরউদ্দিন ফাজিল মাদ্রাসা"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -241,7 +241,7 @@
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/white"
                 android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -262,7 +262,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="রানীপুর গড়িয়াবুনিয়া ইসহাকিয়া আলিম মাদ্রাসা"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -279,7 +279,7 @@
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/white"
                 android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -300,7 +300,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="করুনা হাসানিয়া আলিম মাদ্রাসা"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -317,7 +317,7 @@
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/white"
                 android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -338,7 +338,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="করুনা হাসানিয়া আলিম মাদ্রাসা"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -355,7 +355,7 @@
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/white"
                 android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -376,7 +376,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="ফুলতলা মোহাম্মাদিয়া আলিম মাদ্রাসা"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -393,7 +393,7 @@
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/white"
                 android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -414,7 +414,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="দঃ বেতাগী নাদেরিয়া দাখিল মাদ্রাসা"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -431,7 +431,7 @@
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/white"
                 android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -452,7 +452,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="কাঠালতলী নেছারিয়া দাখিল মাদ্রাসা"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -469,7 +469,7 @@
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/white"
                 android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -490,7 +490,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="করুনা বালিকা দাখিল মাদ্রাসা"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -507,7 +507,7 @@
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/white"
                 android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -528,7 +528,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="দারুল ইসলাম মহিলা আলিম মাদ্রাসা"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -545,7 +545,7 @@
                 android:layout_marginBottom="8dp"
                 android:backgroundTint="@color/white"
                 android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -566,7 +566,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="দারুল ইসলাম মহিলা আলিম মাদ্রাসা"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView

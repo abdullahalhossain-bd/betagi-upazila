@@ -66,7 +66,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="চেয়ারম্যান"
-                    android:textColor="#000000"
+                    android:textColor="@color/premium_text"
                     android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -99,7 +99,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="সচিব"
-                    android:textColor="#000000"
+                    android:textColor="@color/premium_text"
                     android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -132,7 +132,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="মেম্বার"
-                    android:textColor="#000000"
+                    android:textColor="@color/premium_text"
                     android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -165,7 +165,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="হিসাব সহকারী ও কাম কম্পিউটার অপারেটর"
-                    android:textColor="#000000"
+                    android:textColor="@color/premium_text"
                     android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -198,7 +198,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="গ্রামপুলিশ"
-                    android:textColor="#000000"
+                    android:textColor="@color/premium_text"
                     android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>

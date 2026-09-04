@@ -58,7 +58,7 @@
                 android:layout_gravity="right|center"
                 android:layout_margin="7dp"
                 app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="10dp"
+                app:cardCornerRadius="18dp"
                 app:cardElevation="10dp"
                 app:cardMaxElevation="15dp">
 
@@ -72,7 +72,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/kalpurush"
+                android:fontFamily="@font/bnlatxf"
                 android:text="সকল সিমের কোড সমূহ"
                 android:textColor="@android:color/black"
                 android:textSize="20sp"
@@ -103,8 +103,8 @@
                     android:clickable="true"
                     android:focusable="true"
                     app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="4dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="3dp"
                     app:rippleColor="?attr/colorControlHighlight">
 
                     <LinearLayout
@@ -124,7 +124,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:gravity="center"
                             android:text="গ্রামীনফোন সিম"
                             android:textSize="14sp" />
@@ -140,8 +140,8 @@
                     android:clickable="true"
                     android:focusable="true"
                     app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="4dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="3dp"
                     app:rippleColor="?attr/colorControlHighlight">
 
                     <LinearLayout
@@ -161,7 +161,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:gravity="center"
                             android:text="বাংলালিংক সিম"
                             android:textSize="14sp" />
@@ -177,8 +177,8 @@
                     android:clickable="true"
                     android:focusable="true"
                     app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="4dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="3dp"
                     app:rippleColor="?attr/colorControlHighlight">
 
                     <LinearLayout
@@ -198,7 +198,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:gravity="center"
                             android:text="টেলিটক সিম"
                             android:textSize="14sp" />
@@ -222,8 +222,8 @@
                     android:clickable="true"
                     android:focusable="true"
                     app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="4dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="3dp"
                     app:rippleColor="?attr/colorControlHighlight">
 
                     <LinearLayout
@@ -244,7 +244,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:gravity="right"
                             android:text="রবি সিম"
                             android:textSize="14sp" />
@@ -260,8 +260,8 @@
                     android:clickable="true"
                     android:focusable="true"
                     app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="4dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="3dp"
                     app:rippleColor="?attr/colorControlHighlight">
 
                     <LinearLayout
@@ -281,7 +281,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:gravity="center"
                             android:text="এয়ারটেল সিম"
                             android:textSize="14sp" />
@@ -297,8 +297,8 @@
                     android:clickable="true"
                     android:focusable="true"
                     app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="4dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="3dp"
                     app:rippleColor="?attr/colorControlHighlight">
 
                     <LinearLayout
@@ -318,7 +318,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:gravity="center"
                             android:text="হেল্প সেন্টার"
                             android:textSize="14sp" />
@@ -342,8 +342,8 @@
                     android:clickable="true"
                     android:focusable="true"
                     app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="4dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="3dp"
                     app:rippleColor="?attr/colorControlHighlight">
 
                     <LinearLayout
@@ -363,7 +363,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:gravity="center"
                             android:text="নগদ সেবা নিন"
                             android:textSize="14sp" />
@@ -379,8 +379,8 @@
                     android:clickable="true"
                     android:focusable="true"
                     app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="4dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="3dp"
                     app:rippleColor="?attr/colorControlHighlight">
 
                     <LinearLayout
@@ -400,7 +400,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:gravity="center"
                             android:text="বিকাশ সেবা নিন"
                             android:textSize="14sp" />
@@ -416,8 +416,8 @@
                     android:clickable="true"
                     android:focusable="true"
                     app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="4dp"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="3dp"
                     app:rippleColor="?attr/colorControlHighlight">
 
                     <LinearLayout
@@ -437,7 +437,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:gravity="center"
                             android:text="রকেট সেবা নিন"
                             android:textSize="14sp" />

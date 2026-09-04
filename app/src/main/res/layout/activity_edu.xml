@@ -67,7 +67,7 @@
                 android:layout_gravity="right|center"
                 android:layout_margin="7dp"
                 app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="10dp"
+                app:cardCornerRadius="18dp"
                 app:cardElevation="10dp"
                 app:cardMaxElevation="15dp">
 
@@ -104,8 +104,8 @@
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="8dp">
+                app:cardCornerRadius="18dp"
+                app:cardElevation="3dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -122,7 +122,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:text="প্রাথমিক বিদ্যালয়"
                         android:textColor="@android:color/black"
                         android:textSize="16sp"
@@ -137,8 +137,8 @@
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="8dp">
+                app:cardCornerRadius="18dp"
+                app:cardElevation="3dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -155,7 +155,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:text="মাধ্যমিক বিদ্যালয়"
                         android:textColor="@android:color/black"
                         android:textSize="16sp"
@@ -180,8 +180,8 @@
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="8dp">
+                app:cardCornerRadius="18dp"
+                app:cardElevation="3dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -198,7 +198,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:text="কলেজ"
                         android:textColor="@android:color/black"
                         android:textSize="16sp"
@@ -213,8 +213,8 @@
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="8dp">
+                app:cardCornerRadius="18dp"
+                app:cardElevation="3dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -231,7 +231,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:text="মাদ্রাসা"
                         android:textColor="@android:color/black"
                         android:textSize="16sp"

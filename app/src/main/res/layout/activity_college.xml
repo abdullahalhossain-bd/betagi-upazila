@@ -56,7 +56,7 @@
                     android:layout_marginBottom="8dp"
                     android:backgroundTint="@color/white"
                     android:elevation="8dp"
-                    app:cardCornerRadius="10dp">
+                    app:cardCornerRadius="18dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -76,9 +76,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_weight="1"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:text="বেতাগী সরকারি কলেজ"
-                            android:textColor="#2196f3"
+                            android:textColor="@color/premium_primary"
                             android:textSize="16sp" />
 
                         <ImageView
@@ -95,7 +95,7 @@
                     android:layout_marginBottom="8dp"
                     android:backgroundTint="@color/white"
                     android:elevation="8dp"
-                    app:cardCornerRadius="10dp">
+                    app:cardCornerRadius="18dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -115,9 +115,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_weight="1"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:text="চান্দখালী মোশাররফ হোসেন কলেজ"
-                            android:textColor="#2196f3"
+                            android:textColor="@color/premium_primary"
                             android:textSize="16sp" />
 
                         <ImageView
@@ -134,7 +134,7 @@
                     android:layout_marginBottom="8dp"
                     android:backgroundTint="@color/white"
                     android:elevation="8dp"
-                    app:cardCornerRadius="10dp">
+                    app:cardCornerRadius="18dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -154,9 +154,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_weight="1"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:text="কাউনিয়া কলেজ"
-                            android:textColor="#2196f3"
+                            android:textColor="@color/premium_primary"
                             android:textSize="16sp" />
 
                         <ImageView
@@ -173,7 +173,7 @@
                     android:layout_marginBottom="8dp"
                     android:backgroundTint="@color/white"
                     android:elevation="8dp"
-                    app:cardCornerRadius="10dp">
+                    app:cardCornerRadius="18dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -193,9 +193,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_weight="1"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:text="ডাঃ আছমত আলী কলেজ"
-                            android:textColor="#2196f3"
+                            android:textColor="@color/premium_primary"
                             android:textSize="16sp" />
 
                         <ImageView
@@ -212,7 +212,7 @@
                     android:layout_marginBottom="8dp"
                     android:backgroundTint="@color/white"
                     android:elevation="8dp"
-                    app:cardCornerRadius="10dp">
+                    app:cardCornerRadius="18dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -232,9 +232,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_weight="1"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:text="আক্তার মোর্শেদ কৃষি কলেজ"
-                            android:textColor="#2196f3"
+                            android:textColor="@color/premium_primary"
                             android:textSize="16sp" />
 
                         <ImageView
@@ -251,7 +251,7 @@
                     android:layout_marginBottom="8dp"
                     android:backgroundTint="@color/white"
                     android:elevation="8dp"
-                    app:cardCornerRadius="10dp">
+                    app:cardCornerRadius="18dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -271,9 +271,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_weight="1"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:text="বিবিচিনি নিয়ামতি যুক্ত মাঃ বিঃ ও কলেজ"
-                            android:textColor="#2196f3"
+                            android:textColor="@color/premium_primary"
                             android:textSize="16sp" />
 
                         <ImageView
@@ -290,7 +290,7 @@
                     android:layout_marginBottom="8dp"
                     android:backgroundTint="@color/white"
                     android:elevation="8dp"
-                    app:cardCornerRadius="10dp">
+                    app:cardCornerRadius="18dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -310,9 +310,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_weight="1"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:text="বেতাগী গার্লস স্কুল এন্ড কলেজ"
-                            android:textColor="#2196f3"
+                            android:textColor="@color/premium_primary"
                             android:textSize="16sp" />
 
                         <ImageView
@@ -329,7 +329,7 @@
                     android:layout_marginBottom="8dp"
                     android:backgroundTint="@color/white"
                     android:elevation="8dp"
-                    app:cardCornerRadius="10dp">
+                    app:cardCornerRadius="18dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -349,9 +349,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_weight="1"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:text="বেতাগী টেকনিক্যাল বি এম কলেজ"
-                            android:textColor="#2196f3"
+                            android:textColor="@color/premium_primary"
                             android:textSize="16sp" />
 
                         <ImageView
@@ -368,7 +368,7 @@
                     android:layout_marginBottom="8dp"
                     android:backgroundTint="@color/white"
                     android:elevation="8dp"
-                    app:cardCornerRadius="10dp">
+                    app:cardCornerRadius="18dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -388,9 +388,9 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_weight="1"
-                            android:fontFamily="@font/kalpurush"
+                            android:fontFamily="@font/bnlatxf"
                             android:text="ওহিদুর রহমান শাহিন মহিলা কলেজ"
-                            android:textColor="#2196f3"
+                            android:textColor="@color/premium_primary"
                             android:textSize="16sp" />
 
                         <ImageView

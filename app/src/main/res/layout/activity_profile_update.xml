@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff">
+    android:background="@color/premium_background"
+    android:fillViewport="true">
 
     <!-- Top Background Image -->
     <ImageView
@@ -93,7 +94,7 @@
                         android:layout_height="wrap_content"
                         android:text="ছবি পরিবর্তন করুন"
                         android:textSize="12sp"
-                        android:textColor="#666666"
+                        android:textColor="@color/premium_text_secondary"
                         android:fontFamily="@font/bnlatxf"
                         android:layout_marginBottom="8dp" />
 
@@ -132,7 +133,7 @@
                             android:fontFamily="@font/bnlatxf"
                             android:inputType="phone"
                             android:enabled="false"
-                            android:textColor="#999999" />
+                            android:textColor="@color/premium_text_secondary" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <!-- Address Input -->
@@ -177,7 +178,7 @@
                             android:layout_marginStart="8dp"
                             android:text="ফোন নম্বর পরিবর্তন করা যাবে না। পাসওয়ার্ড পরিবর্তন করতে সেটিংস দেখুন।"
                             android:textSize="11sp"
-                            android:textColor="#666666"
+                            android:textColor="@color/premium_text_secondary"
                             android:fontFamily="@font/bnlatxf" />
                     </LinearLayout>
 
@@ -190,7 +191,7 @@
                         android:layout_marginBottom="10dp"
                         app:cardBackgroundColor="#2196F3"
                         app:cardCornerRadius="20dp"
-                        app:cardElevation="4dp">
+                        app:cardElevation="3dp">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"

@@ -44,7 +44,7 @@
                 android:fontFamily="@font/bnlatxf"
                 android:gravity="center"
                 android:text="ডেভেলপার সম্পর্কে"
-                android:textColor="#000000"
+                android:textColor="@color/premium_text"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
@@ -74,7 +74,7 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="16dp"
                 app:cardBackgroundColor="#E53935"
-                app:cardCornerRadius="12dp"
+                app:cardCornerRadius="18dp"
                 app:cardElevation="5dp">
 
                 <TextView

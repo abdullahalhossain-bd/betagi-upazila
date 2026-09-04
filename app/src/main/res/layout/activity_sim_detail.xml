@@ -23,7 +23,7 @@
             android:id="@+id/sim_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/kalpurush"
+            android:fontFamily="@font/bnlatxf"
             android:lineSpacingExtra="8dp"
             android:textSize="16sp"
             android:textColor="@android:color/black" />

@@ -59,7 +59,7 @@
                         android:singleLine="true"
                         android:text="আপনার শহরের সকল সেবা ও তথ্য এক প্ল্যাটফর্মে এনে দিয়েছে। এই অ্যাপটি বেতাগীবাসীর দৈনন্দিন জীবনকে সহজতর এবং উন্নত করার জন্য ডিজাইন করা হয়েছে।"
                         android:textSize="15sp"
-                        android:fontFamily="@font/kalpurush" />
+                        android:fontFamily="@font/bnlatxf" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -227,7 +227,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 app:cardCornerRadius="18dp"
-                app:cardElevation="6dp">
+                app:cardElevation="3dp">
 
                 <com.denzcoskun.imageslider.ImageSlider
                     android:id="@+id/image_slider"
@@ -806,7 +806,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     app:cardCornerRadius="16dp"
-                    app:cardElevation="6dp"
+                    app:cardElevation="3dp"
                     app:cardBackgroundColor="@color/premium_surface">
 
                     <LinearLayout

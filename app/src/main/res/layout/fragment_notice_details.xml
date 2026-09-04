@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#f5f5f5">
+    android:background="@color/premium_background"
+    android:fillViewport="true">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -37,8 +38,8 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="4dp"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="3dp"
                 android:layout_marginBottom="16dp">
 
                 <LinearLayout
@@ -71,9 +72,9 @@
                         android:layout_height="wrap_content"
                         android:text="নোটিশের শিরোনাম"
                         android:textSize="20sp"
-                        android:textColor="#000"
+                        android:textColor="@color/premium_text"
                         android:textStyle="bold"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:layout_marginBottom="8dp"/>
 
                     <!-- Notice Date -->
@@ -83,8 +84,8 @@
                         android:layout_height="wrap_content"
                         android:text="২৫ জানুয়ারি, ২০২৪"
                         android:textSize="14sp"
-                        android:textColor="#666"
-                        android:fontFamily="@font/kalpurush"
+                        android:textColor="@color/premium_text_secondary"
+                        android:fontFamily="@font/bnlatxf"
                         android:layout_marginBottom="8dp"/>
 
                     <!-- Department -->
@@ -94,8 +95,8 @@
                         android:layout_height="wrap_content"
                         android:text="উপজেলা প্রশাসন"
                         android:textSize="14sp"
-                        android:textColor="#666"
-                        android:fontFamily="@font/kalpurush"
+                        android:textColor="@color/premium_text_secondary"
+                        android:fontFamily="@font/bnlatxf"
                         android:layout_marginBottom="16dp"
                         android:visibility="visible"/>
 
@@ -118,7 +119,7 @@
                         android:textSize="16sp"
                         android:textColor="#333"
                         android:lineSpacingExtra="4dp"
-                        android:fontFamily="@font/kalpurush"/>
+                        android:fontFamily="@font/bnlatxf"/>
 
                 </LinearLayout>
 
@@ -129,8 +130,8 @@
                 android:id="@+id/attachmentContainer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="4dp"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="3dp"
                 android:layout_marginBottom="16dp"
                 android:visibility="gone">
 
@@ -162,8 +163,8 @@
                             android:text="সংযুক্তি (0)"
                             android:textSize="16sp"
                             android:textStyle="bold"
-                            android:textColor="#000"
-                            android:fontFamily="@font/kalpurush"
+                            android:textColor="@color/premium_text"
+                            android:fontFamily="@font/bnlatxf"
                             android:layout_marginStart="8dp"/>
 
                     </LinearLayout>
@@ -217,8 +218,8 @@
                     android:layout_height="wrap_content"
                     android:text="কোন তথ্য পাওয়া যায়নি"
                     android:textSize="16sp"
-                    android:textColor="#999"
-                    android:fontFamily="@font/kalpurush"
+                    android:textColor="@color/premium_text_secondary"
+                    android:fontFamily="@font/bnlatxf"
                     android:gravity="center"/>
 
             </LinearLayout>
