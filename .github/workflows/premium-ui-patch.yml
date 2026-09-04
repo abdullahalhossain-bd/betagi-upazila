@@ -15,13 +15,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Apply premium styling across layouts
+      - name: Apply premium styling across user-facing layouts
         run: |
           python3 - <<'PY'
           from pathlib import Path
 
           root = Path('app/src/main/res/layout')
-          files = list(root.glob('*.xml'))
+          admin_prefixes = ('activity_add_', 'fragment_admin', 'item_admin')
+          files = [p for p in root.glob('*.xml') if not p.name.startswith(admin_prefixes)]
           changed = []
 
           replacements = {
@@ -31,6 +32,9 @@ jobs:
               'android:background="#FFFFFF"': 'android:background="@color/premium_background"',
               'android:background="#f5f5f5"': 'android:background="@color/premium_background"',
               'android:background="#F5F5F5"': 'android:background="@color/premium_background"',
+              'android:background="#1eb1b1"': 'android:background="@color/premium_primary"',
+              'android:background="#009688"': 'android:background="@color/premium_primary"',
+              'android:background="@color/bar"': 'android:background="@color/premium_primary"',
               'app:cardBackgroundColor="#fff"': 'app:cardBackgroundColor="@color/premium_surface"',
               'app:cardBackgroundColor="#FFF"': 'app:cardBackgroundColor="@color/premium_surface"',
               'app:cardBackgroundColor="#ffffff"': 'app:cardBackgroundColor="@color/premium_surface"',
@@ -50,13 +54,17 @@ jobs:
               'android:textColor="#999"': 'android:textColor="@color/premium_text_secondary"',
               'android:textColor="#2196f3"': 'android:textColor="@color/premium_primary"',
               'android:textColor="#007aff"': 'android:textColor="@color/premium_primary"',
+              'android:textColor="#1e88e5"': 'android:textColor="@color/premium_primary"',
               'android:textColor="#1eb1b1"': 'android:textColor="@color/premium_primary"',
+              'android:textColor="#a40000"': 'android:textColor="@color/premium_text_secondary"',
               'android:background="#eeeeee"': 'android:background="@color/premium_border"',
               'android:background="#EDEDED"': 'android:background="@color/premium_border"',
               'android:tint="#2196f3"': 'android:tint="@color/premium_primary"',
               'android:tint="#1eb1b1"': 'android:tint="@color/premium_primary"',
               'app:tint="#2196f3"': 'app:tint="@color/premium_primary"',
               'app:tint="#1eb1b1"': 'app:tint="@color/premium_primary"',
+              'app:strokeColor="@android:color/holo_red_light"': 'app:strokeColor="@color/premium_border"',
+              'app:strokeWidth="2dp"': 'app:strokeWidth="1dp"',
           }
 
           for p in files:
@@ -68,17 +76,16 @@ jobs:
               # Keep legacy Bengali typography readable but unify it with the premium app font.
               s = s.replace('android:fontFamily="@font/kalpurush"', 'android:fontFamily="@font/bnlatxf"')
 
-              # Premium detail/form screens get comfortable page gutters without changing IDs.
-              if p.name not in {'activity_home.xml', 'home.xml', 'bottom_nav.xml', 'nav_header.xml'}:
-                  if '<ScrollView' in s and 'android:paddingStart="16dp"' not in s.split('\n', 8)[0:8].__str__():
-                      s = s.replace('android:background="@color/premium_background">',
-                                    'android:background="@color/premium_background"\n    android:fillViewport="true">', 1)
+              # Consistent premium page treatment without changing IDs, listeners, visibility, or data bindings.
+              if 'android:background="@color/premium_background"' in s:
+                  if 'android:clipToPadding="false"' not in s and '<ScrollView' in s:
+                      s = s.replace('<ScrollView', '<ScrollView\n        android:clipToPadding="false"', 1)
 
               if s != old:
                   p.write_text(s, encoding='utf-8')
                   changed.append(p.name)
 
-          print(f'Premium-styled {len(changed)} layout(s)')
+          print(f'Premium-styled {len(changed)} user-facing layout(s)')
           for name in changed:
               print(' -', name)
           PY
@@ -88,5 +95,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add app/src/main/res/layout
-          git diff --cached --quiet || git commit -m "style: premium remaining layouts [premium-ui-auto]"
+          git diff --cached --quiet || git commit -m "style: premium remaining user layouts [premium-ui-auto]"
           git push
