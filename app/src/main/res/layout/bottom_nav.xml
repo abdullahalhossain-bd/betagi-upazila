@@ -2,11 +2,15 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="60dp"
+    android:layout_height="76dp"
     android:orientation="horizontal"
-    android:background="#fff"
-    android:elevation="4dp"
-    android:gravity="center">
+    android:background="@color/premium_surface"
+    android:elevation="12dp"
+    android:gravity="center"
+    android:paddingStart="6dp"
+    android:paddingEnd="6dp"
+    android:paddingTop="6dp"
+    android:paddingBottom="8dp">
 
     <LinearLayout
         android:id="@+id/nav_home"
@@ -15,19 +19,22 @@
         android:layout_weight="1"
         android:orientation="vertical"
         android:gravity="center"
-        android:padding="8dp">
+        android:background="@drawable/red"
+        android:padding="7dp">
         <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/homes" />
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/homes"
+            android:contentDescription="হোম" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="হোম"
-            android:textColor="#000"
-            android:textSize="10sp"
+            android:textColor="@color/premium_primary"
+            android:textSize="11sp"
+            android:textStyle="bold"
             android:fontFamily="@font/bnlatxf"
-            android:layout_marginTop="4dp" />
+            android:layout_marginTop="3dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -37,19 +44,20 @@
         android:layout_weight="1"
         android:orientation="vertical"
         android:gravity="center"
-        android:padding="8dp">
+        android:padding="7dp">
         <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/bell" />
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/bell"
+            android:contentDescription="নোটিশ" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="নোটিশ"
-            android:textColor="#000"
-            android:textSize="10sp"
+            android:textColor="@color/premium_text_secondary"
+            android:textSize="11sp"
             android:fontFamily="@font/bnlatxf"
-            android:layout_marginTop="4dp" />
+            android:layout_marginTop="3dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -59,19 +67,20 @@
         android:layout_weight="1"
         android:orientation="vertical"
         android:gravity="center"
-        android:padding="8dp">
+        android:padding="7dp">
         <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/govtlogo" />
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/govtlogo"
+            android:contentDescription="সরকারি সেবা" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="সরকারি সেবা"
-            android:textColor="#000"
-            android:textSize="10sp"
+            android:textColor="@color/premium_text_secondary"
+            android:textSize="11sp"
             android:fontFamily="@font/bnlatxf"
-            android:layout_marginTop="4dp" />
+            android:layout_marginTop="3dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -81,19 +90,20 @@
         android:layout_weight="1"
         android:orientation="vertical"
         android:gravity="center"
-        android:padding="8dp">
+        android:padding="7dp">
         <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/serviccis" />
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/serviccis"
+            android:contentDescription="সকল সেবা" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="সকল সেবা"
-            android:textColor="#000"
-            android:textSize="10sp"
+            android:textColor="@color/premium_text_secondary"
+            android:textSize="11sp"
             android:fontFamily="@font/bnlatxf"
-            android:layout_marginTop="4dp" />
+            android:layout_marginTop="3dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -103,18 +113,19 @@
         android:layout_weight="1"
         android:orientation="vertical"
         android:gravity="center"
-        android:padding="8dp">
+        android:padding="7dp">
         <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/profile" />
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/profile"
+            android:contentDescription="প্রোফাইল" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="প্রোফাইল"
-            android:textColor="#000"
-            android:textSize="10sp"
+            android:textColor="@color/premium_text_secondary"
+            android:textSize="11sp"
             android:fontFamily="@font/bnlatxf"
-            android:layout_marginTop="4dp" />
+            android:layout_marginTop="3dp" />
     </LinearLayout>
 </LinearLayout>
