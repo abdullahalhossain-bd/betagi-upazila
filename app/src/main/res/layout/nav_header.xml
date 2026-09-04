@@ -1,59 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="150dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="horizontal"
-    android:gravity="center|start"
-    android:background="@drawable/registation"
-    android:padding="16dp">
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:background="@color/premium_primary"
+    android:padding="20dp">
+
     <androidx.cardview.widget.CardView
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        app:cardElevation="10dp"
-        app:cardCornerRadius="20dp"
-        app:cardBackgroundColor="#fff"
-        app:cardMaxElevation="12dp"
-        >
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="32dp"
+        app:cardBackgroundColor="@color/premium_surface">
         <ImageView
             android:id="@+id/profile_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@mipmap/ic_launcher"
             android:scaleType="centerCrop"
-            />
+            android:contentDescription="প্রোফাইল" />
     </androidx.cardview.widget.CardView>
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/header_short"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="15dp"
+        android:text="বেতাগী ই-সেবা"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/bnlatxf"
+        android:layout_marginTop="12dp" />
 
-        >
-        <ImageView
-            android:id="@+id/header_title"
-            android:src="@drawable/betagi"
-            android:layout_width="160dp"
-            android:scaleType="centerCrop"
-            android:layout_height="40dp"
-            android:text="@string/app_name"
-            android:textColor="@android:color/white"
-            android:textSize="22sp"
-            />
-        <TextView
-            android:id="@+id/header_short"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="সকল সেবা ও তথ্য এক প্ল্যাটফর্মে এনে দিয়েছে।"
-            android:textColor="@android:color/white"
-            android:textSize="16sp"
-            android:fontFamily="@font/bnlatxf"
-            android:layout_marginTop="8dp" />
-
-    </LinearLayout>
-
-
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="সকল সেবা ও তথ্য এক প্ল্যাটফর্মে"
+        android:textColor="#DDEDE7"
+        android:textSize="12sp"
+        android:fontFamily="@font/bnlatxf"
+        android:layout_marginTop="2dp" />
 
 </LinearLayout>
