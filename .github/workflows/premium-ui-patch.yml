@@ -9,7 +9,7 @@ permissions:
 
 jobs:
   patch-home-ui:
-    if: !contains(github.event.head_commit.message, '[premium-ui-auto]')
+    if: ${{ !contains(github.event.head_commit.message, '[premium-ui-auto]') }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -33,15 +33,25 @@ jobs:
               'app:tint="#FF6B35"': 'app:tint="@color/premium_accent"',
               'android:background="#EDEDED"': 'android:background="@color/premium_border"',
               'app:cardCornerRadius="12dp"': 'app:cardCornerRadius="18dp"',
+              'app:cardCornerRadius="6dp"': 'app:cardCornerRadius="16dp"',
+              'app:cardCornerRadius="10dp"': 'app:cardCornerRadius="16dp"',
           }
-          for a,b in replacements.items():
-              s = s.replace(a,b)
+          for a, b in replacements.items():
+              s = s.replace(a, b)
 
-          marker = '<!-- PREMIUM_UI_PATCH_V1 -->'
-          if marker not in s:
-              s = s.replace('<LinearLayout xmlns:android=', marker + '\n    <LinearLayout xmlns:android=', 1)
-              s = s.replace('android:paddingBottom="16dp">', 'android:paddingBottom="28dp">', 1)
-              s = s.replace('android:layout_margin="8dp"\n                app:cardCornerRadius="20dp"', 'android:layout_marginStart="16dp"\n                android:layout_marginEnd="16dp"\n                android:layout_marginTop="10dp"\n                android:layout_marginBottom="10dp"\n                app:cardCornerRadius="20dp"', 1)
+          # Normalize common dashboard spacing without touching view IDs or click targets.
+          s = s.replace('android:paddingBottom="16dp">', 'android:paddingBottom="28dp">', 1)
+          s = s.replace('android:layout_margin="8dp"', 'android:layout_marginStart="16dp"\n                android:layout_marginEnd="16dp"\n                android:layout_marginTop="10dp"\n                android:layout_marginBottom="10dp"', 1)
+
+          # Weather hero: premium surface, border, and breathing room.
+          weather_anchor = '<!-- Weather & Quick Actions Row -->'
+          if weather_anchor in s and 'PREMIUM_WEATHER_HERO' not in s:
+              s = s.replace(
+                  '<androidx.constraintlayout.widget.ConstraintLayout\n                    android:layout_width="match_parent"',
+                  '<androidx.constraintlayout.widget.ConstraintLayout\n                    android:id="@+id/premium_weather_hero"\n                    android:background="@drawable/premium_card_background"\n                    android:padding="14dp"\n                    android:layout_marginStart="8dp"\n                    android:layout_marginEnd="8dp"\n                    android:layout_marginTop="4dp"\n                    android:layout_marginBottom="4dp"\n                    android:layout_width="match_parent"',
+                  1
+              )
+              s = s.replace(weather_anchor, '<!-- PREMIUM_WEATHER_HERO -->\n            ' + weather_anchor, 1)
 
           p.write_text(s, encoding='utf-8')
           PY
