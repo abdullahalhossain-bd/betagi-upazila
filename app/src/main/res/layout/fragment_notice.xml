@@ -2,39 +2,50 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/premium_background">
 
-    <!-- ================= MAIN CONTENT ================= -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="#f5f5f5">
+        android:background="@color/premium_background"
+        android:paddingTop="8dp">
 
-        <!-- ================= SEARCH BAR ================= -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="4dp">
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="@color/premium_surface"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="2dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="8dp">
+                android:gravity="center_vertical"
+                android:paddingStart="14dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
 
                 <EditText
                     android:id="@+id/searchEditText"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="48dp"
                     android:layout_weight="1"
                     android:hint="নোটিশ খুঁজুন..."
                     android:background="@null"
-                    android:padding="8dp"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="6dp"
                     android:textSize="14sp"
-                    android:fontFamily="@font/kalpurush"
+                    android:textColor="@color/premium_text"
+                    android:textColorHint="@color/premium_text_secondary"
+                    android:fontFamily="@font/bnlatxf"
                     android:inputType="text"
                     android:imeOptions="actionSearch"/>
 
@@ -42,25 +53,25 @@
                     android:id="@+id/searchIcon"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="6dp"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/ic_search"/>
+                    android:src="@drawable/ic_search"
+                    app:tint="@color/premium_primary"/>
 
                 <ImageButton
                     android:id="@+id/filter_menu"
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:layout_marginStart="8dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
                     android:layout_gravity="center_vertical"
                     android:background="@android:color/transparent"
                     android:src="@android:drawable/ic_menu_more"
                     android:contentDescription="Filter options"
-                    app:tint="@color/colorPrimary"/>
+                    app:tint="@color/premium_primary"/>
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- ================= FILTER CHIPS ================= -->
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -71,8 +82,8 @@
                 android:id="@+id/chipGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingStart="8dp"
-                android:paddingEnd="8dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
                 app:singleSelection="true">
 
                 <com.google.android.material.chip.Chip
@@ -80,60 +91,72 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="সব"
-                    android:textColor="#fff"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/bnlatxf"
                     android:checkable="true"
                     android:checked="true"
-                    app:chipBackgroundColor="@color/colorPrimary"
+                    app:chipBackgroundColor="@color/premium_primary"
                     app:chipCornerRadius="16dp"
-                    android:layout_marginEnd="4dp"/>
+                    android:layout_marginEnd="6dp"/>
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/chipImportant"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="গুরুত্বপূর্ণ"
-                    android:textColor="#fff"
+                    android:textColor="@color/premium_text"
+                    android:fontFamily="@font/bnlatxf"
                     android:checkable="true"
-                    app:chipBackgroundColor="#FF5722"
+                    app:chipBackgroundColor="@color/premium_surface"
+                    app:chipStrokeColor="@color/premium_border"
+                    app:chipStrokeWidth="1dp"
                     app:chipCornerRadius="16dp"
-                    android:layout_marginEnd="4dp"/>
+                    android:layout_marginEnd="6dp"/>
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/chipGeneral"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="সাধারণ"
-                    android:textColor="#fff"
+                    android:textColor="@color/premium_text"
+                    android:fontFamily="@font/bnlatxf"
                     android:checkable="true"
-                    app:chipBackgroundColor="#4CAF50"
+                    app:chipBackgroundColor="@color/premium_surface"
+                    app:chipStrokeColor="@color/premium_border"
+                    app:chipStrokeWidth="1dp"
                     app:chipCornerRadius="16dp"
-                    android:layout_marginEnd="4dp"/>
+                    android:layout_marginEnd="6dp"/>
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/chipEvent"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="ইভেন্ট"
-                    android:textColor="#fff"
+                    android:textColor="@color/premium_text"
+                    android:fontFamily="@font/bnlatxf"
                     android:checkable="true"
-                    app:chipBackgroundColor="#2196F3"
+                    app:chipBackgroundColor="@color/premium_surface"
+                    app:chipStrokeColor="@color/premium_border"
+                    app:chipStrokeWidth="1dp"
                     app:chipCornerRadius="16dp"
-                    android:layout_marginEnd="4dp"/>
+                    android:layout_marginEnd="6dp"/>
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/chipHoliday"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="ছুটি"
-                    android:textColor="#fff"
+                    android:textColor="@color/premium_text"
+                    android:fontFamily="@font/bnlatxf"
                     android:checkable="true"
-                    app:chipBackgroundColor="#FF9800"
+                    app:chipBackgroundColor="@color/premium_surface"
+                    app:chipStrokeColor="@color/premium_border"
+                    app:chipStrokeWidth="1dp"
                     app:chipCornerRadius="16dp"/>
 
             </com.google.android.material.chip.ChipGroup>
         </HorizontalScrollView>
 
-        <!-- ================= NOTICE LIST ================= -->
         <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
             android:id="@+id/swipeRefreshLayout"
             android:layout_width="match_parent"
@@ -143,15 +166,16 @@
                 android:id="@+id/noticeRecyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="8dp"
-                android:paddingBottom="72dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="88dp"
                 android:clipToPadding="false"/>
 
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     </LinearLayout>
 
-    <!-- ================= EMPTY STATE (OVERLAY) ================= -->
     <LinearLayout
         android:id="@+id/emptyStateLayout"
         android:layout_width="match_parent"
@@ -159,7 +183,8 @@
         android:orientation="vertical"
         android:gravity="center"
         android:visibility="gone"
-        android:background="#f5f5f5">
+        android:padding="32dp"
+        android:background="@color/premium_background">
 
         <com.airbnb.lottie.LottieAnimationView
             android:layout_width="150dp"
@@ -172,9 +197,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="কোনো নোটিশ পাওয়া যায়নি"
-            android:textSize="16sp"
-            android:textColor="#666"
-            android:fontFamily="@font/kalpurush"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/premium_text"
+            android:fontFamily="@font/bnlatxf"
             android:layout_marginTop="16dp"/>
 
         <TextView
@@ -182,23 +208,23 @@
             android:layout_height="wrap_content"
             android:text="নতুন নোটিশের জন্য রিফ্রেশ করুন"
             android:textSize="14sp"
-            android:textColor="#999"
-            android:fontFamily="@font/kalpurush"
+            android:textColor="@color/premium_text_secondary"
+            android:fontFamily="@font/bnlatxf"
+            android:gravity="center"
             android:layout_marginTop="8dp"/>
 
     </LinearLayout>
 
-    <!-- ================= ADD NOTICE FAB ================= -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addNoticeFab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_margin="16dp"
+        android:layout_margin="20dp"
         android:visibility="gone"
         android:contentDescription="Add Notice"
         android:src="@drawable/ic_add_24"
-        app:backgroundTint="@color/bar"
+        app:backgroundTint="@color/premium_primary"
         app:tint="@android:color/white"
         app:elevation="8dp"/>
 
