@@ -96,7 +96,8 @@
                 android:layout_height="1dp"
                 android:background="#DDD" />
 
-            <TableRow android:background="@color/premium_background">
+            <TableRow android:background="@color/premium_background"
+    android:fillViewport="true">
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
