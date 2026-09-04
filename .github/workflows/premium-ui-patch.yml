@@ -30,11 +30,16 @@ jobs:
               'android:textColor="#FF6B35"': 'android:textColor="@color/premium_primary"',
               'android:textColor="#2E7D32"': 'android:textColor="@color/premium_primary"',
               'android:textColor="#1565C0"': 'android:textColor="@color/premium_primary"',
+              'android:textColor="#000"': 'android:textColor="@color/premium_text"',
+              'android:textColor="#666"': 'android:textColor="@color/premium_text_secondary"',
+              'android:textColor="#999"': 'android:textColor="@color/premium_text_secondary"',
               'app:tint="#FF6B35"': 'app:tint="@color/premium_accent"',
+              'app:tint="#666"': 'app:tint="@color/premium_text_secondary"',
               'android:background="#EDEDED"': 'android:background="@color/premium_border"',
               'app:cardCornerRadius="12dp"': 'app:cardCornerRadius="18dp"',
               'app:cardCornerRadius="6dp"': 'app:cardCornerRadius="16dp"',
               'app:cardCornerRadius="10dp"': 'app:cardCornerRadius="16dp"',
+              'app:cardBackgroundColor="#FFFFFF"': 'app:cardBackgroundColor="@color/premium_surface"',
           }
           for a, b in replacements.items():
               s = s.replace(a, b)
@@ -52,6 +57,13 @@ jobs:
                   1
               )
               s = s.replace(weather_anchor, '<!-- PREMIUM_WEATHER_HERO -->\n            ' + weather_anchor, 1)
+
+          # Keep the dashboard visually coherent: replace legacy accent bars with the premium palette.
+          s = s.replace('android:background="#FF6B35"', 'android:background="@color/premium_primary"')
+          s = s.replace('android:background="#1565C0"', 'android:background="@color/premium_primary_dark"')
+          s = s.replace('android:background="#2E7D32"', 'android:background="@color/premium_primary"')
+          s = s.replace('android:background="#F9A825"', 'android:background="@color/premium_accent"')
+          s = s.replace('android:background="#F0F0F0"', 'android:background="@color/premium_border"')
 
           p.write_text(s, encoding='utf-8')
           PY
