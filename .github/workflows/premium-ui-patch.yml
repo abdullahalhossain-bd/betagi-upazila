@@ -48,22 +48,29 @@ jobs:
           s = s.replace('android:paddingBottom="16dp">', 'android:paddingBottom="28dp">', 1)
           s = s.replace('android:layout_margin="8dp"', 'android:layout_marginStart="16dp"\n                android:layout_marginEnd="16dp"\n                android:layout_marginTop="10dp"\n                android:layout_marginBottom="10dp"', 1)
 
-          # Weather hero: premium surface, border, and breathing room.
-          weather_anchor = '<!-- Weather & Quick Actions Row -->'
-          if weather_anchor in s and 'PREMIUM_WEATHER_HERO' not in s:
-              s = s.replace(
-                  '<androidx.constraintlayout.widget.ConstraintLayout\n                    android:layout_width="match_parent"',
-                  '<androidx.constraintlayout.widget.ConstraintLayout\n                    android:id="@+id/premium_weather_hero"\n                    android:background="@drawable/premium_card_background"\n                    android:padding="14dp"\n                    android:layout_marginStart="8dp"\n                    android:layout_marginEnd="8dp"\n                    android:layout_marginTop="4dp"\n                    android:layout_marginBottom="4dp"\n                    android:layout_width="match_parent"',
-                  1
-              )
-              s = s.replace(weather_anchor, '<!-- PREMIUM_WEATHER_HERO -->\n            ' + weather_anchor, 1)
+          # Weather hero: upgrade the existing container only; preserve every weather view ID.
+          if 'android:id="@+id/premium_weather_hero"' in s:
+              s = s.replace('android:padding="14dp"', 'android:padding="16dp"', 1)
+              s = s.replace('android:layout_marginStart="8dp"\n                    android:layout_marginEnd="8dp"\n                    android:layout_marginTop="4dp"\n                    android:layout_marginBottom="4dp"',
+                            'android:layout_marginStart="16dp"\n                    android:layout_marginEnd="16dp"\n                    android:layout_marginTop="4dp"\n                    android:layout_marginBottom="12dp"', 1)
 
-          # Keep the dashboard visually coherent: replace legacy accent bars with the premium palette.
-          s = s.replace('android:background="#FF6B35"', 'android:background="@color/premium_primary"')
-          s = s.replace('android:background="#1565C0"', 'android:background="@color/premium_primary_dark"')
-          s = s.replace('android:background="#2E7D32"', 'android:background="@color/premium_primary"')
-          s = s.replace('android:background="#F9A825"', 'android:background="@color/premium_accent"')
-          s = s.replace('android:background="#F0F0F0"', 'android:background="@color/premium_border"')
+          # Emergency hotline cards: cleaner proportions and premium surface.
+          s = s.replace('android:layout_width="100dp"\n                            android:layout_height="80dp"',
+                        'android:layout_width="104dp"\n                            android:layout_height="88dp"')
+          s = s.replace('app:cardBackgroundColor="#FFFFFF"', 'app:cardBackgroundColor="@color/premium_surface"')
+
+          # City-info cards: consistent surface, spacing and hierarchy.
+          city_marker = '<!-- City Information Section -->'
+          if city_marker in s:
+              tail = s.split(city_marker, 1)[1]
+              tail = tail.replace('android:textColor="@color/premium_text"', 'android:textColor="@color/premium_text"')
+              tail = tail.replace('app:cardCornerRadius="20dp"', 'app:cardCornerRadius="18dp"')
+              tail = tail.replace('app:cardElevation="3dp"', 'app:cardElevation="2dp"')
+              s = s.split(city_marker, 1)[0] + city_marker + tail
+
+          # Remove accidental legacy divider styling while keeping the section itself intact.
+          s = s.replace('android:layout_height="8dp"\n                android:background="@color/premium_border"',
+                        'android:layout_height="1dp"\n                android:background="@color/premium_border"')
 
           p.write_text(s, encoding='utf-8')
           PY
