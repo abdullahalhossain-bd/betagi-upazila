@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentTop="true"
-        android:background="#1eb1b1"
+        android:background="@color/premium_primary"
         android:gravity="center"
         android:text="আপনার ইউনিয়ন সিলেক্ট করুন"
         android:textColor="@android:color/white"

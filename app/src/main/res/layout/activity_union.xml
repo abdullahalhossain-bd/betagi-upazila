@@ -14,7 +14,7 @@
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#1eb1b1"
+            android:background="@color/premium_primary"
             android:padding="16dp">
 
             <TextView
