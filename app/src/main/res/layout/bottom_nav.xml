@@ -5,11 +5,11 @@
     android:layout_height="76dp"
     android:orientation="horizontal"
     android:background="@color/premium_surface"
-    android:elevation="12dp"
+    android:elevation="16dp"
     android:gravity="center"
-    android:paddingStart="6dp"
-    android:paddingEnd="6dp"
-    android:paddingTop="6dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:paddingTop="7dp"
     android:paddingBottom="8dp">
 
     <LinearLayout
@@ -22,8 +22,8 @@
         android:background="@drawable/red"
         android:padding="7dp">
         <ImageView
-            android:layout_width="26dp"
-            android:layout_height="26dp"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
             android:src="@drawable/homes"
             android:contentDescription="হোম" />
         <TextView
@@ -45,19 +45,8 @@
         android:orientation="vertical"
         android:gravity="center"
         android:padding="7dp">
-        <ImageView
-            android:layout_width="26dp"
-            android:layout_height="26dp"
-            android:src="@drawable/bell"
-            android:contentDescription="নোটিশ" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="নোটিশ"
-            android:textColor="@color/premium_text_secondary"
-            android:textSize="11sp"
-            android:fontFamily="@font/bnlatxf"
-            android:layout_marginTop="3dp" />
+        <ImageView android:layout_width="27dp" android:layout_height="27dp" android:src="@drawable/bell" android:contentDescription="নোটিশ" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="নোটিশ" android:textColor="@color/premium_text_secondary" android:textSize="11sp" android:fontFamily="@font/bnlatxf" android:layout_marginTop="3dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -68,19 +57,8 @@
         android:orientation="vertical"
         android:gravity="center"
         android:padding="7dp">
-        <ImageView
-            android:layout_width="26dp"
-            android:layout_height="26dp"
-            android:src="@drawable/govtlogo"
-            android:contentDescription="সরকারি সেবা" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="সরকারি সেবা"
-            android:textColor="@color/premium_text_secondary"
-            android:textSize="11sp"
-            android:fontFamily="@font/bnlatxf"
-            android:layout_marginTop="3dp" />
+        <ImageView android:layout_width="27dp" android:layout_height="27dp" android:src="@drawable/govtlogo" android:contentDescription="সরকারি সেবা" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="সরকারি সেবা" android:textColor="@color/premium_text_secondary" android:textSize="11sp" android:fontFamily="@font/bnlatxf" android:layout_marginTop="3dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -91,19 +69,8 @@
         android:orientation="vertical"
         android:gravity="center"
         android:padding="7dp">
-        <ImageView
-            android:layout_width="26dp"
-            android:layout_height="26dp"
-            android:src="@drawable/serviccis"
-            android:contentDescription="সকল সেবা" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="সকল সেবা"
-            android:textColor="@color/premium_text_secondary"
-            android:textSize="11sp"
-            android:fontFamily="@font/bnlatxf"
-            android:layout_marginTop="3dp" />
+        <ImageView android:layout_width="27dp" android:layout_height="27dp" android:src="@drawable/serviccis" android:contentDescription="সকল সেবা" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="সকল সেবা" android:textColor="@color/premium_text_secondary" android:textSize="11sp" android:fontFamily="@font/bnlatxf" android:layout_marginTop="3dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -114,18 +81,7 @@
         android:orientation="vertical"
         android:gravity="center"
         android:padding="7dp">
-        <ImageView
-            android:layout_width="26dp"
-            android:layout_height="26dp"
-            android:src="@drawable/profile"
-            android:contentDescription="প্রোফাইল" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="প্রোফাইল"
-            android:textColor="@color/premium_text_secondary"
-            android:textSize="11sp"
-            android:fontFamily="@font/bnlatxf"
-            android:layout_marginTop="3dp" />
+        <ImageView android:layout_width="27dp" android:layout_height="27dp" android:src="@drawable/profile" android:contentDescription="প্রোফাইল" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="প্রোফাইল" android:textColor="@color/premium_text_secondary" android:textSize="11sp" android:fontFamily="@font/bnlatxf" android:layout_marginTop="3dp" />
     </LinearLayout>
 </LinearLayout>
