@@ -102,7 +102,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="25.00 °C"
-                            android:textColor="#000"
+                            android:textColor="@color/premium_text"
                             android:textSize="26sp"
                             android:fontFamily="@font/elcias"
                             />
@@ -267,7 +267,7 @@
                         android:text="জরুরি হটলাইন"
                         android:textSize="18sp"
 
-                        android:textColor="#000"
+                        android:textColor="@color/premium_text"
                         android:fontFamily="@font/btxf"/>
 
                     <ImageView
@@ -314,7 +314,7 @@
                                     android:text="৯৯৯"
                                     android:textSize="14sp"
                                     android:textStyle="bold"
-                                    android:textColor="#000"
+                                    android:textColor="@color/premium_text"
                                     android:fontFamily="@font/bnlatxf"
                                     android:layout_marginTop="4dp"/>
                             </LinearLayout>
@@ -347,7 +347,7 @@
                                     android:text="১০৯"
                                     android:textSize="14sp"
                                     android:textStyle="bold"
-                                    android:textColor="#000"
+                                    android:textColor="@color/premium_text"
                                     android:fontFamily="@font/bnlatxf"
                                     android:layout_marginTop="4dp"/>
                             </LinearLayout>
@@ -380,7 +380,7 @@
                                     android:text="১৬২৬৩"
                                     android:textSize="14sp"
                                     android:textStyle="bold"
-                                    android:textColor="#000"
+                                    android:textColor="@color/premium_text"
                                     android:fontFamily="@font/bnlatxf"
                                     android:layout_marginTop="4dp"/>
                             </LinearLayout>
@@ -413,7 +413,7 @@
                         android:text="বেতাগী ই সেবা"
                         android:textSize="18sp"
 
-                        android:textColor="#000"
+                        android:textColor="@color/premium_text"
                         android:fontFamily="@font/btxf"/>
 
                     <ImageView
@@ -456,7 +456,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="অ্যাপ সম্পর্কে"
                                 android:textSize="12sp"
-                                android:textColor="#000"
+                                android:textColor="@color/premium_text"
                                 android:fontFamily="@font/bnlatxf"
                                 android:layout_marginTop="8dp"
                                 android:gravity="center"/>
@@ -490,7 +490,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="শহর সম্পর্কে"
                                 android:textSize="12sp"
-                                android:textColor="#000"
+                                android:textColor="@color/premium_text"
                                 android:fontFamily="@font/bnlatxf"
                                 android:layout_marginTop="8dp"
                                 android:gravity="center"/>
@@ -531,7 +531,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="ফেসবুক পেইজ"
                                 android:textSize="12sp"
-                                android:textColor="#000"
+                                android:textColor="@color/premium_text"
                                 android:fontFamily="@font/bnlatxf"
                                 android:layout_marginTop="8dp"
                                 android:gravity="center"/>
@@ -565,7 +565,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="ফেসবুক গ্রুপ"
                                 android:textSize="12sp"
-                                android:textColor="#000"
+                                android:textColor="@color/premium_text"
                                 android:fontFamily="@font/bnlatxf"
                                 android:layout_marginTop="8dp"
                                 android:gravity="center"/>
@@ -587,14 +587,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_margin="8dp">
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="উপজেলা এক নজরে"
                     android:textSize="18sp"
-                    android:textColor="#000"
+                    android:textColor="@color/premium_text"
                     android:fontFamily="@font/btxf"
                     android:layout_marginBottom="8dp"/>
 
@@ -639,7 +642,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="নিবন্ধিত নাগরিক"
                                     android:textSize="11sp"
-                                    android:textColor="#000"
+                                    android:textColor="@color/premium_text"
                                     android:fontFamily="@font/bnlatxf"
                                     android:gravity="center"
                                     android:layout_marginTop="4dp"/>
@@ -677,7 +680,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="সমাধানকৃত অভিযোগ"
                                     android:textSize="11sp"
-                                    android:textColor="#000"
+                                    android:textColor="@color/premium_text"
                                     android:fontFamily="@font/bnlatxf"
                                     android:gravity="center"
                                     android:layout_marginTop="4dp"/>
@@ -715,7 +718,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="চলমান অভিযোগ"
                                     android:textSize="11sp"
-                                    android:textColor="#000"
+                                    android:textColor="@color/premium_text"
                                     android:fontFamily="@font/bnlatxf"
                                     android:gravity="center"
                                     android:layout_marginTop="4dp"/>
@@ -752,7 +755,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="চলমান প্রকল্প"
                                     android:textSize="11sp"
-                                    android:textColor="#000"
+                                    android:textColor="@color/premium_text"
                                     android:fontFamily="@font/bnlatxf"
                                     android:gravity="center"
                                     android:layout_marginTop="4dp"/>
@@ -784,7 +787,7 @@
                         android:layout_weight="1"
                         android:text="উন্নয়ন ও বাজেট"
                         android:textSize="18sp"
-                        android:textColor="#000"
+                        android:textColor="@color/premium_text"
                         android:fontFamily="@font/btxf"/>
 
                     <ImageView
@@ -801,7 +804,7 @@
                     android:layout_marginBottom="8dp"
                     app:cardCornerRadius="16dp"
                     app:cardElevation="6dp"
-                    app:cardBackgroundColor="#FFFFFF">
+                    app:cardBackgroundColor="@color/premium_surface">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -814,7 +817,7 @@
                             android:layout_height="wrap_content"
                             android:text="মোট বার্ষিক বাজেট"
                             android:textSize="13sp"
-                            android:textColor="#666"
+                            android:textColor="@color/premium_text_secondary"
                             android:fontFamily="@font/bnlatxf"/>
 
                         <TextView
@@ -824,7 +827,7 @@
                             android:text="৳ ৫,২০,০০,০০০"
                             android:textSize="28sp"
                             android:textStyle="bold"
-                            android:textColor="#000"
+                            android:textColor="@color/premium_text"
                             android:fontFamily="@font/elcias"
                             android:layout_marginTop="2dp"/>
 
@@ -857,7 +860,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="ব্যয়িত"
                                     android:textSize="12sp"
-                                    android:textColor="#666"
+                                    android:textColor="@color/premium_text_secondary"
                                     android:fontFamily="@font/bnlatxf"/>
 
                                 <TextView
@@ -883,7 +886,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="অবশিষ্ট"
                                     android:textSize="12sp"
-                                    android:textColor="#666"
+                                    android:textColor="@color/premium_text_secondary"
                                     android:fontFamily="@font/bnlatxf"/>
 
                                 <TextView
@@ -904,7 +907,7 @@
                             android:layout_height="wrap_content"
                             android:text="সর্বশেষ হালনাগাদ: ০১ জুলাই, ২০২৬"
                             android:textSize="11sp"
-                            android:textColor="#999"
+                            android:textColor="@color/premium_text_secondary"
                             android:fontFamily="@font/bnlatxf"
                             android:layout_marginTop="10dp"/>
                     </LinearLayout>
@@ -930,7 +933,7 @@
                             android:text="খাতভিত্তিক বরাদ্দ"
                             android:textSize="15sp"
                             android:textStyle="bold"
-                            android:textColor="#000"
+                            android:textColor="@color/premium_text"
                             android:fontFamily="@font/btxf"
                             android:layout_marginBottom="10dp"/>
 
@@ -946,25 +949,25 @@
                                 android:layout_width="0dp"
                                 android:layout_weight="35"
                                 android:layout_height="match_parent"
-                                android:background="#FF6B35"/>
+                                android:background="@color/premium_primary"/>
 
                             <View
                                 android:layout_width="0dp"
                                 android:layout_weight="25"
                                 android:layout_height="match_parent"
-                                android:background="#1565C0"/>
+                                android:background="@color/premium_primary_dark"/>
 
                             <View
                                 android:layout_width="0dp"
                                 android:layout_weight="20"
                                 android:layout_height="match_parent"
-                                android:background="#2E7D32"/>
+                                android:background="@color/premium_primary"/>
 
                             <View
                                 android:layout_width="0dp"
                                 android:layout_weight="12"
                                 android:layout_height="match_parent"
-                                android:background="#F9A825"/>
+                                android:background="@color/premium_accent"/>
 
                             <View
                                 android:layout_width="0dp"
@@ -992,7 +995,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="🟧 রাস্তা ও অবকাঠামো — ৩৫%"
                                     android:textSize="12sp"
-                                    android:textColor="#000"
+                                    android:textColor="@color/premium_text"
                                     android:fontFamily="@font/bnlatxf"
                                     android:layout_marginBottom="6dp"/>
 
@@ -1001,7 +1004,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="🟦 শিক্ষা — ২৫%"
                                     android:textSize="12sp"
-                                    android:textColor="#000"
+                                    android:textColor="@color/premium_text"
                                     android:fontFamily="@font/bnlatxf"
                                     android:layout_marginBottom="6dp"/>
 
@@ -1010,7 +1013,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="🟩 স্বাস্থ্য — ২০%"
                                     android:textSize="12sp"
-                                    android:textColor="#000"
+                                    android:textColor="@color/premium_text"
                                     android:fontFamily="@font/bnlatxf"/>
                             </LinearLayout>
 
@@ -1025,7 +1028,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="🟨 কৃষি — ১২%"
                                     android:textSize="12sp"
-                                    android:textColor="#000"
+                                    android:textColor="@color/premium_text"
                                     android:fontFamily="@font/bnlatxf"
                                     android:layout_marginBottom="6dp"/>
 
@@ -1034,7 +1037,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="⬜ অন্যান্য — ৮%"
                                     android:textSize="12sp"
-                                    android:textColor="#000"
+                                    android:textColor="@color/premium_text"
                                     android:fontFamily="@font/bnlatxf"/>
                             </LinearLayout>
                         </LinearLayout>
@@ -1061,7 +1064,7 @@
                             android:text="বার্ষিক বাজেট তুলনা"
                             android:textSize="15sp"
                             android:textStyle="bold"
-                            android:textColor="#000"
+                            android:textColor="@color/premium_text"
                             android:fontFamily="@font/btxf"
                             android:layout_marginBottom="12dp"/>
 
@@ -1093,7 +1096,7 @@
                             </LinearLayout>
 
                             <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center">
-                                <View android:layout_width="24dp" android:layout_height="115dp" android:background="#FF6B35"/>
+                                <View android:layout_width="24dp" android:layout_height="115dp" android:background="@color/premium_primary"/>
                                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="২০২৬" android:textSize="10sp" android:fontFamily="@font/bnlatxf" android:layout_marginTop="4dp"/>
                             </LinearLayout>
                         </LinearLayout>
@@ -1133,7 +1136,7 @@
                                 android:text="চলমান প্রকল্প"
                                 android:textSize="15sp"
                                 android:textStyle="bold"
-                                android:textColor="#000"
+                                android:textColor="@color/premium_text"
                                 android:fontFamily="@font/btxf"/>
 
                             <ImageView
@@ -1141,7 +1144,7 @@
                                 android:layout_width="22dp"
                                 android:layout_height="22dp"
                                 android:src="@drawable/baseline_autorenew_24"
-                                app:tint="#666"/>
+                                app:tint="@color/premium_text_secondary"/>
                         </LinearLayout>
 
                         <!-- Row 1 (always visible) -->
@@ -1156,7 +1159,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="গ্রামীণ রাস্তা সংস্কার — ওয়ার্ড ৪"
                                 android:textSize="13sp"
-                                android:textColor="#000"
+                                android:textColor="@color/premium_text"
                                 android:fontFamily="@font/bnlatxf"/>
 
                             <LinearLayout
@@ -1201,7 +1204,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="কমিউনিটি ক্লিনিক নির্মাণ — ওয়ার্ড ৭"
                                 android:textSize="13sp"
-                                android:textColor="#000"
+                                android:textColor="@color/premium_text"
                                 android:fontFamily="@font/bnlatxf"/>
 
                             <LinearLayout
@@ -1237,7 +1240,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="পুকুর পুনঃখনন প্রকল্প — ওয়ার্ড ২"
                                 android:textSize="13sp"
-                                android:textColor="#000"
+                                android:textColor="@color/premium_text"
                                 android:fontFamily="@font/bnlatxf"/>
 
                             <LinearLayout
@@ -1297,7 +1300,7 @@
                     android:layout_height="wrap_content"
                     android:text="দ্রুত সেবা"
                     android:textSize="18sp"
-                    android:textColor="#000"
+                    android:textColor="@color/premium_text"
                     android:fontFamily="@font/btxf"
                     android:layout_marginBottom="8dp"/>
 
@@ -1335,7 +1338,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="জন্ম/মৃত্যু\nনিবন্ধন"
                                 android:textSize="11sp"
-                                android:textColor="#000"
+                                android:textColor="@color/premium_text"
                                 android:fontFamily="@font/bnlatxf"
                                 android:gravity="center"
                                 android:layout_marginTop="6dp"/>
@@ -1370,7 +1373,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="ট্যাক্স/হোল্ডিং\nতথ্য"
                                 android:textSize="11sp"
-                                android:textColor="#000"
+                                android:textColor="@color/premium_text"
                                 android:fontFamily="@font/bnlatxf"
                                 android:gravity="center"
                                 android:layout_marginTop="6dp"/>
@@ -1405,7 +1408,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="অভিযোগ\nজানান"
                                 android:textSize="11sp"
-                                android:textColor="#000"
+                                android:textColor="@color/premium_text"
                                 android:fontFamily="@font/bnlatxf"
                                 android:gravity="center"
                                 android:layout_marginTop="6dp"/>
@@ -1447,7 +1450,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="সেবা তালিকা\nও ফি"
                                 android:textSize="11sp"
-                                android:textColor="#000"
+                                android:textColor="@color/premium_text"
                                 android:fontFamily="@font/bnlatxf"
                                 android:gravity="center"
                                 android:layout_marginTop="6dp"/>
@@ -1482,7 +1485,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="ফরম\nডাউনলোড"
                                 android:textSize="11sp"
-                                android:textColor="#000"
+                                android:textColor="@color/premium_text"
                                 android:fontFamily="@font/bnlatxf"
                                 android:gravity="center"
                                 android:layout_marginTop="6dp"/>
@@ -1517,7 +1520,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="অফিস\nসময়সূচি"
                                 android:textSize="11sp"
-                                android:textColor="#000"
+                                android:textColor="@color/premium_text"
                                 android:fontFamily="@font/bnlatxf"
                                 android:gravity="center"
                                 android:layout_marginTop="6dp"/>
@@ -1538,7 +1541,7 @@
                     android:layout_height="wrap_content"
                     android:text="আজকের আপডেট"
                     android:textSize="18sp"
-                    android:textColor="#000"
+                    android:textColor="@color/premium_text"
                     android:fontFamily="@font/btxf"
                     android:layout_marginBottom="8dp"/>
 
@@ -1571,7 +1574,7 @@
                             android:layout_height="wrap_content"
                             android:text="আজকের পরামর্শ: বর্ষার আগে ঘরের চারপাশে পানি নিষ্কাশনের ব্যবস্থা করুন।"
                             android:textSize="13sp"
-                            android:textColor="#000"
+                            android:textColor="@color/premium_text"
                             android:fontFamily="@font/bnlatxf"
                             android:paddingStart="10dp"/>
                     </LinearLayout>
@@ -1597,7 +1600,7 @@
                             android:text="নাগরিক জরিপ: আপনার এলাকার রাস্তার অবস্থা কেমন?"
                             android:textSize="13sp"
                             android:textStyle="bold"
-                            android:textColor="#000"
+                            android:textColor="@color/premium_text"
                             android:fontFamily="@font/bnlatxf"
                             android:layout_marginBottom="8dp"/>
 
@@ -1650,7 +1653,7 @@
                             android:text="পূর্ববর্তী নোটিশ"
                             android:textSize="13sp"
                             android:textStyle="bold"
-                            android:textColor="#000"
+                            android:textColor="@color/premium_text"
                             android:fontFamily="@font/btxf"
                             android:layout_marginBottom="8dp"/>
 
@@ -1688,7 +1691,7 @@
                     android:text="আসন্ন ইভেন্ট"
                     android:textSize="13sp"
                     android:textStyle="bold"
-                    android:textColor="#000"
+                    android:textColor="@color/premium_text"
                     android:fontFamily="@font/btxf"
                     android:layout_marginBottom="8dp"/>
 
