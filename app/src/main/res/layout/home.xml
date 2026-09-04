@@ -77,11 +77,11 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/premium_weather_hero"
                     android:background="@drawable/premium_card_background"
-                    android:padding="14dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
+                    android:padding="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
                     android:layout_marginTop="4dp"
-                    android:layout_marginBottom="4dp"
+                    android:layout_marginBottom="12dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -289,8 +289,8 @@
 
                         <androidx.cardview.widget.CardView
                             android:id="@+id/hotline_999_card"
-                            android:layout_width="100dp"
-                            android:layout_height="80dp"
+                            android:layout_width="104dp"
+                            android:layout_height="88dp"
                             android:layout_marginEnd="8dp"
                             app:cardCornerRadius="20dp"
                             app:cardElevation="3dp">
@@ -322,8 +322,8 @@
 
                         <androidx.cardview.widget.CardView
                             android:id="@+id/hotline_109_card"
-                            android:layout_width="100dp"
-                            android:layout_height="80dp"
+                            android:layout_width="104dp"
+                            android:layout_height="88dp"
                             android:layout_marginEnd="8dp"
                             app:cardCornerRadius="20dp"
                             app:cardElevation="3dp">
@@ -355,8 +355,8 @@
 
                         <androidx.cardview.widget.CardView
                             android:id="@+id/hotline_16263_card"
-                            android:layout_width="100dp"
-                            android:layout_height="80dp"
+                            android:layout_width="104dp"
+                            android:layout_height="88dp"
                             android:layout_marginEnd="8dp"
                             app:cardCornerRadius="20dp"
                             app:cardElevation="3dp">
@@ -435,8 +435,8 @@
                         android:layout_height="100dp"
                         android:layout_weight="1"
                         android:layout_margin="4dp"
-                        app:cardCornerRadius="20dp"
-                        app:cardElevation="3dp">
+                        app:cardCornerRadius="18dp"
+                        app:cardElevation="2dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -469,8 +469,8 @@
                         android:layout_height="100dp"
                         android:layout_weight="1"
                         android:layout_margin="4dp"
-                        app:cardCornerRadius="20dp"
-                        app:cardElevation="3dp">
+                        app:cardCornerRadius="18dp"
+                        app:cardElevation="2dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -510,8 +510,8 @@
                         android:layout_height="100dp"
                         android:layout_weight="1"
                         android:layout_margin="4dp"
-                        app:cardCornerRadius="20dp"
-                        app:cardElevation="3dp">
+                        app:cardCornerRadius="18dp"
+                        app:cardElevation="2dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -544,8 +544,8 @@
                         android:layout_height="100dp"
                         android:layout_weight="1"
                         android:layout_margin="4dp"
-                        app:cardCornerRadius="20dp"
-                        app:cardElevation="3dp">
+                        app:cardCornerRadius="18dp"
+                        app:cardElevation="2dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -578,7 +578,7 @@
             <!-- Section Divider -->
             <View
                 android:layout_width="match_parent"
-                android:layout_height="8dp"
+                android:layout_height="1dp"
                 android:background="@color/premium_border"
                 android:layout_marginTop="8dp"/>
 
@@ -772,7 +772,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_margin="8dp">
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -919,7 +922,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     app:cardCornerRadius="16dp"
-                    app:cardElevation="3dp">
+                    app:cardElevation="2dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -1050,7 +1053,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     app:cardCornerRadius="16dp"
-                    app:cardElevation="3dp">
+                    app:cardElevation="2dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -1109,7 +1112,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:cardCornerRadius="16dp"
-                    app:cardElevation="3dp"
+                    app:cardElevation="2dp"
                     app:strokeWidth="1dp"
                     app:strokeColor="#EEEEEE">
 
@@ -1762,7 +1765,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 app:cardCornerRadius="14dp"
-                app:cardElevation="3dp"
+                app:cardElevation="2dp"
                 app:cardBackgroundColor="@color/premium_primary">
 
                 <LinearLayout
