@@ -8,77 +8,85 @@ permissions:
   contents: write
 
 jobs:
-  patch-home-ui:
+  patch-premium-ui:
     if: ${{ !contains(github.event.head_commit.message, '[premium-ui-auto]') }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Apply premium dashboard styling
+      - name: Apply premium styling across layouts
         run: |
           python3 - <<'PY'
           from pathlib import Path
-          p = Path('app/src/main/res/layout/home.xml')
-          s = p.read_text(encoding='utf-8')
+
+          root = Path('app/src/main/res/layout')
+          files = list(root.glob('*.xml'))
+          changed = []
 
           replacements = {
+              'android:background="#fff"': 'android:background="@color/premium_background"',
+              'android:background="#FFF"': 'android:background="@color/premium_background"',
+              'android:background="#ffffff"': 'android:background="@color/premium_background"',
+              'android:background="#FFFFFF"': 'android:background="@color/premium_background"',
+              'android:background="#f5f5f5"': 'android:background="@color/premium_background"',
               'android:background="#F5F5F5"': 'android:background="@color/premium_background"',
-              'app:cardCornerRadius="8dp"': 'app:cardCornerRadius="20dp"',
-              'app:cardElevation="4dp"': 'app:cardElevation="3dp"',
-              'app:cardBackgroundColor="#FF6B35"': 'app:cardBackgroundColor="@color/premium_primary"',
-              'android:textColor="#FF6B35"': 'android:textColor="@color/premium_primary"',
-              'android:textColor="#2E7D32"': 'android:textColor="@color/premium_primary"',
-              'android:textColor="#1565C0"': 'android:textColor="@color/premium_primary"',
-              'android:textColor="#000"': 'android:textColor="@color/premium_text"',
-              'android:textColor="#666"': 'android:textColor="@color/premium_text_secondary"',
-              'android:textColor="#999"': 'android:textColor="@color/premium_text_secondary"',
-              'app:tint="#FF6B35"': 'app:tint="@color/premium_accent"',
-              'app:tint="#666"': 'app:tint="@color/premium_text_secondary"',
-              'android:background="#EDEDED"': 'android:background="@color/premium_border"',
-              'app:cardCornerRadius="12dp"': 'app:cardCornerRadius="18dp"',
-              'app:cardCornerRadius="6dp"': 'app:cardCornerRadius="16dp"',
-              'app:cardCornerRadius="10dp"': 'app:cardCornerRadius="16dp"',
+              'app:cardBackgroundColor="#fff"': 'app:cardBackgroundColor="@color/premium_surface"',
+              'app:cardBackgroundColor="#FFF"': 'app:cardBackgroundColor="@color/premium_surface"',
+              'app:cardBackgroundColor="#ffffff"': 'app:cardBackgroundColor="@color/premium_surface"',
               'app:cardBackgroundColor="#FFFFFF"': 'app:cardBackgroundColor="@color/premium_surface"',
+              'app:cardCornerRadius="6dp"': 'app:cardCornerRadius="16dp"',
+              'app:cardCornerRadius="8dp"': 'app:cardCornerRadius="18dp"',
+              'app:cardCornerRadius="10dp"': 'app:cardCornerRadius="18dp"',
+              'app:cardCornerRadius="12dp"': 'app:cardCornerRadius="18dp"',
+              'app:cardElevation="4dp"': 'app:cardElevation="3dp"',
+              'app:cardElevation="6dp"': 'app:cardElevation="3dp"',
+              'app:cardElevation="8dp"': 'app:cardElevation="3dp"',
+              'android:textColor="#000000"': 'android:textColor="@color/premium_text"',
+              'android:textColor="#000"': 'android:textColor="@color/premium_text"',
+              'android:textColor="#666666"': 'android:textColor="@color/premium_text_secondary"',
+              'android:textColor="#666"': 'android:textColor="@color/premium_text_secondary"',
+              'android:textColor="#999999"': 'android:textColor="@color/premium_text_secondary"',
+              'android:textColor="#999"': 'android:textColor="@color/premium_text_secondary"',
+              'android:textColor="#2196f3"': 'android:textColor="@color/premium_primary"',
+              'android:textColor="#007aff"': 'android:textColor="@color/premium_primary"',
+              'android:textColor="#1eb1b1"': 'android:textColor="@color/premium_primary"',
+              'android:background="#eeeeee"': 'android:background="@color/premium_border"',
+              'android:background="#EDEDED"': 'android:background="@color/premium_border"',
+              'android:tint="#2196f3"': 'android:tint="@color/premium_primary"',
+              'android:tint="#1eb1b1"': 'android:tint="@color/premium_primary"',
+              'app:tint="#2196f3"': 'app:tint="@color/premium_primary"',
+              'app:tint="#1eb1b1"': 'app:tint="@color/premium_primary"',
           }
-          for a, b in replacements.items():
-              s = s.replace(a, b)
 
-          # Normalize common dashboard spacing without touching view IDs or click targets.
-          s = s.replace('android:paddingBottom="16dp">', 'android:paddingBottom="28dp">', 1)
-          s = s.replace('android:layout_margin="8dp"', 'android:layout_marginStart="16dp"\n                android:layout_marginEnd="16dp"\n                android:layout_marginTop="10dp"\n                android:layout_marginBottom="10dp"', 1)
+          for p in files:
+              s = p.read_text(encoding='utf-8')
+              old = s
+              for a, b in replacements.items():
+                  s = s.replace(a, b)
 
-          # Weather hero: upgrade the existing container only; preserve every weather view ID.
-          if 'android:id="@+id/premium_weather_hero"' in s:
-              s = s.replace('android:padding="14dp"', 'android:padding="16dp"', 1)
-              s = s.replace('android:layout_marginStart="8dp"\n                    android:layout_marginEnd="8dp"\n                    android:layout_marginTop="4dp"\n                    android:layout_marginBottom="4dp"',
-                            'android:layout_marginStart="16dp"\n                    android:layout_marginEnd="16dp"\n                    android:layout_marginTop="4dp"\n                    android:layout_marginBottom="12dp"', 1)
+              # Keep legacy Bengali typography readable but unify it with the premium app font.
+              s = s.replace('android:fontFamily="@font/kalpurush"', 'android:fontFamily="@font/bnlatxf"')
 
-          # Emergency hotline cards: cleaner proportions and premium surface.
-          s = s.replace('android:layout_width="100dp"\n                            android:layout_height="80dp"',
-                        'android:layout_width="104dp"\n                            android:layout_height="88dp"')
-          s = s.replace('app:cardBackgroundColor="#FFFFFF"', 'app:cardBackgroundColor="@color/premium_surface"')
+              # Premium detail/form screens get comfortable page gutters without changing IDs.
+              if p.name not in {'activity_home.xml', 'home.xml', 'bottom_nav.xml', 'nav_header.xml'}:
+                  if '<ScrollView' in s and 'android:paddingStart="16dp"' not in s.split('\n', 8)[0:8].__str__():
+                      s = s.replace('android:background="@color/premium_background">',
+                                    'android:background="@color/premium_background"\n    android:fillViewport="true">', 1)
 
-          # City-info cards: consistent surface, spacing and hierarchy.
-          city_marker = '<!-- City Information Section -->'
-          if city_marker in s:
-              tail = s.split(city_marker, 1)[1]
-              tail = tail.replace('android:textColor="@color/premium_text"', 'android:textColor="@color/premium_text"')
-              tail = tail.replace('app:cardCornerRadius="20dp"', 'app:cardCornerRadius="18dp"')
-              tail = tail.replace('app:cardElevation="3dp"', 'app:cardElevation="2dp"')
-              s = s.split(city_marker, 1)[0] + city_marker + tail
+              if s != old:
+                  p.write_text(s, encoding='utf-8')
+                  changed.append(p.name)
 
-          # Remove accidental legacy divider styling while keeping the section itself intact.
-          s = s.replace('android:layout_height="8dp"\n                android:background="@color/premium_border"',
-                        'android:layout_height="1dp"\n                android:background="@color/premium_border"')
-
-          p.write_text(s, encoding='utf-8')
+          print(f'Premium-styled {len(changed)} layout(s)')
+          for name in changed:
+              print(' -', name)
           PY
 
-      - name: Commit premium dashboard changes
+      - name: Commit premium layout changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add app/src/main/res/layout/home.xml
-          git diff --cached --quiet || git commit -m "style: premium home dashboard [premium-ui-auto]"
+          git add app/src/main/res/layout
+          git diff --cached --quiet || git commit -m "style: premium remaining layouts [premium-ui-auto]"
           git push
