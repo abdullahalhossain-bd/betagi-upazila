@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="8dp"
-    android:background="@color/white">
+    android:background="@color/premium_background">
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
@@ -103,7 +103,7 @@
 
         </RelativeLayout>
         <LinearLayout
-            android:background="@color/white"
+            android:background="@color/premium_background"
             android:id="@+id/bottom_row"
            android:visibility="gone"
             android:gravity="center_vertical"

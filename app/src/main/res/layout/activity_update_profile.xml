@@ -51,7 +51,7 @@
                 android:layout_margin="5dp"
                 app:cardBackgroundColor="@color/primary_color"
                 app:cardCornerRadius="20dp"
-                app:cardElevation="10dp"
+                app:cardElevation="3dp"
                 app:layout_constraintEnd_toEndOf="@+id/profileImage"
                 app:layout_constraintBottom_toBottomOf="@+id/profileImage">
 
@@ -83,8 +83,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 app:cardBackgroundColor="@android:color/white"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="10dp">
+                app:cardCornerRadius="18dp"
+                app:cardElevation="3dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -133,8 +133,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 app:cardBackgroundColor="@android:color/white"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="10dp">
+                app:cardCornerRadius="18dp"
+                app:cardElevation="3dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -183,8 +183,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 app:cardBackgroundColor="@android:color/white"
-                app:cardCornerRadius="15dp"
-                app:cardElevation="10dp">
+                app:cardCornerRadius="18dp"
+                app:cardElevation="3dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -240,8 +240,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="56dp"
                     app:cardBackgroundColor="@color/primary_color"
-                    app:cardCornerRadius="15dp"
-                    app:cardElevation="10dp">
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="3dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"

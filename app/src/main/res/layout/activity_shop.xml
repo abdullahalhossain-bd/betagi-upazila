@@ -85,8 +85,8 @@ android:visibility="gone"                android:id="@+id/custom_dialog_market"
                     android:layout_margin="7dp"
                     app:cardBackgroundColor="@color/premium_surface"
                     app:cardCornerRadius="18dp"
-                    app:cardElevation="10dp"
-                    app:cardMaxElevation="15dp">
+                    app:cardElevation="3dp"
+                    app:cardMaxElevation="4dp">
 
                     <ImageView
                         android:layout_width="match_parent"
