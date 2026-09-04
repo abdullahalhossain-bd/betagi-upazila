@@ -1,0 +1,55 @@
+name: Premium UI Patch
+
+on:
+  push:
+    branches: ["ui/premium-redesign"]
+
+permissions:
+  contents: write
+
+jobs:
+  patch-home-ui:
+    if: !contains(github.event.head_commit.message, '[premium-ui-auto]')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Apply premium dashboard styling
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path('app/src/main/res/layout/home.xml')
+          s = p.read_text(encoding='utf-8')
+
+          replacements = {
+              'android:background="#F5F5F5"': 'android:background="@color/premium_background"',
+              'app:cardCornerRadius="8dp"': 'app:cardCornerRadius="20dp"',
+              'app:cardElevation="4dp"': 'app:cardElevation="3dp"',
+              'app:cardBackgroundColor="#FF6B35"': 'app:cardBackgroundColor="@color/premium_primary"',
+              'android:textColor="#FF6B35"': 'android:textColor="@color/premium_primary"',
+              'android:textColor="#2E7D32"': 'android:textColor="@color/premium_primary"',
+              'android:textColor="#1565C0"': 'android:textColor="@color/premium_primary"',
+              'app:tint="#FF6B35"': 'app:tint="@color/premium_accent"',
+              'android:background="#EDEDED"': 'android:background="@color/premium_border"',
+              'app:cardCornerRadius="12dp"': 'app:cardCornerRadius="18dp"',
+          }
+          for a,b in replacements.items():
+              s = s.replace(a,b)
+
+          marker = '<!-- PREMIUM_UI_PATCH_V1 -->'
+          if marker not in s:
+              s = s.replace('<LinearLayout xmlns:android=', marker + '\n    <LinearLayout xmlns:android=', 1)
+              s = s.replace('android:paddingBottom="16dp">', 'android:paddingBottom="28dp">', 1)
+              s = s.replace('android:layout_margin="8dp"\n                app:cardCornerRadius="20dp"', 'android:layout_marginStart="16dp"\n                android:layout_marginEnd="16dp"\n                android:layout_marginTop="10dp"\n                android:layout_marginBottom="10dp"\n                app:cardCornerRadius="20dp"', 1)
+
+          p.write_text(s, encoding='utf-8')
+          PY
+
+      - name: Commit premium dashboard changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/src/main/res/layout/home.xml
+          git diff --cached --quiet || git commit -m "style: premium home dashboard [premium-ui-auto]"
+          git push
