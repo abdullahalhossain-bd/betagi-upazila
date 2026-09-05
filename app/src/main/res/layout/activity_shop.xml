@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white">
+    android:background="@color/premium_background">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,8 +16,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/premium_primary"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp">
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
 
             <ImageView
                 android:layout_width="190dp"
