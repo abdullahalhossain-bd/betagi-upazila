@@ -4,28 +4,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@android:color/white">
+    android:background="@color/premium_background">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="64dp"
         android:background="@color/premium_primary"
-        android:elevation="3dp"
+        android:elevation="4dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="16dp">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="24dp">
 
-        <TextView
-            android:id="@+id/sim_content"
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/bnlatxf"
-            android:lineSpacingExtra="8dp"
-            android:textSize="16sp"
-            android:textColor="@android:color/black" />
+            app:cardBackgroundColor="@color/premium_surface"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="2dp"
+            app:strokeColor="@color/premium_border"
+            app:strokeWidth="1dp">
+
+            <TextView
+                android:id="@+id/sim_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bnlatxf"
+                android:lineSpacingExtra="8dp"
+                android:padding="20dp"
+                android:textColor="@color/premium_text"
+                android:textSize="16sp" />
+        </com.google.android.material.card.MaterialCardView>
     </ScrollView>
 </LinearLayout>
