@@ -3,48 +3,89 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/premium_background">
+
     <LinearLayout
         android:id="@+id/title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="68dp"
         android:background="@color/premium_primary"
-        android:gravity="center|start"
+        android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:padding="8dp">
+        android:paddingStart="10dp"
+        android:paddingEnd="18dp">
 
         <ImageView
             android:id="@+id/back"
-            android:layout_width="55dp"
-            android:layout_height="35dp"
-            android:layout_gravity="center"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/premium_primary_button"
+            android:contentDescription="ফিরে যান"
+            android:padding="12dp"
             android:rotation="180"
             android:src="@drawable/baseline_double_arrow_24"
-            app:tint="#fff" />
+            app:tint="@android:color/white" />
 
-        <TextView
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:fontFamily="@font/btxf"
-            android:text="জরুরী নাম্বার সমূহের তালিকা"
-            android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:layout_marginStart="14dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bnlatxf"
+                android:text="জরুরি নম্বর"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bnlatxf"
+                android:text="প্রয়োজনে দ্রুত যোগাযোগ করুন"
+                android:textColor="#DCEBFF"
+                android:textSize="12sp" />
+        </LinearLayout>
     </LinearLayout>
-
-
-
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="10dp">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_view_emergency"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
-            android:dividerHeight="8dp" />
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/premium_card_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/premium_primary_button"
+            android:gravity="center"
+            android:text="!"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/bnlatxf"
+            android:text="জরুরি সেবার জন্য তালিকা থেকে প্রয়োজনীয় নম্বরটি নির্বাচন করুন।"
+            android:textColor="@color/premium_text_secondary"
+            android:textSize="14sp" />
     </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_emergency"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="20dp" />
 </LinearLayout>
