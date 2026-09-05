@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?
-    android:background="@color/premium_background">
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -51,7 +50,7 @@
                 android:layout_marginTop="16dp"
                 android:fontFamily="@font/bnlatxf"
                 android:text="নামকরণের ইতিহাস"
-                android:textColor="@color/premium_text"
+                android:textColor="@android:color/black"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -78,7 +77,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bnlatxf"
                 android:text="উপজেলার মানচিত্র"
-                android:textColor="@color/premium_text"
+                android:textColor="@android:color/black"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -109,7 +108,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bnlatxf"
                 android:text="অবস্থান ও আয়তন"
-                android:textColor="@color/premium_text"
+                android:textColor="@android:color/black"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -120,7 +119,7 @@
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/bnlatxf"
                 android:text="বেতাগী উপজেলাটি বিষখালী নদীর তীরে অবস্থিত। এর আয়তন ১৬৭.৭৫ বর্গ কি.মি.। অবস্থান: ২২°১৩´ থেকে ২২°২৯´ উত্তর অক্ষাংশ এবং ৯০°০৪´ থেকে ৯০°১৫´ পূর্ব দ্রাঘিমাংশ। এর উত্তরে ঝালকাঠি জেলার রাজাপুর উপজেলা, কাঠালিয়া উপজেলা ও বরিশাল জেলার বাকেরগঞ্জ উপজেলা, দক্ষিণে বরগুনা সদর উপজেলা, পূর্বে পটুয়াখালী জেলার মির্জাগঞ্জ উপজেলা, পশ্চিমে ঝালকাঠি জেলার কাঠালিয়া উপজেলা ও বরগুনা জেলার বামনা উপজেলা। এই উপজেলার প্রধান নদীগুলো হচ্ছেঃ বিষখালী নদী ও গজালিয়া নদী। এছাড়াও এখানকার উল্লেখযোগ্য জলাশয়ের মধ্যে রয়েছে কাটাখালি খাল ও করুণা খাল।"
-                android:textColor="@color/premium_text"
+                android:textColor="@android:color/black"
                 android:textSize="16sp" />
 
             <View
@@ -135,7 +134,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bnlatxf"
                 android:text="উল্লেখযোগ্য ব্যক্তিত্ব"
-                android:textColor="@color/premium_text"
+                android:textColor="@android:color/black"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -146,7 +145,7 @@
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/bnlatxf"
                 android:text="শাহজাদা আবদুল মালেক খান - রাজনীতিবিদ।"
-                android:textColor="@color/premium_text"
+                android:textColor="@android:color/black"
                 android:textSize="16sp" />
 
             <TextView
