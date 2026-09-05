@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/premium_background"
@@ -9,14 +10,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:paddingStart="16dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="28dp">
 
         <RelativeLayout
             android:id="@+id/title"
             android:layout_width="match_parent"
-            android:layout_height="64dp"
+            android:layout_height="68dp"
             android:background="@color/premium_primary"
-            android:elevation="3dp">
+            android:elevation="4dp">
+
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/premium_primary_button"
+                android:contentDescription="পেছনে যান"
+                android:padding="12dp"
+                android:src="@drawable/back"
+                android:tint="@android:color/white" />
 
             <TextView
                 android:id="@+id/name"
@@ -28,39 +45,31 @@
                 android:textColor="@android:color/white"
                 android:textSize="20sp"
                 android:textStyle="bold" />
-
-            <ImageButton
-                android:id="@+id/back_button"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_centerVertical="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="8dp"
-                android:background="@drawable/premium_primary_button"
-                android:contentDescription="পেছনে যান"
-                android:padding="12dp"
-                android:src="@drawable/back"
-                android:tint="@android:color/white" />
         </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/btxf"
+            android:text="ইউনিয়ন পরিষদের বিভিন্ন দায়িত্বশীল ব্যক্তিদের তথ্য দেখতে একটি বিভাগ নির্বাচন করুন"
+            android:textColor="@color/premium_text_secondary"
+            android:textSize="14sp"
+            android:lineSpacingExtra="3dp" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_chairman"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="16dp"
             app:cardBackgroundColor="@color/premium_surface"
             app:cardCornerRadius="20dp"
             app:cardElevation="3dp"
             app:cardUseCompatPadding="true">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="20dp">
-                <ImageView android:layout_width="52dp" android:layout_height="52dp" android:layout_marginBottom="10dp" android:src="@drawable/chairman" />
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/bnlatxf" android:text="চেয়ারম্যান" android:textColor="@color/premium_text" android:textSize="16sp" android:textStyle="bold" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:padding="18dp">
+                <ImageView android:layout_width="52dp" android:layout_height="52dp" android:src="@drawable/chairman" android:contentDescription="চেয়ারম্যান" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="16dp" android:fontFamily="@font/bnlatxf" android:text="চেয়ারম্যান" android:textColor="@color/premium_text" android:textSize="17sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textColor="@color/premium_primary" android:textSize="30sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -68,14 +77,15 @@
             android:id="@+id/card_secretary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="10dp"
             app:cardBackgroundColor="@color/premium_surface"
             app:cardCornerRadius="20dp"
             app:cardElevation="3dp"
             app:cardUseCompatPadding="true">
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="vertical" android:padding="20dp">
-                <ImageView android:layout_width="52dp" android:layout_height="52dp" android:layout_marginBottom="10dp" android:src="@drawable/man" />
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/bnlatxf" android:text="সচিব" android:textColor="@color/premium_text" android:textSize="16sp" android:textStyle="bold" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:padding="18dp">
+                <ImageView android:layout_width="52dp" android:layout_height="52dp" android:src="@drawable/man" android:contentDescription="সচিব" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="16dp" android:fontFamily="@font/bnlatxf" android:text="সচিব" android:textColor="@color/premium_text" android:textSize="17sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textColor="@color/premium_primary" android:textSize="30sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -83,14 +93,15 @@
             android:id="@+id/card_member"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="10dp"
             app:cardBackgroundColor="@color/premium_surface"
             app:cardCornerRadius="20dp"
             app:cardElevation="3dp"
             app:cardUseCompatPadding="true">
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="vertical" android:padding="20dp">
-                <ImageView android:layout_width="52dp" android:layout_height="52dp" android:layout_marginBottom="10dp" android:src="@drawable/man" />
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/bnlatxf" android:text="মেম্বার" android:textColor="@color/premium_text" android:textSize="16sp" android:textStyle="bold" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:padding="18dp">
+                <ImageView android:layout_width="52dp" android:layout_height="52dp" android:src="@drawable/man" android:contentDescription="মেম্বার" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="16dp" android:fontFamily="@font/bnlatxf" android:text="মেম্বার" android:textColor="@color/premium_text" android:textSize="17sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textColor="@color/premium_primary" android:textSize="30sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -98,14 +109,15 @@
             android:id="@+id/card_accountant"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="10dp"
             app:cardBackgroundColor="@color/premium_surface"
             app:cardCornerRadius="20dp"
             app:cardElevation="3dp"
             app:cardUseCompatPadding="true">
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="vertical" android:padding="20dp">
-                <ImageView android:layout_width="52dp" android:layout_height="52dp" android:layout_marginBottom="10dp" android:src="@drawable/man" />
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/bnlatxf" android:gravity="center" android:text="হিসাব সহকারী ও কাম কম্পিউটার অপারেটর" android:textColor="@color/premium_text" android:textSize="16sp" android:textStyle="bold" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:padding="18dp">
+                <ImageView android:layout_width="52dp" android:layout_height="52dp" android:src="@drawable/man" android:contentDescription="হিসাব সহকারী" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="16dp" android:fontFamily="@font/bnlatxf" android:text="হিসাব সহকারী ও কাম কম্পিউটার অপারেটর" android:textColor="@color/premium_text" android:textSize="16sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textColor="@color/premium_primary" android:textSize="30sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -113,15 +125,15 @@
             android:id="@+id/card_village_police"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
             app:cardBackgroundColor="@color/premium_surface"
             app:cardCornerRadius="20dp"
             app:cardElevation="3dp"
             app:cardUseCompatPadding="true">
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="vertical" android:padding="20dp">
-                <ImageView android:layout_width="52dp" android:layout_height="52dp" android:layout_marginBottom="10dp" android:src="@drawable/man" />
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/bnlatxf" android:text="গ্রামপুলিশ" android:textColor="@color/premium_text" android:textSize="16sp" android:textStyle="bold" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:padding="18dp">
+                <ImageView android:layout_width="52dp" android:layout_height="52dp" android:src="@drawable/man" android:contentDescription="গ্রামপুলিশ" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="16dp" android:fontFamily="@font/bnlatxf" android:text="গ্রামপুলিশ" android:textColor="@color/premium_text" android:textSize="17sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textColor="@color/premium_primary" android:textSize="30sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
