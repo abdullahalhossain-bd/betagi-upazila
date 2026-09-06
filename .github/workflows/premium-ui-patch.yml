@@ -92,28 +92,19 @@ jobs:
               old = s
               for a, b in replacements.items():
                   s = s.replace(a, b)
-
               s = s.replace('android:fontFamily="@font/kalpurush"', 'android:fontFamily="@font/bnlatxf"')
-
               if 'android:background="@color/premium_background"' in s:
                   if 'android:clipToPadding="false"' not in s and '<ScrollView' in s:
                       s = s.replace('<ScrollView', '<ScrollView\n        android:clipToPadding="false"', 1)
-
               if s != old:
                   p.write_text(s, encoding='utf-8')
                   changed.append(p.name)
 
-          # The following four screens had a malformed XML prolog. Repair only that
-          # declaration and the back affordance; preserve every content item/ID.
-          requested = [
-              root / 'activity_madrasa.xml',
-              root / 'activity_primary.xml',
-              root / 'activity_upazila_info.xml',
-              root / 'activity_college.xml',
-          ]
+          requested = [root / 'activity_madrasa.xml', root / 'activity_primary.xml', root / 'activity_upazila_info.xml', root / 'activity_college.xml']
           for p in requested:
               s = p.read_text(encoding='utf-8')
               old = s
+              s = s.lstrip('\ufeff')
               s = re.sub(r'^<\?xml version="1\.0" encoding="utf-8"\?\s*\n\s*android:background="[^"]+"\s*>?', '<?xml version="1.0" encoding="utf-8"?>\n', s, count=1)
               s = re.sub(r'^<\?xml version="1\.0" encoding="utf-8"\?\s*\n', '<?xml version="1.0" encoding="utf-8"?>\n', s, count=1)
               for bid in ('back', 'back_button'):
