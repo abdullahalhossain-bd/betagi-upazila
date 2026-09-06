@@ -19,7 +19,6 @@ jobs:
         run: |
           python3 - <<'PY'
           from pathlib import Path
-          import re
 
           root = Path('app/src/main/res/layout')
           admin_prefixes = ('activity_add_', 'fragment_admin', 'item_admin')
@@ -93,28 +92,31 @@ jobs:
               for a, b in replacements.items():
                   s = s.replace(a, b)
               s = s.replace('android:fontFamily="@font/kalpurush"', 'android:fontFamily="@font/bnlatxf"')
-              if 'android:background="@color/premium_background"' in s:
-                  if 'android:clipToPadding="false"' not in s and '<ScrollView' in s:
-                      s = s.replace('<ScrollView', '<ScrollView\n        android:clipToPadding="false"', 1)
+              if 'android:background="@color/premium_background"' in s and '<ScrollView' in s and 'android:clipToPadding="false"' not in s:
+                  s = s.replace('<ScrollView', '<ScrollView\n        android:clipToPadding="false"', 1)
               if s != old:
                   p.write_text(s, encoding='utf-8')
                   changed.append(p.name)
 
           requested = [root / 'activity_madrasa.xml', root / 'activity_primary.xml', root / 'activity_upazila_info.xml', root / 'activity_college.xml']
           for p in requested:
-              s = p.read_text(encoding='utf-8')
+              s = p.read_text(encoding='utf-8-sig')
               old = s
-              s = s.lstrip('\ufeff')
-              s = re.sub(r'^<\?xml version="1\.0" encoding="utf-8"\?\s*\n\s*android:background="[^"]+"\s*>?', '<?xml version="1.0" encoding="utf-8"?>\n', s, count=1)
-              s = re.sub(r'^<\?xml version="1\.0" encoding="utf-8"\?\s*\n', '<?xml version="1.0" encoding="utf-8"?>\n', s, count=1)
+              lines = s.splitlines()
+              if lines and lines[0].startswith('<?xml') and '?>' not in lines[0]:
+                  lines[0] = '<?xml version="1.0" encoding="utf-8"?>'
+                  if len(lines) > 1 and lines[1].lstrip().startswith('android:background='):
+                      del lines[1]
+                  s = '\n'.join(lines) + ('\n' if s.endswith('\n') else '')
               for bid in ('back', 'back_button'):
-                  pattern = rf'(<(?:ImageView|ImageButton)[^>]*android:id="@\+id/{bid}"[^>]*)(/?>)'
-                  def add_cd(m):
-                      block = m.group(1)
-                      if 'contentDescription=' in block:
-                          return m.group(0)
-                      return block + ' android:contentDescription="ফিরে যান"' + m.group(2)
-                  s = re.sub(pattern, add_cd, s, count=1)
+                  marker = f'android:id="@+id/{bid}"'
+                  pos = s.find(marker)
+                  if pos >= 0:
+                      end = s.find('>', pos)
+                      if end >= 0:
+                          block = s[pos:end]
+                          if 'contentDescription=' not in block:
+                              s = s[:end] + ' android:contentDescription="ফিরে যান"' + s[end:]
               if s != old:
                   p.write_text(s, encoding='utf-8')
                   if p.name not in changed:
