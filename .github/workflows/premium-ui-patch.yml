@@ -19,6 +19,7 @@ jobs:
         run: |
           python3 - <<'PY'
           from pathlib import Path
+          import re
 
           root = Path('app/src/main/res/layout')
           admin_prefixes = ('activity_add_', 'fragment_admin', 'item_admin')
@@ -102,9 +103,46 @@ jobs:
                   p.write_text(s, encoding='utf-8')
                   changed.append(p.name)
 
+          # The following four screens had a malformed XML prolog. Repair only that
+          # declaration and the back affordance; preserve every content item/ID.
+          requested = [
+              root / 'activity_madrasa.xml',
+              root / 'activity_primary.xml',
+              root / 'activity_upazila_info.xml',
+              root / 'activity_college.xml',
+          ]
+          for p in requested:
+              s = p.read_text(encoding='utf-8')
+              old = s
+              s = re.sub(r'^<\?xml version="1\.0" encoding="utf-8"\?\s*\n\s*android:background="[^"]+"\s*>?', '<?xml version="1.0" encoding="utf-8"?>\n', s, count=1)
+              s = re.sub(r'^<\?xml version="1\.0" encoding="utf-8"\?\s*\n', '<?xml version="1.0" encoding="utf-8"?>\n', s, count=1)
+              for bid in ('back', 'back_button'):
+                  pattern = rf'(<(?:ImageView|ImageButton)[^>]*android:id="@\+id/{bid}"[^>]*)(/?>)'
+                  def add_cd(m):
+                      block = m.group(1)
+                      if 'contentDescription=' in block:
+                          return m.group(0)
+                      return block + ' android:contentDescription="ফিরে যান"' + m.group(2)
+                  s = re.sub(pattern, add_cd, s, count=1)
+              if s != old:
+                  p.write_text(s, encoding='utf-8')
+                  if p.name not in changed:
+                      changed.append(p.name)
+
           print(f'Premium-styled {len(changed)} user-facing layout(s)')
           for name in changed:
               print(' -', name)
+          PY
+
+      - name: Validate requested XML
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          files = [Path('app/src/main/res/layout/activity_madrasa.xml'), Path('app/src/main/res/layout/activity_primary.xml'), Path('app/src/main/res/layout/activity_upazila_info.xml'), Path('app/src/main/res/layout/activity_college.xml')]
+          for p in files:
+              ET.parse(p)
+              print('OK:', p)
           PY
 
       - name: Commit premium layout changes
