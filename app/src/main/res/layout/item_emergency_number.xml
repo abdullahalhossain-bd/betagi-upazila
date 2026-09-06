@@ -30,7 +30,7 @@
             android:layout_toEndOf="@+id/img_emergency_icon"
             android:fontFamily="@font/bnlatxf"
             android:text="Emergency Name"
-            android:textColor="@android:color/black"
+            android:textColor="@color/premium_text"
             android:textSize="16sp"
             android:textStyle="bold" />
 

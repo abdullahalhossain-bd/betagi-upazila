@@ -52,7 +52,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="বিবিচিনি ইউনিয়ন"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/premium_text"
                     android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -85,7 +85,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="বেতাগী সদর ইউনিয়ন"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/premium_text"
                     android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -118,7 +118,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="হোসনাবাদ ইউনিয়ন"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/premium_text"
                     android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -151,7 +151,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="মোকামিয়া ইউনিয়ন"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/premium_text"
                     android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -184,7 +184,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="বুড়ামজুমদার ইউনিয়ন"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/premium_text"
                     android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -217,7 +217,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="কাজিরাবাদ ইউনিয়ন"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/premium_text"
                     android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -250,7 +250,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="সরিষামুড়ি ইউনিয়ন"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/premium_text"
                     android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>

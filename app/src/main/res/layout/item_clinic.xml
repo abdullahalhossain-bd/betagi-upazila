@@ -51,7 +51,7 @@
                     <TextView
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/premium_text"
                         android:id="@+id/clinic_name"
                         android:paddingBottom="2dp"
                         android:layout_width="wrap_content"

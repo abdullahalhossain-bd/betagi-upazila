@@ -46,7 +46,7 @@
                     android:fontFamily="@font/btxf"
                     android:paddingBottom="4dp"
                     android:text="কোচিং সেন্টারের নাম"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/premium_text"
                     android:textSize="16sp"
                  />
 
@@ -56,7 +56,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/bnlatxf"
                     android:text="ঠিকানা"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/premium_text"
                     android:textSize="14sp" />
 
                 <TextView
@@ -90,7 +90,7 @@
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/bnlatxf"
                     android:text="কল করুন"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/premium_text"
                     android:textSize="14sp" />
             </LinearLayout>
         </LinearLayout>

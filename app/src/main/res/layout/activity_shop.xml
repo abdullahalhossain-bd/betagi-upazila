@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-        android:clipToPadding="false" xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?
+    android:background="@color/premium_background">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -17,8 +17,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/premium_primary"
-            android:paddingTop="12dp"
-            android:paddingBottom="12dp">
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
 
             <ImageView
                 android:layout_width="190dp"
@@ -101,7 +101,7 @@ android:visibility="gone"                android:id="@+id/custom_dialog_market"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/btxf"
                     android:text="সব ধরনের দোকানের তালিকা সমূহ"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/premium_text"
                     android:textSize="20sp" />
             </LinearLayout>
 

@@ -10,7 +10,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@android:color/white">
+    android:background="@color/premium_background">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"

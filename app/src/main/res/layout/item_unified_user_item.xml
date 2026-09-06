@@ -57,7 +57,7 @@
                     android:fontFamily="@font/btxf"
                     android:paddingBottom="4dp"
                     android:text="ব্যবহারকারীর নাম"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/premium_text"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
@@ -112,7 +112,7 @@
                     android:layout_marginTop="4dp"
                     android:fontFamily="@font/bnlatxf"
                     android:text="কল করুন"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/premium_text"
                     android:textSize="12sp" />
             </LinearLayout>
         </LinearLayout>

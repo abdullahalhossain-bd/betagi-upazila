@@ -39,7 +39,7 @@
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/bnlatxf"
                 android:text="বিশেষজ্ঞঃ"
-                android:textColor="@android:color/black"
+                android:textColor="@color/premium_text"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -51,7 +51,7 @@
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/bnlatxf"
                 android:text="কার্ডিওলজিস্ট বিশেষজ্ঞ"
-                android:textColor="@android:color/black"
+                android:textColor="@color/premium_text"
                 android:textSize="14sp" />
 
             <TextView
@@ -61,7 +61,7 @@
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/bnlatxf"
                 android:text="শিক্ষাগত যোগ্যতাঃ"
-                android:textColor="@android:color/black"
+                android:textColor="@color/premium_text"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -73,7 +73,7 @@
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/bnlatxf"
                 android:text="এমবিবিএস, এফসিপিএস (কার্ডিওলজি)"
-                android:textColor="@android:color/black"
+                android:textColor="@color/premium_text"
                 android:textSize="14sp" />
 
             <TextView
@@ -83,7 +83,7 @@
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/bnlatxf"
                 android:text="বর্তমান কর্মস্থলঃ"
-                android:textColor="@android:color/black"
+                android:textColor="@color/premium_text"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -95,7 +95,7 @@
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/bnlatxf"
                 android:text="ঢাকা মেডিকেল কলেজ হাসপাতাল।"
-                android:textColor="@android:color/black"
+                android:textColor="@color/premium_text"
                 android:textSize="14sp" />
 
             <TextView
@@ -105,7 +105,7 @@
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/bnlatxf"
                 android:text="চেম্বারঃ"
-                android:textColor="@android:color/black"
+                android:textColor="@color/premium_text"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -117,7 +117,7 @@
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/bnlatxf"
                 android:text="চেম্বারঃ ইউনিভার্সাল হাসপাতাল, ঢাকা।"
-                android:textColor="@android:color/black"
+                android:textColor="@color/premium_text"
                 android:textSize="14sp" />
 
             <TextView
@@ -127,7 +127,7 @@
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/bnlatxf"
                 android:text="রোগী দেখার সময়ঃ"
-                android:textColor="@android:color/black"
+                android:textColor="@color/premium_text"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -139,7 +139,7 @@
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/bnlatxf"
                 android:text="প্রতি সোমবার ও বুধবার সকাল ১০টা থেকে বিকাল ৫টা পর্যন্ত।"
-                android:textColor="@android:color/black"
+                android:textColor="@color/premium_text"
                 android:textSize="14sp" />
 
             <LinearLayout

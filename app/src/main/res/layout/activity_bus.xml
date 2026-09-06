@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?
+    android:background="@color/premium_background">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -143,7 +144,7 @@
                                     android:layout_marginTop="8dp"
                                     android:fontFamily="@font/bnlatxf"
                                     android:text="কল করুন"
-                                    android:textColor="@android:color/black"
+                                    android:textColor="@color/premium_text"
                                     android:textSize="14sp" />
                             </LinearLayout>
                         </LinearLayout>
@@ -300,7 +301,7 @@
                                     android:layout_marginTop="8dp"
                                     android:fontFamily="@font/bnlatxf"
                                     android:text="কল করুন"
-                                    android:textColor="@android:color/black"
+                                    android:textColor="@color/premium_text"
                                     android:textSize="14sp" />
                             </LinearLayout>
                         </LinearLayout>
@@ -448,7 +449,7 @@
                                     android:layout_marginTop="8dp"
                                     android:fontFamily="@font/bnlatxf"
                                     android:text="কল করুন"
-                                    android:textColor="@android:color/black"
+                                    android:textColor="@color/premium_text"
                                     android:textSize="14sp" />
                             </LinearLayout>
                         </LinearLayout>
@@ -606,7 +607,7 @@
                                     android:layout_marginTop="8dp"
                                     android:fontFamily="@font/bnlatxf"
                                     android:text="কল করুন"
-                                    android:textColor="@android:color/black"
+                                    android:textColor="@color/premium_text"
                                     android:textSize="14sp" />
                             </LinearLayout>
                         </LinearLayout>
@@ -764,7 +765,7 @@
                                     android:layout_marginTop="8dp"
                                     android:fontFamily="@font/bnlatxf"
                                     android:text="কল করুন"
-                                    android:textColor="@android:color/black"
+                                    android:textColor="@color/premium_text"
                                     android:textSize="14sp" />
                             </LinearLayout>
                         </LinearLayout>
@@ -922,7 +923,7 @@
                                     android:layout_marginTop="8dp"
                                     android:fontFamily="@font/bnlatxf"
                                     android:text="কল করুন"
-                                    android:textColor="@android:color/black"
+                                    android:textColor="@color/premium_text"
                                     android:textSize="14sp" />
                             </LinearLayout>
                         </LinearLayout>
@@ -1081,7 +1082,7 @@
                                     android:layout_marginTop="8dp"
                                     android:fontFamily="@font/bnlatxf"
                                     android:text="কল করুন"
-                                    android:textColor="@android:color/black"
+                                    android:textColor="@color/premium_text"
                                     android:textSize="14sp" />
                             </LinearLayout>
                         </LinearLayout>
@@ -1239,7 +1240,7 @@
                                     android:layout_marginTop="8dp"
                                     android:fontFamily="@font/bnlatxf"
                                     android:text="কল করুন"
-                                    android:textColor="@android:color/black"
+                                    android:textColor="@color/premium_text"
                                     android:textSize="14sp" />
                             </LinearLayout>
                         </LinearLayout>
@@ -1397,7 +1398,7 @@
                                     android:layout_marginTop="8dp"
                                     android:fontFamily="@font/bnlatxf"
                                     android:text="কল করুন"
-                                    android:textColor="@android:color/black"
+                                    android:textColor="@color/premium_text"
                                     android:textSize="14sp" />
                             </LinearLayout>
                         </LinearLayout>
