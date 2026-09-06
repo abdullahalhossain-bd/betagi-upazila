@@ -1,0 +1,77 @@
+name: P1 Premium UI Polish
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/p1-premium-polish.yml'
+permissions:
+  contents: write
+jobs:
+  polish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ui/premium-redesign
+          fetch-depth: 0
+      - name: Polish and validate P1 layouts
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          import re, xml.etree.ElementTree as ET
+          root=Path('app/src/main/res/layout')
+          exact={
+            'activity_apps_details.xml','activity_add_blood_donation.xml','actionbar.xml',
+            'activity_edu.xml','activity_tourist.xml',
+          }
+          tokens=('blood','donor','unified','govt','government','business','specialist','doctor','officer','person')
+          files=[]
+          for p in root.glob('*.xml'):
+            n=p.name.lower()
+            if p.name in exact or n.startswith('item_') or any(t in n for t in tokens):
+              if n.startswith('activity_add_') and n != 'activity_add_blood_donation.xml':
+                continue
+              files.append(p)
+          for p in files:
+            s=p.read_text(encoding='utf-8')
+            # Repair only the XML declaration; never rewrite the rest of the document.
+            s=re.sub(r'^<\?xml[^>]*>.*?\n', '<?xml version="1.0" encoding="utf-8"?>\n', s, count=1, flags=re.S)
+            if not s.startswith('<?xml version="1.0" encoding="utf-8"?>'):
+              s='<?xml version="1.0" encoding="utf-8"?>\n'+s
+            # Shared premium palette, preserving IDs/content/Java contracts.
+            s=s.replace('android:textColor="@android:color/black"','android:textColor="@color/premium_text"')
+            s=s.replace('android:textColor="#000000"','android:textColor="@color/premium_text"')
+            s=s.replace('android:background="@android:color/white"','android:background="@color/premium_background"')
+            s=s.replace('android:background="@color/white"','android:background="@color/premium_background"')
+            s=s.replace('android:backgroundTint="@color/white"','android:backgroundTint="@color/premium_surface"')
+            s=s.replace('app:cardBackgroundColor="@android:color/white"','app:cardBackgroundColor="@color/premium_surface"')
+            # Consistent premium card geometry where cards already exist.
+            s=re.sub(r'app:cardCornerRadius="(?:[0-9]+(?:\\.[0-9]+)?)dp"','app:cardCornerRadius="18dp"',s)
+            # Add a root premium background only when the root has none.
+            m=re.search(r'(<[A-Za-z0-9_.]+\b)([^>]*)(>)',s,re.S)
+            if m and 'android:background=' not in m.group(2):
+              attrs=m.group(2)+'\n    android:background="@color/premium_background"'
+              s=s[:m.start(2)]+attrs+s[m.end(2):]
+            p.write_text(s,encoding='utf-8')
+          # Explicitly improve shared actionbar accessibility without changing IDs/behavior.
+          p=root/'actionbar.xml'
+          s=p.read_text(encoding='utf-8')
+          if 'android:contentDescription="ফিরে যান"' not in s and 'android:id="@+id/back"' in s:
+            s=s.replace('android:id="@+id/back"','android:id="@+id/back"\n            android:contentDescription="ফিরে যান"',1)
+          p.write_text(s,encoding='utf-8')
+          # Validate every touched XML with a real parser; fail the workflow on malformed XML.
+          for p in files:
+            try: ET.parse(p)
+            except Exception as e:
+              raise SystemExit(f'Invalid XML: {p}: {e}')
+          PY
+          git diff --check
+          rm -f .github/workflows/p1-premium-polish.yml
+          git add app/src/main/res/layout .github/workflows/p1-premium-polish.yml
+          git diff --cached --check
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'feat: polish P1 user-facing layouts and validate XML'
+          git push origin HEAD:ui/premium-redesign

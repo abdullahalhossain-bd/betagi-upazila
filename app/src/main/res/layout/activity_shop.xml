@@ -1,10 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?
+    android:background="@color/premium_background">
+<ScrollView
+        android:clipToPadding="false" xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white">
+    android:background="@color/premium_background">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,7 +17,7 @@
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#1eb1b1"
+            android:background="@color/premium_primary"
             android:paddingTop="10dp"
             android:paddingBottom="10dp">
 
@@ -55,8 +57,8 @@ android:visibility="gone"                android:id="@+id/custom_dialog_market"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 app:cardBackgroundColor="#009688"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="4dp">
+                app:cardCornerRadius="18dp"
+                app:cardElevation="3dp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -83,10 +85,10 @@ android:visibility="gone"                android:id="@+id/custom_dialog_market"
                     android:layout_height="30dp"
                     android:layout_gravity="right|center"
                     android:layout_margin="7dp"
-                    app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="10dp"
-                    app:cardElevation="10dp"
-                    app:cardMaxElevation="15dp">
+                    app:cardBackgroundColor="@color/premium_surface"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="3dp"
+                    app:cardMaxElevation="4dp">
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -100,7 +102,7 @@ android:visibility="gone"                android:id="@+id/custom_dialog_market"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/btxf"
                     android:text="সব ধরনের দোকানের তালিকা সমূহ"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/premium_text"
                     android:textSize="20sp" />
             </LinearLayout>
 
@@ -127,9 +129,9 @@ android:visibility="gone"                android:id="@+id/custom_dialog_market"
                         android:layout_weight="1"
                         android:clickable="true"
                         android:focusable="true"
-                        app:cardBackgroundColor="@color/white"
-                        app:cardCornerRadius="12dp"
-                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="@color/premium_surface"
+                        app:cardCornerRadius="18dp"
+                        app:cardElevation="3dp"
                         app:rippleColor="?attr/colorControlHighlight">
 
                         <LinearLayout
@@ -149,7 +151,7 @@ android:visibility="gone"                android:id="@+id/custom_dialog_market"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
-                                android:fontFamily="@font/kalpurush"
+                                android:fontFamily="@font/bnlatxf"
                                 android:gravity="center"
                                 android:text="গ্রোসারী শপ"
                                 android:textSize="14sp"
@@ -165,9 +167,9 @@ android:visibility="gone"                android:id="@+id/custom_dialog_market"
                         android:layout_weight="1"
                         android:clickable="true"
                         android:focusable="true"
-                        app:cardBackgroundColor="@color/white"
-                        app:cardCornerRadius="12dp"
-                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="@color/premium_surface"
+                        app:cardCornerRadius="18dp"
+                        app:cardElevation="3dp"
                         app:rippleColor="?attr/colorControlHighlight">
 
                         <LinearLayout
@@ -187,7 +189,7 @@ android:visibility="gone"                android:id="@+id/custom_dialog_market"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
-                                android:fontFamily="@font/kalpurush"
+                                android:fontFamily="@font/bnlatxf"
                                 android:gravity="center"
                                 android:text="ফার্নিচার শপ"
                                 android:textSize="14sp"
@@ -211,9 +213,9 @@ android:visibility="gone"                android:id="@+id/custom_dialog_market"
                         android:layout_weight="1"
                         android:clickable="true"
                         android:focusable="true"
-                        app:cardBackgroundColor="@color/white"
-                        app:cardCornerRadius="12dp"
-                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="@color/premium_surface"
+                        app:cardCornerRadius="18dp"
+                        app:cardElevation="3dp"
                         app:rippleColor="?attr/colorControlHighlight">
 
                         <LinearLayout
@@ -234,7 +236,7 @@ android:visibility="gone"                android:id="@+id/custom_dialog_market"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:layout_marginTop="8dp"
-                                android:fontFamily="@font/kalpurush"
+                                android:fontFamily="@font/bnlatxf"
                                 android:text="কংক্রিট শপ"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />
@@ -249,9 +251,9 @@ android:visibility="gone"                android:id="@+id/custom_dialog_market"
                         android:layout_weight="1"
                         android:clickable="true"
                         android:focusable="true"
-                        app:cardBackgroundColor="@color/white"
-                        app:cardCornerRadius="12dp"
-                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="@color/premium_surface"
+                        app:cardCornerRadius="18dp"
+                        app:cardElevation="3dp"
                         app:rippleColor="?attr/colorControlHighlight">
 
                         <LinearLayout
@@ -271,7 +273,7 @@ android:visibility="gone"                android:id="@+id/custom_dialog_market"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
-                                android:fontFamily="@font/kalpurush"
+                                android:fontFamily="@font/bnlatxf"
                                 android:gravity="center"
                                 android:text="ডেকোরেটার্স শপ"
                                 android:textSize="14sp"
@@ -295,9 +297,9 @@ android:visibility="gone"                android:id="@+id/custom_dialog_market"
                         android:layout_weight="1"
                         android:clickable="true"
                         android:focusable="true"
-                        app:cardBackgroundColor="@color/white"
-                        app:cardCornerRadius="12dp"
-                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="@color/premium_surface"
+                        app:cardCornerRadius="18dp"
+                        app:cardElevation="3dp"
                         app:rippleColor="?attr/colorControlHighlight">
 
                         <LinearLayout
@@ -317,7 +319,7 @@ android:visibility="gone"                android:id="@+id/custom_dialog_market"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
-                                android:fontFamily="@font/kalpurush"
+                                android:fontFamily="@font/bnlatxf"
                                 android:gravity="center"
                                 android:text="ইলেকট্রনিক্স শপ"
                                 android:textSize="14sp"
@@ -333,9 +335,9 @@ android:visibility="gone"                android:id="@+id/custom_dialog_market"
                         android:layout_weight="1"
                         android:clickable="true"
                         android:focusable="true"
-                        app:cardBackgroundColor="@color/white"
-                        app:cardCornerRadius="12dp"
-                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="@color/premium_surface"
+                        app:cardCornerRadius="18dp"
+                        app:cardElevation="3dp"
                         app:rippleColor="?attr/colorControlHighlight">
 
                         <LinearLayout
@@ -355,7 +357,7 @@ android:visibility="gone"                android:id="@+id/custom_dialog_market"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
-                                android:fontFamily="@font/kalpurush"
+                                android:fontFamily="@font/bnlatxf"
                                 android:gravity="center"
                                 android:text="জুয়েলার্স শপ"
                                 android:textSize="14sp"
@@ -379,9 +381,9 @@ android:visibility="gone"                android:id="@+id/custom_dialog_market"
                         android:layout_weight="1"
                         android:clickable="true"
                         android:focusable="true"
-                        app:cardBackgroundColor="@color/white"
-                        app:cardCornerRadius="12dp"
-                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="@color/premium_surface"
+                        app:cardCornerRadius="18dp"
+                        app:cardElevation="3dp"
                         app:rippleColor="?attr/colorControlHighlight">
 
                         <LinearLayout
@@ -401,7 +403,7 @@ android:visibility="gone"                android:id="@+id/custom_dialog_market"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
-                                android:fontFamily="@font/kalpurush"
+                                android:fontFamily="@font/bnlatxf"
                                 android:gravity="center"
                                 android:text="লাইব্রেরি"
                                 android:textSize="14sp"
@@ -417,9 +419,9 @@ android:visibility="gone"                android:id="@+id/custom_dialog_market"
                         android:layout_weight="1"
                         android:clickable="true"
                         android:focusable="true"
-                        app:cardBackgroundColor="@color/white"
-                        app:cardCornerRadius="12dp"
-                        app:cardElevation="4dp"
+                        app:cardBackgroundColor="@color/premium_surface"
+                        app:cardCornerRadius="18dp"
+                        app:cardElevation="3dp"
                         app:rippleColor="?attr/colorControlHighlight">
 
                         <LinearLayout
@@ -439,7 +441,7 @@ android:visibility="gone"                android:id="@+id/custom_dialog_market"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
-                                android:fontFamily="@font/kalpurush"
+                                android:fontFamily="@font/bnlatxf"
                                 android:gravity="center"
                                 android:text="কাপড়ের দোকান"
                                 android:textSize="14sp"

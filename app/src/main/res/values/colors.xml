@@ -1,41 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#E9D6FF</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
+    <!-- Legacy names kept for compatibility -->
+    <color name="purple_200">#B7DCCF</color>
+    <color name="purple_500">#0B6E4F</color>
+    <color name="purple_700">#07543D</color>
+    <color name="teal_200">#D4A72C</color>
+    <color name="teal_700">#A67F18</color>
+    <color name="black">#FF14201B</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="bar">#FF03DAC5</color>
-    <color name="primary_color">#6200EE</color>
-    
-    <!-- Missing colors from drawable files -->
-    <color name="purple_100">#F3E5F5</color>
-    <color name="colorEditText">#E0E0E0</color>
-    <color name="primary">#6200EE</color>
-    <color name="gray">#9E9E9E</color>
-    <color name="purple">#9C27B0</color>
-    <color name="lavender">#E1BEE7</color>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorAccent">#03DAC5</color>
-    <color name="userMessageBackground">#E3F2FD</color>
+    <color name="bar">#0B6E4F</color>
+    <color name="primary_color">#0B6E4F</color>
 
+    <color name="purple_100">#EAF4EF</color>
+    <color name="colorEditText">#E3E9E6</color>
+    <color name="primary">#0B6E4F</color>
+    <color name="gray">#66736D</color>
+    <color name="purple">#0B6E4F</color>
+    <color name="lavender">#EAF4EF</color>
+    <color name="colorPrimary">#0B6E4F</color>
+    <color name="colorAccent">#D4A72C</color>
+    <color name="userMessageBackground">#EAF4EF</color>
 
-    <color name="colorPrimaryDark">#3700B3</color>
-        <color name="text_secondary">#757575</color>
-        <color name="text_primary">#212121</color>
-        <color name="text_light">#BDBDBD</color>
-        <color name="back_color">#F5F5F5</color>
-        <color name="light_purple">#E1BEE7</color>
-        <color name="colorTextBlack">#000000</color>
-        <color name="colorButton">#6200EE</color>
-        <color name="colorButtonText">#FFFFFF</color>
-        <color name="colorTextPrimary">#212121</color>
-        <color name="primary_text_color">#212121</color>
-        <color name="secondary_text_color">#757575</color>
-        <color name="dark_blue">#1565C0</color>
-        <color name="table_background">#F5F5F5</color>
-        <color name="table_row_background">#FFFFFF</color>
-    </resources>
-
+    <color name="colorPrimaryDark">#07543D</color>
+    <color name="text_secondary">#66736D</color>
+    <color name="text_primary">#14201B</color>
+    <color name="text_light">#9AA59F</color>
+    <color name="back_color">#F7F9F8</color>
+    <color name="light_purple">#EAF4EF</color>
+    <color name="colorTextBlack">#14201B</color>
+    <color name="colorButton">#0B6E4F</color>
+    <color name="colorButtonText">#FFFFFF</color>
+    <color name="colorTextPrimary">#14201B</color>
+    <color name="primary_text_color">#14201B</color>
+    <color name="secondary_text_color">#66736D</color>
+    <color name="dark_blue">#245C8A</color>
+    <color name="table_background">#F7F9F8</color>
+    <color name="table_row_background">#FFFFFF</color>
+</resources>

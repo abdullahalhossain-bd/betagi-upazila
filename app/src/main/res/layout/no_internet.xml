@@ -5,110 +5,70 @@
     android:id="@+id/layoutDialogContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    >
-
+    android:background="@color/premium_background">
 
     <LinearLayout
         android:id="@+id/relativeLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
         android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp"
+        android:background="@drawable/premium_card_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:padding="5dp"
-        >
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-
-            android:paddingTop="40dp"
-            android:paddingBottom="20dp"
-            android:paddingRight="5dp"
-            android:paddingLeft="5dp"
             android:id="@+id/nonetTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/exit_title_bg"
             android:gravity="center"
-            android:text="No Internet"
-            android:textColor="#B0000000"
-            android:textSize="18sp"
+            android:text="ইন্টারনেট সংযোগ নেই"
+            android:textColor="@color/premium_text"
+            android:textSize="21sp"
             android:textStyle="bold"
-            />
-
+            android:fontFamily="@font/bnlatxf" />
 
         <TextView
             android:id="@+id/nonetDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="12dp"
+            android:layout_marginTop="10dp"
             android:gravity="center"
-            android:paddingBottom="12dp"
-            android:text="Please Check Internet Connection and Try Again.."
-            android:textColor="#99000000"
+            android:text="ইন্টারনেট সংযোগ পরীক্ষা করে আবার চেষ্টা করুন।"
+            android:textColor="@color/premium_text_secondary"
             android:textSize="14sp"
-            android:textStyle="normal"
-            />
-
-
-
-
+            android:fontFamily="@font/bnlatxf" />
     </LinearLayout>
 
-
-
-
-
-
-
-
-
-
     <ImageView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:padding="10dp"
         android:src="@mipmap/ic_launcher_round"
+        android:background="@drawable/premium_card_background"
         app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
         app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
         app:layout_constraintStart_toStartOf="@+id/relativeLayout"
-        app:layout_constraintTop_toTopOf="@+id/relativeLayout"
-        />
-
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="#4F000000"
+        android:background="@color/premium_background"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/relativeLayout"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="0dp"
-        >
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp">
 
-
-        <!-- 2D Game offline -->
         <com.lionzxy.trex_offline.TRexOfflineView
             android:id="@+id/trexOffline"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
-
-
+            android:layout_height="match_parent" />
     </LinearLayout>
-
-
-
-
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

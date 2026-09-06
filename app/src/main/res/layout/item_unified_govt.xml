@@ -46,7 +46,7 @@
                     android:fontFamily="@font/btxf"
                     android:paddingBottom="4dp"
                     android:text="কোচিং সেন্টারের নাম"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/premium_text"
                     android:textSize="16sp"
                  />
 
@@ -54,9 +54,9 @@
                     android:id="@+id/unified_govt_address"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/kalpurush"
+                    android:fontFamily="@font/bnlatxf"
                     android:text="ঠিকানা"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/premium_text"
                     android:textSize="14sp" />
 
                 <TextView
@@ -88,9 +88,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:fontFamily="@font/kalpurush"
+                    android:fontFamily="@font/bnlatxf"
                     android:text="কল করুন"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/premium_text"
                     android:textSize="14sp" />
             </LinearLayout>
         </LinearLayout>
@@ -117,7 +117,7 @@ android:visibility="gone"
                     android:textStyle="bold"
                     android:textColor="#FFFFFF"
                     android:background="@drawable/btn_edit_bg"
-                    android:fontFamily="@font/kalpurush"
+                    android:fontFamily="@font/bnlatxf"
                     android:contentDescription="Edit"/>
 
                 <!-- Delete Button -->
@@ -132,7 +132,7 @@ android:visibility="gone"
                     android:textStyle="bold"
                     android:textColor="#FFFFFF"
                     android:background="@drawable/btn_delete_bg"
-                    android:fontFamily="@font/kalpurush"
+                    android:fontFamily="@font/bnlatxf"
                     android:contentDescription="Delete"/>
             </LinearLayout>
         </LinearLayout>

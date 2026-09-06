@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="premium_screen_padding">20dp</dimen>
+    <dimen name="premium_card_radius">20dp</dimen>
+    <dimen name="premium_small_radius">14dp</dimen>
+    <dimen name="premium_card_padding">16dp</dimen>
+    <dimen name="premium_section_gap">24dp</dimen>
+</resources>

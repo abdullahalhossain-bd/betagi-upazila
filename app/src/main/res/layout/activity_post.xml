@@ -8,7 +8,7 @@
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/bar"
+        android:background="@color/premium_primary"
         android:gravity="center|start"
         android:orientation="horizontal"
         android:padding="16dp">
@@ -44,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:fontFamily="@font/kalpurush"
+            android:fontFamily="@font/bnlatxf"
             android:gravity="center"
             android:paddingBottom="16dp"
             android:text="বেতাগী উপজেলায় অবস্থিত সকল পোস্ট অফিসের নাম ও পোস্টাল কোড"
@@ -68,7 +68,7 @@
                     android:layout_height="30dp"
                     android:layout_weight="1"
                     android:background="@drawable/table_border"
-                    android:fontFamily="@font/kalpurush"
+                    android:fontFamily="@font/bnlatxf"
                     android:gravity="center"
                     android:text="ক্র.নং"
                     android:textStyle="bold" />
@@ -78,7 +78,7 @@
                     android:layout_height="30dp"
                     android:layout_weight="1"
                     android:background="@drawable/table_border"
-                    android:fontFamily="@font/kalpurush"
+                    android:fontFamily="@font/bnlatxf"
                     android:gravity="center"
                     android:text="পোস্ট অফিস"
                     android:textStyle="bold" />
@@ -88,7 +88,7 @@
                     android:layout_height="30dp"
                     android:layout_weight="1"
                     android:background="@drawable/table_border"
-                    android:fontFamily="@font/kalpurush"
+                    android:fontFamily="@font/bnlatxf"
                     android:gravity="center"
                     android:text="পোস্টাল কোড"
                     android:textStyle="bold" />
@@ -101,7 +101,7 @@
                     android:layout_height="30dp"
                     android:layout_weight="1"
                     android:background="@drawable/table_border"
-                    android:fontFamily="@font/kalpurush"
+                    android:fontFamily="@font/bnlatxf"
                     android:gravity="center"
                     android:text="০১"
                     android:textStyle="bold" />
@@ -111,7 +111,7 @@
                     android:layout_height="30dp"
                     android:layout_weight="1"
                     android:background="@drawable/table_border"
-                    android:fontFamily="@font/kalpurush"
+                    android:fontFamily="@font/bnlatxf"
                     android:gravity="center"
                     android:text="ঝোপখালী" />
 
@@ -120,7 +120,7 @@
                     android:layout_height="30dp"
                     android:layout_weight="1"
                     android:background="@drawable/table_border"
-                    android:fontFamily="@font/kalpurush"
+                    android:fontFamily="@font/bnlatxf"
                     android:gravity="center"
                     android:text="8740" />
             </TableRow>

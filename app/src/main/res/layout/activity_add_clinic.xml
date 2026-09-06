@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:background="#fff">
+    android:background="@color/premium_background"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,7 +18,8 @@
             android:layout_width="match_parent"
             android:layout_marginBottom="30dp"
             android:layout_height="wrap_content"
-            android:background="#fff">
+            android:background="@color/premium_background"
+    android:fillViewport="true">
 
             <!-- Top Background Image -->
             <ImageView
@@ -256,7 +258,7 @@
                         android:text="সেবা যুক্ত করুন"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="#1eb1b1"
+                        android:textColor="@color/premium_primary"
                         android:fontFamily="@font/bnlatxf"
                         android:layout_marginTop="16dp"
                         android:layout_marginBottom="8dp" />
@@ -321,7 +323,7 @@
                         android:layout_height="wrap_content"
                         android:text="+ আরও সেবা যুক্ত করুন"
                         android:textSize="14sp"
-                        android:textColor="#1eb1b1"
+                        android:textColor="@color/premium_primary"
                         android:textStyle="bold"
                         android:fontFamily="@font/bnlatxf"
                         android:layout_marginTop="4dp"

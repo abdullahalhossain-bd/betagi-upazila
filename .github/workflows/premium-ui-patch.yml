@@ -1,0 +1,116 @@
+name: Premium UI Patch
+
+on:
+  push:
+    branches: ["ui/premium-redesign"]
+
+permissions:
+  contents: write
+
+jobs:
+  patch-premium-ui:
+    if: ${{ !contains(github.event.head_commit.message, '[premium-ui-auto]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Apply premium styling across user-facing layouts
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          root = Path('app/src/main/res/layout')
+          admin_prefixes = ('activity_add_', 'fragment_admin', 'item_admin')
+          files = [p for p in root.glob('*.xml') if not p.name.startswith(admin_prefixes)]
+          changed = []
+
+          replacements = {
+              'android:background="#fff"': 'android:background="@color/premium_background"',
+              'android:background="#FFF"': 'android:background="@color/premium_background"',
+              'android:background="#ffffff"': 'android:background="@color/premium_background"',
+              'android:background="#FFFFFF"': 'android:background="@color/premium_background"',
+              'android:background="#f5f5f5"': 'android:background="@color/premium_background"',
+              'android:background="#F5F5F5"': 'android:background="@color/premium_background"',
+              'android:background="@color/white"': 'android:background="@color/premium_background"',
+              'android:background="#1eb1b1"': 'android:background="@color/premium_primary"',
+              'android:background="#009688"': 'android:background="@color/premium_primary"',
+              'android:background="@color/bar"': 'android:background="@color/premium_primary"',
+              'app:cardBackgroundColor="#fff"': 'app:cardBackgroundColor="@color/premium_surface"',
+              'app:cardBackgroundColor="#FFF"': 'app:cardBackgroundColor="@color/premium_surface"',
+              'app:cardBackgroundColor="#ffffff"': 'app:cardBackgroundColor="@color/premium_surface"',
+              'app:cardBackgroundColor="#FFFFFF"': 'app:cardBackgroundColor="@color/premium_surface"',
+              'app:cardBackgroundColor="@color/white"': 'app:cardBackgroundColor="@color/premium_surface"',
+              'app:cardCornerRadius="6dp"': 'app:cardCornerRadius="16dp"',
+              'app:cardCornerRadius="8dp"': 'app:cardCornerRadius="18dp"',
+              'app:cardCornerRadius="10dp"': 'app:cardCornerRadius="18dp"',
+              'app:cardCornerRadius="12dp"': 'app:cardCornerRadius="18dp"',
+              'app:cardCornerRadius="15dp"': 'app:cardCornerRadius="18dp"',
+              'app:cardElevation="4dp"': 'app:cardElevation="3dp"',
+              'app:cardElevation="6dp"': 'app:cardElevation="3dp"',
+              'app:cardElevation="8dp"': 'app:cardElevation="3dp"',
+              'app:cardElevation="10dp"': 'app:cardElevation="3dp"',
+              'app:cardMaxElevation="15dp"': 'app:cardMaxElevation="4dp"',
+              'android:elevation="4dp"': 'android:elevation="3dp"',
+              'android:elevation="6dp"': 'android:elevation="3dp"',
+              'android:elevation="8dp"': 'android:elevation="3dp"',
+              'android:textColor="#000000"': 'android:textColor="@color/premium_text"',
+              'android:textColor="#000"': 'android:textColor="@color/premium_text"',
+              'android:textColor="@color/black"': 'android:textColor="@color/premium_text"',
+              'android:textColor="#666666"': 'android:textColor="@color/premium_text_secondary"',
+              'android:textColor="#666"': 'android:textColor="@color/premium_text_secondary"',
+              'android:textColor="#999999"': 'android:textColor="@color/premium_text_secondary"',
+              'android:textColor="#999"': 'android:textColor="@color/premium_text_secondary"',
+              'android:textColor="#bdbdbd"': 'android:textColor="@color/premium_text_secondary"',
+              'android:textColor="#BDBDBD"': 'android:textColor="@color/premium_text_secondary"',
+              'android:textColor="#2196f3"': 'android:textColor="@color/premium_primary"',
+              'android:textColor="#007aff"': 'android:textColor="@color/premium_primary"',
+              'android:textColor="#1e88e5"': 'android:textColor="@color/premium_primary"',
+              'android:textColor="#1976D2"': 'android:textColor="@color/premium_primary"',
+              'android:textColor="#1eb1b1"': 'android:textColor="@color/premium_primary"',
+              'android:textColor="#25ccbb"': 'android:textColor="@color/premium_primary"',
+              'android:textColor="#a40000"': 'android:textColor="@color/premium_text_secondary"',
+              'android:background="#eeeeee"': 'android:background="@color/premium_border"',
+              'android:background="#EDEDED"': 'android:background="@color/premium_border"',
+              'android:backgroundTint="#1eb1b1"': 'android:backgroundTint="@color/premium_primary"',
+              'android:tint="#2196f3"': 'android:tint="@color/premium_primary"',
+              'android:tint="#1eb1b1"': 'android:tint="@color/premium_primary"',
+              'android:tint="#47bfbf"': 'android:tint="@color/premium_primary"',
+              'android:tint="#1976D2"': 'android:tint="@color/premium_primary"',
+              'app:tint="#2196f3"': 'app:tint="@color/premium_primary"',
+              'app:tint="#1eb1b1"': 'app:tint="@color/premium_primary"',
+              'app:tint="#47bfbf"': 'app:tint="@color/premium_primary"',
+              'app:tint="#1976D2"': 'app:tint="@color/premium_primary"',
+              'app:strokeColor="@android:color/holo_red_light"': 'app:strokeColor="@color/premium_border"',
+              'app:strokeColor="#ff0000"': 'app:strokeColor="@color/premium_border"',
+              'app:strokeWidth="2dp"': 'app:strokeWidth="1dp"',
+          }
+
+          for p in files:
+              s = p.read_text(encoding='utf-8')
+              old = s
+              for a, b in replacements.items():
+                  s = s.replace(a, b)
+
+              s = s.replace('android:fontFamily="@font/kalpurush"', 'android:fontFamily="@font/bnlatxf"')
+
+              if 'android:background="@color/premium_background"' in s:
+                  if 'android:clipToPadding="false"' not in s and '<ScrollView' in s:
+                      s = s.replace('<ScrollView', '<ScrollView\n        android:clipToPadding="false"', 1)
+
+              if s != old:
+                  p.write_text(s, encoding='utf-8')
+                  changed.append(p.name)
+
+          print(f'Premium-styled {len(changed)} user-facing layout(s)')
+          for name in changed:
+              print(' -', name)
+          PY
+
+      - name: Commit premium layout changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/src/main/res/layout
+          git diff --cached --quiet || git commit -m "style: premium remaining user layouts [premium-ui-auto]"
+          git push

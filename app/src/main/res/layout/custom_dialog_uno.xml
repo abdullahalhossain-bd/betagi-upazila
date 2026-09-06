@@ -45,7 +45,7 @@
             android:fontFamily="@font/siligurimedium"
             android:gravity="center"
             android:text="স্বপ্ন পূরণের পথে আপনারাই আমাদের প্রেরণা।"
-            android:textColor="#000000"
+            android:textColor="@color/premium_text"
             android:textSize="18sp" />
 
         <TextView
@@ -55,7 +55,7 @@
             android:fontFamily="@font/siligurimedium"
             android:gravity="center"
             android:text="উন্নয়ন ও সেবার প্রত্যয়ে আমরা প্রতিশ্রুতিবদ্ধ,"
-            android:textColor="#000000"
+            android:textColor="@color/premium_text"
             android:textSize="18sp" />
 
         <TextView
@@ -65,7 +65,7 @@
             android:fontFamily="@font/siligurimedium"
             android:gravity="center"
             android:text="একসাথে গড়বো সমৃদ্ধ বাংলাদেশ।"
-            android:textColor="#000000"
+            android:textColor="@color/premium_text"
             android:textSize="18sp" />
 
         <View

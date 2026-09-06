@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?
+    android:background="@color/premium_background">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -10,7 +11,7 @@
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/bar"
+        android:background="@color/premium_primary"
         android:gravity="center|start"
         android:orientation="horizontal"
         android:padding="8dp">
@@ -28,13 +29,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:fontFamily="@font/kalpurush"
+            android:fontFamily="@font/bnlatxf"
             android:text="বেতাগী উপজেলা সম্পর্কে তথ্য"
             android:textColor="@color/white"
             android:textSize="16sp" />
     </LinearLayout>
 
     <ScrollView
+        android:clipToPadding="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -48,9 +50,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -71,7 +73,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="বিবিচিনি সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -86,9 +88,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -109,7 +111,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="পুটিয়াখী সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -124,9 +126,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -147,7 +149,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="উত্তর দেশান্তরকাঠী সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -162,9 +164,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -185,7 +187,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="ফুলতলা সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -200,9 +202,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -223,7 +225,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="গড়িয়াবুনিয়া সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -238,9 +240,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -261,7 +263,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="তালগাছিয়া সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -276,9 +278,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -299,7 +301,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="দেশান্তরকাঠী সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -314,9 +316,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -337,7 +339,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="মধ্য দেশান্তরকাঠী সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -352,9 +354,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -375,7 +377,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="উত্তর বিবিচিনি সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -390,9 +392,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -413,7 +415,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="গড়িয়াবুনিয়া ফুলতলা সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -428,9 +430,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -451,7 +453,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="ঝোপখালী সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -466,9 +468,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -489,7 +491,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="গ্রেদ লক্ষীপুরা সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -504,9 +506,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -527,7 +529,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="বেতাগী মডেল সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -542,9 +544,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -565,7 +567,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="কেওড়াবুনিয়া সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -580,9 +582,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -603,7 +605,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="ভোলানাথপুর সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -618,9 +620,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -641,7 +643,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="পূর্ব রানীপুর সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -656,9 +658,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -679,7 +681,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="দক্ষিন রানীপুর সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -694,9 +696,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -717,7 +719,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="বাসন্ডা সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -732,9 +734,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -755,7 +757,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="খোন্তাকাটা সরকারি প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -770,9 +772,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -793,7 +795,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="উত্তর রানীপুর সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -808,9 +810,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -831,7 +833,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="পূর্ব বেতাগী সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -846,9 +848,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -869,7 +871,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="উত্তর বেতাগী সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -884,9 +886,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -907,7 +909,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="দক্ষিন ভোলানাথপুর সরকারী প্রাথমিক বিদ্যা"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -922,9 +924,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -945,7 +947,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="বাসন্ডা আদর্শ সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -960,9 +962,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -983,7 +985,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="বেতাগী মাঃবাঃবিঃসংলগ্ন সরকারী প্রাথমিক বিদলয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -998,9 +1000,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1021,7 +1023,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="পমধ্য করুনা সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -1036,9 +1038,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1059,7 +1061,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="কিসমত করুনা সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -1074,9 +1076,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1097,7 +1099,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="আনারজলিসা সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -1112,9 +1114,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1135,7 +1137,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="উত্তর ঝোপখালী সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -1150,9 +1152,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1173,7 +1175,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="উত্তর হোসনাবাদ সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -1188,9 +1190,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1211,7 +1213,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="দক্ষিন ছোপখালী সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -1226,9 +1228,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1249,7 +1251,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="চর ছোপখালী সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -1264,9 +1266,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1287,7 +1289,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="জলিসাহাট সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -1302,9 +1304,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1325,7 +1327,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="পছোট মোকামিয়া বোর্ড সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -1340,9 +1342,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1363,7 +1365,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="ছোট মোকামিয়া সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -1378,9 +1380,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1401,7 +1403,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="করুনা মোকামিয়া সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -1416,9 +1418,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1439,7 +1441,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="জোয়ার করুনা সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -1454,9 +1456,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1477,7 +1479,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="উত্তর করুনা সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -1492,9 +1494,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1515,7 +1517,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="মাছুয়াখালী সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -1530,9 +1532,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1553,7 +1555,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="জোয়ার করুনা সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -1568,9 +1570,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1591,7 +1593,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="কাইয়ালঘাটা সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -1606,9 +1608,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1629,7 +1631,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="চরকখালী সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -1644,9 +1646,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1667,7 +1669,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="ঝদক্ষিন বড় মোকামিয়া সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -1682,9 +1684,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1705,7 +1707,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="ঝিংগাবাড়িয়া সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -1720,9 +1722,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1743,7 +1745,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="কাউনিয়া সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -1758,9 +1760,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1781,7 +1783,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="পশ্চিম করুনা সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -1796,9 +1798,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1819,7 +1821,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="বুড়ামজুমদার সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -1834,9 +1836,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1857,7 +1859,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="পূর্ব কাউনিয়া সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -1872,9 +1874,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1895,7 +1897,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="পূর্ব করুনা সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -1910,9 +1912,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1933,7 +1935,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="বদনীখালী সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -1948,9 +1950,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1971,7 +1973,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="বলইবুনিয়া সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -1986,9 +1988,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -2009,7 +2011,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="মধ্য গেরামর্দন সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -2024,9 +2026,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -2047,7 +2049,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="দক্ষিন করুনা পল্লিমংগল সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -2062,9 +2064,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -2085,7 +2087,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="চান্দখালী সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -2100,9 +2102,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -2123,7 +2125,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="কাজিরাবাদ বোর্ড সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -2138,9 +2140,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -2161,7 +2163,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="মধ্য কাজিরাবাদ সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -2176,9 +2178,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -2199,7 +2201,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="পূর্ব কাজিরাবাদ সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -2214,9 +2216,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -2237,7 +2239,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="উত্তর কাজিরাবাদ সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -2252,9 +2254,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -2275,7 +2277,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="কুমড়াখালী সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -2290,9 +2292,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -2313,7 +2315,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="গাবতলী সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -2328,9 +2330,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -2351,7 +2353,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="কালিকাবাড়ী সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -2366,9 +2368,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -2389,7 +2391,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="দঃ সরিষামুড়ি সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView
@@ -2404,9 +2406,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -2427,7 +2429,7 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         android:text="ভোড়া সরকারী প্রাথমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" android:fontFamily="@font/bnlatxf" />
 
                     <ImageView

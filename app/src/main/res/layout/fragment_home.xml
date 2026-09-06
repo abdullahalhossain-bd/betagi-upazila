@@ -5,12 +5,8 @@
     android:id="@+id/main"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:background="#fff"
-    android:layout_height="match_parent"
-    >
-
-
-
+    android:background="@color/premium_background"
+    android:layout_height="match_parent">
 
     <include layout="@layout/home"/>
 </LinearLayout>

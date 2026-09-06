@@ -5,14 +5,14 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="8dp"
-    android:background="@color/white">
+    android:background="@color/premium_background">
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        app:cardCornerRadius="12dp"
-        app:cardElevation="6dp">
+        app:cardCornerRadius="18dp"
+        app:cardElevation="3dp">
 <LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
                 android:layout_toEndOf="@id/unified_business_item_image"
                 android:fontFamily="@font/btxf"
                 android:text="Furniture Name"
-                android:textColor="@color/black"
+                android:textColor="@color/premium_text"
                 android:textSize="16sp" />
 
             <!-- Proprietor Name -->
@@ -54,9 +54,9 @@
                 android:layout_below="@id/Unified_business_item_name"
                 android:layout_toEndOf="@id/unified_business_item_image"
                 android:layout_marginTop="4dp"
-                android:fontFamily="@font/kalpurush"
+                android:fontFamily="@font/bnlatxf"
                 android:text="Proprietor Name"
-                android:textColor="@color/black"
+                android:textColor="@color/premium_text"
                 android:textSize="14sp" />
 
             <!-- Address -->
@@ -67,9 +67,9 @@
                 android:layout_below="@id/unified_business_item_proprietor_name"
                 android:layout_toEndOf="@id/unified_business_item_image"
                 android:layout_marginTop="4dp"
-                android:fontFamily="@font/kalpurush"
+                android:fontFamily="@font/bnlatxf"
                 android:text="Address"
-                android:textColor="@color/black"
+                android:textColor="@color/premium_text"
                 android:textSize="14sp" />
 
             <!-- Details -->
@@ -80,9 +80,9 @@
                 android:layout_below="@id/unified_business_item_image"
 
                 android:layout_marginTop="6dp"
-                android:fontFamily="@font/kalpurush"
+                android:fontFamily="@font/bnlatxf"
                 android:text="Details"
-                android:textColor="@color/black"
+                android:textColor="@color/premium_text"
                 android:textSize="14sp" />
 
             <!-- Call Button -->
@@ -92,8 +92,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/unified_business_item_details"
                 android:layout_marginTop="14dp"
-                android:backgroundTint="#1eb1b1"
-                android:fontFamily="@font/kalpurush"
+                android:backgroundTint="@color/premium_primary"
+                android:fontFamily="@font/bnlatxf"
                 android:text="কল করুন"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
@@ -103,7 +103,7 @@
 
         </RelativeLayout>
         <LinearLayout
-            android:background="@color/white"
+            android:background="@color/premium_background"
             android:id="@+id/bottom_row"
            android:visibility="gone"
             android:gravity="center_vertical"
@@ -126,7 +126,7 @@
                 android:textStyle="bold"
                 android:textColor="#FFFFFF"
                 android:background="@drawable/btn_edit_bg"
-                android:fontFamily="@font/kalpurush"
+                android:fontFamily="@font/bnlatxf"
                 android:contentDescription="Edit"/>
 
             <!-- Delete Button -->
@@ -141,7 +141,7 @@
                 android:textStyle="bold"
                 android:textColor="#FFFFFF"
                 android:background="@drawable/btn_delete_bg"
-                android:fontFamily="@font/kalpurush"
+                android:fontFamily="@font/bnlatxf"
                 android:contentDescription="Delete"/>
         </LinearLayout>
 </LinearLayout>

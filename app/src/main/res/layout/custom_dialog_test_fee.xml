@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="12dp"
-            android:fontFamily="@font/kalpurush"
+            android:fontFamily="@font/bnlatxf"
             android:text="সেবা নাম ও সেবা রেট চার্ট"
             android:textColor="@color/text_primary"
             android:textSize="22sp"
@@ -36,7 +36,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/kalpurush"
+                    android:fontFamily="@font/bnlatxf"
                     android:text="পরিক্ষার নাম"
                     android:textColor="@color/text_light"
                     android:textSize="18sp"
@@ -46,7 +46,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:fontFamily="@font/kalpurush"
+                    android:fontFamily="@font/bnlatxf"
                     android:text="পরিক্ষার খরচ"
                     android:textColor="@color/text_light"
                     android:textSize="18sp"
@@ -60,7 +60,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/kalpurush"
+                    android:fontFamily="@font/bnlatxf"
                     android:text="ব্লাড টেস্ট"
                     android:textColor="@color/text_primary"
                     android:textSize="16sp" />
@@ -69,7 +69,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:fontFamily="@font/kalpurush"
+                    android:fontFamily="@font/bnlatxf"
                     android:text="৳২০০"
                     android:textColor="@color/text_primary"
                     android:textSize="16sp" />
@@ -82,7 +82,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/kalpurush"
+                    android:fontFamily="@font/bnlatxf"
                     android:text="ব্লাড প্রেসার"
                     android:textColor="@color/text_primary"
                     android:textSize="16sp" />
@@ -91,7 +91,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:fontFamily="@font/kalpurush"
+                    android:fontFamily="@font/bnlatxf"
                     android:text="৳৫০০"
                     android:textColor="@color/text_primary"
                     android:textSize="16sp" />
@@ -104,7 +104,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/kalpurush"
+                    android:fontFamily="@font/bnlatxf"
                     android:text="এক্সরে"
                     android:textColor="@color/text_primary"
                     android:textSize="16sp" />
@@ -113,7 +113,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:fontFamily="@font/kalpurush"
+                    android:fontFamily="@font/bnlatxf"
                     android:text="৳৫০০"
                     android:textColor="@color/text_primary"
                     android:textSize="16sp" />

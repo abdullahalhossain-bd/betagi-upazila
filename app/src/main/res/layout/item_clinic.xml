@@ -12,9 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        app:cardCornerRadius="12dp"
-        app:cardElevation="4dp"
-        app:cardBackgroundColor="#FFFFFF">
+        app:cardCornerRadius="18dp"
+        app:cardElevation="3dp"
+        app:cardBackgroundColor="@color/premium_surface">
 
         <LinearLayout
             android:orientation="vertical"
@@ -51,23 +51,23 @@
                     <TextView
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/premium_text"
                         android:id="@+id/clinic_name"
                         android:paddingBottom="2dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Clinic Name"
-                        android:fontFamily="@font/kalpurush"/>
+                        android:fontFamily="@font/bnlatxf"/>
 
                     <TextView
                         android:textSize="13sp"
-                        android:textColor="#666666"
+                        android:textColor="@color/premium_text_secondary"
                         android:id="@+id/clinic_address"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="3dp"
                         android:text="Address: 123 Clinic Street"
-                        android:fontFamily="@font/kalpurush"/>
+                        android:fontFamily="@font/bnlatxf"/>
 
                     <TextView
                         android:textSize="13sp"
@@ -77,7 +77,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="3dp"
                         android:text="Phone: +880123456789"
-                        android:fontFamily="@font/kalpurush"/>
+                        android:fontFamily="@font/bnlatxf"/>
                 </LinearLayout>
 
                 <!-- Call Button -->
@@ -100,7 +100,7 @@
 
                     <TextView
                         android:textSize="11sp"
-                        android:textColor="#007aff"
+                        android:textColor="@color/premium_primary"
                         android:textStyle="bold"
                         android:id="@+id/text_call"
                         android:layout_width="wrap_content"
@@ -108,7 +108,7 @@
                         android:layout_marginTop="4dp"
                         android:layout_gravity="center_horizontal"
                         android:text="কল করুন"
-                        android:fontFamily="@font/kalpurush"/>
+                        android:fontFamily="@font/bnlatxf"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -146,7 +146,7 @@ android:visibility="gone"
                     android:textStyle="bold"
                     android:textColor="#FFFFFF"
                     android:background="@drawable/btn_edit_bg"
-                    android:fontFamily="@font/kalpurush"
+                    android:fontFamily="@font/bnlatxf"
                     android:contentDescription="Edit"/>
 
                 <!-- Delete Button -->
@@ -161,7 +161,7 @@ android:visibility="gone"
                     android:textStyle="bold"
                     android:textColor="#FFFFFF"
                     android:background="@drawable/btn_delete_bg"
-                    android:fontFamily="@font/kalpurush"
+                    android:fontFamily="@font/bnlatxf"
                     android:contentDescription="Delete"/>
             </LinearLayout>
         </LinearLayout>

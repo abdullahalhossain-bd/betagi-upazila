@@ -1,0 +1,61 @@
+name: Fix Premium XML
+
+on:
+  push:
+    paths:
+      - '.github/workflows/fix-premium-xml.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ui/premium-redesign
+          fetch-depth: 0
+      - name: Repair XML declarations
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          files = [
+              'activity_upazila_info.xml',
+              'activity_bus.xml',
+              'activity_primary.xml',
+              'activity_college.xml',
+              'activity_high.xml',
+              'activity_madrasa.xml',
+          ]
+          root = Path('app/src/main/res/layout')
+          bad = '<?xml version="1.0" encoding="utf-8"?\n    android:background="@color/premium_background">'
+          good = '<?xml version="1.0" encoding="utf-8"?>'
+          for name in files:
+              p = root / name
+              s = p.read_text(encoding='utf-8')
+              if s.startswith(bad):
+                  s = good + s[len(bad):]
+              elif s.startswith('<?xml version="1.0" encoding="utf-8"?>'):
+                  pass
+              else:
+                  raise SystemExit(f'Unexpected XML header in {name}')
+              p.write_text(s, encoding='utf-8')
+          PY
+          git diff --check
+          python3 - <<'PY'
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+          for name in ['activity_upazila_info.xml','activity_bus.xml','activity_primary.xml','activity_college.xml','activity_high.xml','activity_madrasa.xml']:
+              ET.parse(Path('app/src/main/res/layout') / name)
+              print('XML OK:', name)
+          PY
+          rm -f .github/workflows/fix-premium-xml.yml
+          git add app/src/main/res/layout .github/workflows/fix-premium-xml.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'fix: repair premium layout XML declarations'
+          git push origin HEAD:ui/premium-redesign

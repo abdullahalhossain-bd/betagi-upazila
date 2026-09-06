@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Loading..."
-            android:fontFamily="@font/kalpurush"/>
+            android:fontFamily="@font/bnlatxf"/>
     </LinearLayout>
 
     <TextView
@@ -37,13 +37,13 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:text="Available Test"
-        android:fontFamily="@font/kalpurush"/>
+        android:fontFamily="@font/bnlatxf"/>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:elevation="4dp">
+        android:elevation="3dp">
 
         <TableLayout
             android:id="@+id/services_table"
@@ -56,25 +56,25 @@
                 <TextView
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/premium_text"
                     android:padding="8dp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="Test Name"
                     android:layout_weight="1.5"
-                    android:fontFamily="@font/kalpurush"/>
+                    android:fontFamily="@font/bnlatxf"/>
 
                 <TextView
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/premium_text"
                     android:gravity="end"
                     android:padding="8dp"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="Rate"
                     android:layout_weight="1"
-                    android:fontFamily="@font/kalpurush"/>
+                    android:fontFamily="@font/bnlatxf"/>
             </TableRow>
         </TableLayout>
     </androidx.cardview.widget.CardView>
@@ -90,7 +90,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cancel"
-            android:fontFamily="@font/kalpurush"
+            android:fontFamily="@font/bnlatxf"
             android:layout_marginEnd="8dp"
             style="@style/Widget.MaterialComponents.Button.TextButton"/>
 
@@ -99,7 +99,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ঠিক আছে!!"
-            android:fontFamily="@font/kalpurush"
+            android:fontFamily="@font/bnlatxf"
             style="@style/Widget.MaterialComponents.Button.TextButton"/>
     </LinearLayout>
 </LinearLayout>

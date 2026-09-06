@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="premium_primary">#0B6E4F</color>
+    <color name="premium_primary_dark">#07543D</color>
+    <color name="premium_accent">#D4A72C</color>
+    <color name="premium_background">#F7F9F8</color>
+    <color name="premium_surface">#FFFFFF</color>
+    <color name="premium_text">#14201B</color>
+    <color name="premium_text_secondary">#66736D</color>
+    <color name="premium_border">#E3E9E6</color>
+</resources>

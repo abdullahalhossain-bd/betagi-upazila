@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="12dp"
-    app:cardCornerRadius="10dp"
-    app:cardElevation="4dp">
+    app:cardCornerRadius="18dp"
+    app:cardElevation="3dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
             android:text="খাতের নাম"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="#000"
+            android:textColor="@color/premium_text"
             android:fontFamily="@font/bnlatxf"
             android:layout_marginBottom="6dp"/>
 

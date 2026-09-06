@@ -1,40 +1,36 @@
 <resources>
-    <!-- Base application theme. -->
+    <!-- Base application theme -->
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/premium_primary</item>
+        <item name="colorPrimaryDark">@color/premium_primary_dark</item>
+        <item name="colorAccent">@color/premium_accent</item>
+        <item name="android:fontFamily">@font/bnlatxf</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/premium_background</item>
+        <item name="android:navigationBarColor">@color/premium_surface</item>
     </style>
-    <!-- styles.xml -->
+
     <style name="Widget.MaterialComponents.TextInputLayout.ExposedDropdownMenu" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
-        <!-- Background color for the dropdown -->
-        <item name="boxBackgroundColor">@color/white</item>
-
-        <!-- Stroke color and width -->
-        <item name="boxStrokeColor">@color/black</item>
+        <item name="boxBackgroundColor">@color/premium_surface</item>
+        <item name="boxStrokeColor">@color/premium_border</item>
         <item name="boxStrokeWidth">1dp</item>
-
-        <!-- Text color and hint color -->
-        <item name="hintTextColor">@color/gray</item>
-        <item name="android:textColor">@color/black</item>
-
-        <!-- End icon (dropdown arrow) -->
+        <item name="hintTextColor">@color/premium_text_secondary</item>
+        <item name="android:textColor">@color/premium_text</item>
         <item name="endIconMode">dropdown_menu</item>
-        <item name="endIconTint">@color/black</item>
-
-        <!-- Padding and shape appearance can be customized -->
+        <item name="endIconTint">@color/premium_primary</item>
         <item name="shapeAppearanceOverlay">@style/ShapeAppearance.MaterialComponents.SmallComponent</item>
     </style>
 
-    <!-- Main application theme -->
     <style name="Theme.BetagiESeva" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/premium_primary</item>
+        <item name="colorPrimaryDark">@color/premium_primary_dark</item>
+        <item name="colorAccent">@color/premium_accent</item>
+        <item name="android:fontFamily">@font/bnlatxf</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/premium_background</item>
+        <item name="android:navigationBarColor">@color/premium_surface</item>
     </style>
 
-    <!-- Splash theme -->
     <style name="Theme.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:windowBackground">@drawable/background_gradient</item>
         <item name="android:windowNoTitle">true</item>
@@ -47,59 +43,69 @@
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-    
-    <!-- Specialty card styles -->
+
+    <!-- Premium drawer navigation -->
+    <style name="PremiumNavigationItemShape" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">14dp</item>
+    </style>
+
+    <style name="PremiumNavigationItemText" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/premium_text</item>
+        <item name="android:fontFamily">@font/bnlatxf</item>
+    </style>
+
+    <!-- Premium reusable card system -->
     <style name="SpecialtyCard">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">8dp</item>
-        <item name="android:background">@drawable/card_background</item>
-        <item name="android:elevation">4dp</item>
+        <item name="android:background">@drawable/premium_card_background</item>
+        <item name="android:elevation">2dp</item>
     </style>
-    
+
     <style name="SpecialtyCardContent">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:padding">16dp</item>
         <item name="android:orientation">vertical</item>
     </style>
-    
+
     <style name="SpecialtyIcon">
         <item name="android:layout_width">48dp</item>
         <item name="android:layout_height">48dp</item>
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:layout_marginBottom">8dp</item>
     </style>
-    
+
     <style name="SpecialtyText">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@color/black</item>
+        <item name="android:textColor">@color/premium_text</item>
         <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/bnlatxf</item>
     </style>
-    
-    <!-- Rounded image view style -->
+
     <style name="RoundedImageView">
         <item name="android:layout_width">80dp</item>
         <item name="android:layout_height">80dp</item>
         <item name="android:layout_margin">8dp</item>
         <item name="android:scaleType">centerCrop</item>
     </style>
-    
-    <!-- Profile menu styles -->
+
     <style name="ProfileMenuItem">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">8dp</item>
-        <item name="android:background">@drawable/card_background</item>
+        <item name="android:background">@drawable/premium_card_background</item>
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
     </style>
-    
+
     <style name="ProfileMenuItemContent">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -107,24 +113,26 @@
         <item name="android:orientation">horizontal</item>
         <item name="android:gravity">center_vertical</item>
     </style>
-    
+
     <style name="ProfileMenuIcon">
         <item name="android:layout_width">24dp</item>
         <item name="android:layout_height">24dp</item>
         <item name="android:layout_marginEnd">16dp</item>
     </style>
-    
+
     <style name="ProfileMenuText">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
         <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColor">@color/premium_text</item>
+        <item name="android:fontFamily">@font/bnlatxf</item>
     </style>
-    
+
     <style name="ProfileMenuArrow">
         <item name="android:layout_width">24dp</item>
         <item name="android:layout_height">24dp</item>
         <item name="android:src">@drawable/baseline_arrow_forward_24</item>
+        <item name="android:tint">@color/premium_primary</item>
     </style>
 </resources>

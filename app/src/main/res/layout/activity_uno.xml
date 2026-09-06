@@ -3,15 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
+    android:background="@color/premium_background"
     android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="@color/bar"
-        android:elevation="4dp"
+        android:background="@color/premium_primary"
+        android:elevation="3dp"
         android:gravity="center_vertical"
         android:paddingStart="6dp"
         android:paddingTop="10dp"
@@ -75,7 +75,7 @@
             <LinearLayout
                 android:layout_width="35dp"
                 android:layout_height="40dp"
-                android:background="#1eb1b1"
+                android:background="@color/premium_primary"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -104,7 +104,7 @@
                     android:layout_marginBottom="8dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/baseline_alternate_email_24"
-                    android:tint="#1eb1b1" />
+                    android:tint="@color/premium_primary" />
             </LinearLayout>
 
             <LinearLayout
@@ -112,7 +112,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginRight="10dp"
-                android:background="#1eb1b1"
+                android:background="@color/premium_primary"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -139,7 +139,7 @@
                     android:layout_height="40dp"
                     android:layout_marginBottom="8dp"
                     android:src="@drawable/speaker"
-                    android:tint="#1eb1b1" />
+                    android:tint="@color/premium_primary" />
             </LinearLayout>
         </LinearLayout>
     </GridLayout>
@@ -160,7 +160,7 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@drawable/table_border"
-                android:fontFamily="@font/kalpurush"
+                android:fontFamily="@font/bnlatxf"
                 android:gravity="center"
                 android:text="নাম"
                 android:textStyle="bold" />
@@ -170,7 +170,7 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@drawable/table_border"
-                android:fontFamily="@font/kalpurush"
+                android:fontFamily="@font/bnlatxf"
                 android:gravity="center"
                 android:text="মোঃ সাদ্দাম হুসাইন " />
         </TableRow>
@@ -182,7 +182,7 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@drawable/table_border"
-                android:fontFamily="@font/kalpurush"
+                android:fontFamily="@font/bnlatxf"
                 android:gravity="center"
                 android:text="পদবি"
                 android:textStyle="bold" />
@@ -192,7 +192,7 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@drawable/table_border"
-                android:fontFamily="@font/kalpurush"
+                android:fontFamily="@font/bnlatxf"
                 android:gravity="center"
                 android:text="উপজেলা নির্বাহী অফিসার" />
         </TableRow>
@@ -204,7 +204,7 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@drawable/table_border"
-                android:fontFamily="@font/kalpurush"
+                android:fontFamily="@font/bnlatxf"
                 android:gravity="center"
                 android:text="ই-মেইল"
                 android:textStyle="bold" />
@@ -214,7 +214,7 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@drawable/table_border"
-                android:fontFamily="@font/kalpurush"
+                android:fontFamily="@font/bnlatxf"
                 android:gravity="center"
                 android:text="unobetagi@mopa.gov.bd" />
         </TableRow>
@@ -226,7 +226,7 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@drawable/table_border"
-                android:fontFamily="@font/kalpurush"
+                android:fontFamily="@font/bnlatxf"
                 android:gravity="center"
                 android:text="ফোন (অফিস)"
                 android:textStyle="bold" />
@@ -236,7 +236,7 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@drawable/table_border"
-                android:fontFamily="@font/kalpurush"
+                android:fontFamily="@font/bnlatxf"
                 android:gravity="center"
                 android:text="0445456001" />
         </TableRow>
@@ -248,7 +248,7 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@drawable/table_border"
-                android:fontFamily="@font/kalpurush"
+                android:fontFamily="@font/bnlatxf"
                 android:gravity="center"
                 android:text="মোবাইল"
                 android:textStyle="bold" />
@@ -258,7 +258,7 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@drawable/table_border"
-                android:fontFamily="@font/kalpurush"
+                android:fontFamily="@font/bnlatxf"
                 android:gravity="center"
                 android:text="01733348029" />
         </TableRow>
@@ -270,7 +270,7 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@drawable/table_border"
-                android:fontFamily="@font/kalpurush"
+                android:fontFamily="@font/bnlatxf"
                 android:gravity="center"
                 android:text="ব্যাচ (বিসিএস)"
                 android:textStyle="bold" />
@@ -280,7 +280,7 @@
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 android:background="@drawable/table_border"
-                android:fontFamily="@font/kalpurush"
+                android:fontFamily="@font/bnlatxf"
                 android:gravity="center"
                 android:text="37" />
         </TableRow>
@@ -291,9 +291,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="12dp"
-        android:fontFamily="@font/kalpurush"
+        android:fontFamily="@font/bnlatxf"
         android:padding="8dp"
         android:text="বর্তমান কর্মস্থলে যোগদানের তারিখঃ ২৪ আগষ্ট ২০২৫"
-        android:textColor="#666666"
+        android:textColor="@color/premium_text_secondary"
         android:textStyle="bold" />
 </LinearLayout>

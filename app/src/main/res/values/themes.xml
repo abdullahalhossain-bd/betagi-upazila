@@ -1,29 +1,26 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- Premium Betagi e-Sheba light theme -->
     <style name="Theme.WebviewPro" parent="Theme.Material3.Light.NoActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/premium_primary</item>
+        <item name="colorPrimaryVariant">@color/premium_primary_dark</item>
         <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorSecondary">@color/premium_accent</item>
+        <item name="colorSecondaryVariant">@color/premium_accent</item>
         <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
-        <item name="android:statusBarColor">@color/bar</item>
-        <item name="android:windowIsTranslucent">true</item>
-
-        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/premium_background</item>
+        <item name="android:navigationBarColor">@color/premium_surface</item>
+        <item name="android:statusBarColor">@color/premium_primary_dark</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">false</item>
+        <item name="android:fontFamily">sans</item>
     </style>
 
     <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
         <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
     </style>
-    <!-- Base application theme. -->
-    <style name="Base.Theme.WebviewPro" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-    </style>
 
+    <style name="Base.Theme.WebviewPro" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/premium_primary</item>
+        <item name="colorSecondary">@color/premium_accent</item>
+        <item name="android:windowBackground">@color/premium_background</item>
+    </style>
 </resources>

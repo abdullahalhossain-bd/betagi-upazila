@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?
+    android:background="@color/premium_background">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -9,7 +10,7 @@
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/bar"
+        android:background="@color/premium_primary"
         android:gravity="center|start"
         android:orientation="horizontal"
         android:padding="16dp">
@@ -35,6 +36,7 @@
 
 
     <ScrollView
+        android:clipToPadding="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -48,9 +50,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -70,9 +72,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:text="বেতাগী সরকারি পাইলট উচ্চ বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" />
 
                     <ImageView
@@ -87,9 +89,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -109,9 +111,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:text="বকাজিরহাট মাধ্যমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" />
 
                     <ImageView
@@ -126,9 +128,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -148,9 +150,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:text="বলইবুনিয়া মাধ্যমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" />
 
                     <ImageView
@@ -165,9 +167,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -187,9 +189,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:text="ছোপখালী মাধ্যমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" />
 
                     <ImageView
@@ -204,9 +206,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -226,9 +228,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:text="ভোড়া কালিকাবাড়ী হাতেমআলী মাধ্যমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" />
 
                     <ImageView
@@ -243,9 +245,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -265,9 +267,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:text="পশ্চিম করুনা মাধ্যমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" />
 
                     <ImageView
@@ -282,9 +284,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -304,9 +306,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:text="কাউনিয়া এমদাদিয়া মাধ্যমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" />
 
                     <ImageView
@@ -321,9 +323,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -343,9 +345,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:text="হোসনাবাদ আদর্শ মাধ্যমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" />
 
                     <ImageView
@@ -360,9 +362,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -382,9 +384,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:text="মোকামিয়া মাধ্যমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" />
 
                     <ImageView
@@ -399,9 +401,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -421,9 +423,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:text="কদভানু মেমোরিয়াল বালিকা মাধ্যমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" />
 
                     <ImageView
@@ -438,9 +440,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -460,9 +462,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:text="কাউনিয়া মাধ্যমিক বালিকা বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" />
 
                     <ImageView
@@ -477,9 +479,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -499,9 +501,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:text="বি এল বি মাধ্যমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" />
 
                     <ImageView
@@ -516,9 +518,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -538,9 +540,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:text="ফুলতলা নুরুন্নেছা নিম্ন মাধ্যমিক বালিকা বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" />
 
                     <ImageView
@@ -555,9 +557,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -577,9 +579,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:text="ভোড়া দঃ কালিকাবাড়ী আশের দিয়া মাধ্যমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" />
 
                     <ImageView
@@ -594,9 +596,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -616,9 +618,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:text="রানীপুর নিম্ন মাধ্যমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" />
 
                     <ImageView
@@ -633,9 +635,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/white"
-                android:elevation="8dp"
-                app:cardCornerRadius="10dp">
+                android:backgroundTint="@color/premium_surface"
+                android:elevation="3dp"
+                app:cardCornerRadius="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -655,9 +657,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
-                        android:fontFamily="@font/kalpurush"
+                        android:fontFamily="@font/bnlatxf"
                         android:text="কাজিরাবাদ নিম্ন মাধ্যমিক বিদ্যালয়"
-                        android:textColor="#2196f3"
+                        android:textColor="@color/premium_primary"
                         android:textSize="16sp" />
 
                     <ImageView

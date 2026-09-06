@@ -14,13 +14,14 @@
         android:text="আজকের বাজার দর"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="#000"
+        android:textColor="@color/premium_text"
         android:gravity="center"
-        android:fontFamily="@font/kalpurush"
+        android:fontFamily="@font/bnlatxf"
         android:layout_marginBottom="16dp" />
 
     <!-- Market Rate Table inside ScrollView -->
     <ScrollView
+        android:clipToPadding="false"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -38,7 +39,7 @@
 
             <!-- Header Row -->
             <TableRow
-                android:background="@color/bar">
+                android:background="@color/premium_primary">
 
                 <TextView
                     android:layout_width="0dp"
@@ -50,7 +51,7 @@
                     android:textColor="#fff"
                     android:padding="12dp"
                     android:gravity="center"
-                    android:fontFamily="@font/kalpurush" />
+                    android:fontFamily="@font/bnlatxf" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -62,11 +63,12 @@
                     android:textColor="#fff"
                     android:padding="12dp"
                     android:gravity="center"
-                    android:fontFamily="@font/kalpurush" />
+                    android:fontFamily="@font/bnlatxf" />
             </TableRow>
 
             <!-- Data Rows with subtle dividers -->
-            <TableRow android:background="#FFF">
+            <TableRow android:background="@color/premium_background"
+    android:fillViewport="true">
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -76,7 +78,7 @@
                     android:textColor="#333"
                     android:padding="12dp"
                     android:gravity="center"
-                    android:fontFamily="@font/kalpurush" />
+                    android:fontFamily="@font/bnlatxf" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -87,7 +89,7 @@
                     android:textColor="#333"
                     android:padding="12dp"
                     android:gravity="center"
-                    android:fontFamily="@font/kalpurush" />
+                    android:fontFamily="@font/bnlatxf" />
             </TableRow>
 
             <View
@@ -95,7 +97,8 @@
                 android:layout_height="1dp"
                 android:background="#DDD" />
 
-            <TableRow android:background="#FFF">
+            <TableRow android:background="@color/premium_background"
+    android:fillViewport="true">
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -105,7 +108,7 @@
                     android:textColor="#333"
                     android:padding="12dp"
                     android:gravity="center"
-                    android:fontFamily="@font/kalpurush" />
+                    android:fontFamily="@font/bnlatxf" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -116,7 +119,7 @@
                     android:textColor="#333"
                     android:padding="12dp"
                     android:gravity="center"
-                    android:fontFamily="@font/kalpurush" />
+                    android:fontFamily="@font/bnlatxf" />
             </TableRow>
 
             <View
@@ -124,7 +127,8 @@
                 android:layout_height="1dp"
                 android:background="#DDD" />
 
-            <TableRow android:background="#FFF">
+            <TableRow android:background="@color/premium_background"
+    android:fillViewport="true">
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -134,7 +138,7 @@
                     android:textColor="#333"
                     android:padding="12dp"
                     android:gravity="center"
-                    android:fontFamily="@font/kalpurush" />
+                    android:fontFamily="@font/bnlatxf" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -145,7 +149,7 @@
                     android:textColor="#333"
                     android:padding="12dp"
                     android:gravity="center"
-                    android:fontFamily="@font/kalpurush" />
+                    android:fontFamily="@font/bnlatxf" />
             </TableRow>
 
             <View
@@ -153,7 +157,8 @@
                 android:layout_height="1dp"
                 android:background="#DDD" />
 
-            <TableRow android:background="#FFF">
+            <TableRow android:background="@color/premium_background"
+    android:fillViewport="true">
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -163,7 +168,7 @@
                     android:textColor="#333"
                     android:padding="12dp"
                     android:gravity="center"
-                    android:fontFamily="@font/kalpurush" />
+                    android:fontFamily="@font/bnlatxf" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -174,7 +179,7 @@
                     android:textColor="#333"
                     android:padding="12dp"
                     android:gravity="center"
-                    android:fontFamily="@font/kalpurush" />
+                    android:fontFamily="@font/bnlatxf" />
             </TableRow>
 
             <View
@@ -182,7 +187,8 @@
                 android:layout_height="1dp"
                 android:background="#DDD" />
 
-            <TableRow android:background="#FFF">
+            <TableRow android:background="@color/premium_background"
+    android:fillViewport="true">
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -192,7 +198,7 @@
                     android:textColor="#333"
                     android:padding="12dp"
                     android:gravity="center"
-                    android:fontFamily="@font/kalpurush" />
+                    android:fontFamily="@font/bnlatxf" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -203,7 +209,7 @@
                     android:textColor="#333"
                     android:padding="12dp"
                     android:gravity="center"
-                    android:fontFamily="@font/kalpurush" />
+                    android:fontFamily="@font/bnlatxf" />
             </TableRow>
 
             <View
@@ -211,7 +217,8 @@
                 android:layout_height="1dp"
                 android:background="#DDD" />
 
-            <TableRow android:background="#FFF">
+            <TableRow android:background="@color/premium_background"
+    android:fillViewport="true">
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -221,7 +228,7 @@
                     android:textColor="#333"
                     android:padding="12dp"
                     android:gravity="center"
-                    android:fontFamily="@font/kalpurush" />
+                    android:fontFamily="@font/bnlatxf" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -232,7 +239,7 @@
                     android:textColor="#333"
                     android:padding="12dp"
                     android:gravity="center"
-                    android:fontFamily="@font/kalpurush" />
+                    android:fontFamily="@font/bnlatxf" />
             </TableRow>
 
             <View
@@ -240,7 +247,8 @@
                 android:layout_height="1dp"
                 android:background="#DDD" />
 
-            <TableRow android:background="#FFF">
+            <TableRow android:background="@color/premium_background"
+    android:fillViewport="true">
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -250,7 +258,7 @@
                     android:textColor="#333"
                     android:padding="12dp"
                     android:gravity="center"
-                    android:fontFamily="@font/kalpurush" />
+                    android:fontFamily="@font/bnlatxf" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -261,7 +269,7 @@
                     android:textColor="#333"
                     android:padding="12dp"
                     android:gravity="center"
-                    android:fontFamily="@font/kalpurush" />
+                    android:fontFamily="@font/bnlatxf" />
             </TableRow>
 
             <View
@@ -269,7 +277,8 @@
                 android:layout_height="1dp"
                 android:background="#DDD" />
 
-            <TableRow android:background="#FFF">
+            <TableRow android:background="@color/premium_background"
+    android:fillViewport="true">
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -279,7 +288,7 @@
                     android:textColor="#333"
                     android:padding="12dp"
                     android:gravity="center"
-                    android:fontFamily="@font/kalpurush" />
+                    android:fontFamily="@font/bnlatxf" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -290,7 +299,7 @@
                     android:textColor="#333"
                     android:padding="12dp"
                     android:gravity="center"
-                    android:fontFamily="@font/kalpurush" />
+                    android:fontFamily="@font/bnlatxf" />
             </TableRow>
 
             <View
@@ -298,7 +307,8 @@
                 android:layout_height="1dp"
                 android:background="#DDD" />
 
-            <TableRow android:background="#FFF">
+            <TableRow android:background="@color/premium_background"
+    android:fillViewport="true">
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -308,7 +318,7 @@
                     android:textColor="#333"
                     android:padding="12dp"
                     android:gravity="center"
-                    android:fontFamily="@font/kalpurush" />
+                    android:fontFamily="@font/bnlatxf" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -319,7 +329,7 @@
                     android:textColor="#333"
                     android:padding="12dp"
                     android:gravity="center"
-                    android:fontFamily="@font/kalpurush" />
+                    android:fontFamily="@font/bnlatxf" />
             </TableRow>
 
             <View
@@ -327,7 +337,8 @@
                 android:layout_height="1dp"
                 android:background="#DDD" />
 
-            <TableRow android:background="#FFF">
+            <TableRow android:background="@color/premium_background"
+    android:fillViewport="true">
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -337,7 +348,7 @@
                     android:textColor="#333"
                     android:padding="12dp"
                     android:gravity="center"
-                    android:fontFamily="@font/kalpurush" />
+                    android:fontFamily="@font/bnlatxf" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -348,7 +359,7 @@
                     android:textColor="#333"
                     android:padding="12dp"
                     android:gravity="center"
-                    android:fontFamily="@font/kalpurush" />
+                    android:fontFamily="@font/bnlatxf" />
             </TableRow>
 
             <View
@@ -356,7 +367,8 @@
                 android:layout_height="1dp"
                 android:background="#DDD" />
 
-            <TableRow android:background="#FFF">
+            <TableRow android:background="@color/premium_background"
+    android:fillViewport="true">
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -366,7 +378,7 @@
                     android:textColor="#333"
                     android:padding="12dp"
                     android:gravity="center"
-                    android:fontFamily="@font/kalpurush" />
+                    android:fontFamily="@font/bnlatxf" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -377,7 +389,7 @@
                     android:textColor="#333"
                     android:padding="12dp"
                     android:gravity="center"
-                    android:fontFamily="@font/kalpurush" />
+                    android:fontFamily="@font/bnlatxf" />
             </TableRow>
 
             <View
@@ -385,7 +397,8 @@
                 android:layout_height="1dp"
                 android:background="#DDD" />
 
-            <TableRow android:background="#FFF">
+            <TableRow android:background="@color/premium_background"
+    android:fillViewport="true">
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -395,7 +408,7 @@
                     android:textColor="#333"
                     android:padding="12dp"
                     android:gravity="center"
-                    android:fontFamily="@font/kalpurush" />
+                    android:fontFamily="@font/bnlatxf" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -406,7 +419,7 @@
                     android:textColor="#333"
                     android:padding="12dp"
                     android:gravity="center"
-                    android:fontFamily="@font/kalpurush" />
+                    android:fontFamily="@font/bnlatxf" />
             </TableRow>
 
         </TableLayout>
@@ -419,9 +432,9 @@
         android:layout_height="wrap_content"
         android:text="সর্বশেষ আপডেট: ২৫ জানুয়ারি, ২০২৫"
         android:textSize="12sp"
-        android:textColor="#666"
+        android:textColor="@color/premium_text_secondary"
         android:gravity="end"
-        android:fontFamily="@font/kalpurush"
+        android:fontFamily="@font/bnlatxf"
         android:layout_marginBottom="16dp" />
 
     <!-- Admin Control Panel -->
@@ -443,9 +456,9 @@
             android:text="অ্যাডমিন কন্ট্রোল প্যানেল"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="#000"
+            android:textColor="@color/premium_text"
             android:gravity="center"
-            android:fontFamily="@font/kalpurush"
+            android:fontFamily="@font/bnlatxf"
             android:layout_marginBottom="12dp" />
 
         <LinearLayout
@@ -511,8 +524,8 @@
             android:text="সরকারি নির্দেশ অনুযায়ী প্রতিটি পণ্যের সঠিক দর প্রদান করুন। মিথ্যা তথ্য প্রদানে আইনত ব্যবস্থা গ্রহণ করা হবে।"
             android:textSize="12sp"
             android:textColor="#FF6B35"
-            android:fontFamily="@font/kalpurush" />
+            android:fontFamily="@font/bnlatxf" />
     </LinearLayout>
 
-    <Button android:textColor="@color/white" android:id="@+id/btn_close" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="হ্যাঁ বুঝতে পারছি!!" android:layout_alignParentBottom="true" android:fontFamily="@font/kalpurush" android:backgroundTint="@color/bar" app:cornerRadius="8dp"/>
+    <Button android:textColor="@color/white" android:id="@+id/btn_close" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="হ্যাঁ বুঝতে পারছি!!" android:layout_alignParentBottom="true" android:fontFamily="@font/bnlatxf" android:backgroundTint="@color/bar" app:cornerRadius="8dp"/>
 </LinearLayout>

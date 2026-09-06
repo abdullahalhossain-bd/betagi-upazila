@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/premium_background"
   >
 
     <!-- Top App Bar -->
@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         app:cardBackgroundColor="@color/bar"
-        app:cardElevation="6dp">
+        app:cardElevation="3dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -48,7 +48,7 @@
                 android:inputType="text"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
-                android:textColor="@android:color/black"
+                android:textColor="@color/premium_text"
                 android:textColorHint="@android:color/darker_gray"
                 android:textSize="14sp"
                 app:layout_constraintStart_toEndOf="@id/back_button"
@@ -62,10 +62,10 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
                 android:id="@+id/add"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="10dp"
-                app:cardMaxElevation="15dp"
+                app:cardBackgroundColor="@color/premium_surface"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="3dp"
+                app:cardMaxElevation="4dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent">
