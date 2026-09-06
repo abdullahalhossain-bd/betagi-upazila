@@ -24,7 +24,8 @@
             android:padding="12dp"
             android:rotation="180"
             android:src="@drawable/baseline_double_arrow_24"
-            app:tint="@android:color/white" />
+            android:contentDescription="ফিরে যান"
+            app:tint="@color/white" />
 
         <ImageView
             android:layout_width="0dp"
@@ -33,7 +34,8 @@
             android:layout_marginStart="12dp"
             android:gravity="start"
             android:scaleType="centerInside"
-            android:src="@drawable/betagi" />
+            android:src="@drawable/betagi"
+            android:contentDescription="বেতাগী ই-সেবা" />
 
         <View
             android:layout_width="8dp"
