@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   normalize:
-    if: !contains(github.event.head_commit.message, '[skip p2]')
+    if: ${{ !contains(github.event.head_commit.message, '[skip p2]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
