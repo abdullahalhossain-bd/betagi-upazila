@@ -4,8 +4,11 @@ on:
   push:
     branches: [ui/premium-redesign]
     paths:
-      - 'app/src/main/res/layout/**/*.xml'
-      - 'app/src/main/res/drawable/**/*.xml'
+      - '.github/workflows/p2-ux-consistency.yml'
+      - 'app/src/main/res/layout/activity_madrasa.xml'
+      - 'app/src/main/res/layout/activity_primary.xml'
+      - 'app/src/main/res/layout/activity_upazila_info.xml'
+      - 'app/src/main/res/layout/activity_college.xml'
 
 permissions:
   contents: write
@@ -20,29 +23,39 @@ jobs:
           ref: ui/premium-redesign
           fetch-depth: 0
 
-      - name: Normalize user-facing layouts safely
+      - name: Normalize requested layouts safely
         shell: python
         run: |
           from pathlib import Path
           import re
 
-          root = Path('app/src/main/res/layout')
-          changed = []
-          admin_prefixes = ('activity_add_',)
+          files = [
+              Path('app/src/main/res/layout/activity_madrasa.xml'),
+              Path('app/src/main/res/layout/activity_primary.xml'),
+              Path('app/src/main/res/layout/activity_upazila_info.xml'),
+              Path('app/src/main/res/layout/activity_college.xml'),
+          ]
 
-          for p in sorted(root.rglob('*.xml')):
-              if p.name in {'activity_add_clinic.xml'} or p.name.startswith(admin_prefixes):
-                  continue
+          changed = []
+          for p in files:
               s = p.read_text(encoding='utf-8')
               old = s
 
-              # Repair the known malformed XML prolog without touching layout content.
-              s = re.sub(r'^<\?xml version="1\.0" encoding="utf-8"\?\s*\n\s*android:background="([^"]+)"\s*>?',
-                         r'<?xml version="1.0" encoding="utf-8"?>\n', s, count=1)
-              s = re.sub(r'^<\?xml version="1\.0" encoding="utf-8"\?\s*\n',
-                         '<?xml version="1.0" encoding="utf-8"?>\n', s, count=1)
+              # Repair only the malformed XML declaration; preserve all layout content.
+              s = re.sub(
+                  r'^<\?xml version="1\.0" encoding="utf-8"\?\s*\n\s*android:background="[^"]+"\s*>?',
+                  '<?xml version="1.0" encoding="utf-8"?>\n',
+                  s,
+                  count=1,
+              )
+              s = re.sub(
+                  r'^<\?xml version="1\.0" encoding="utf-8"\?\s*\n',
+                  '<?xml version="1.0" encoding="utf-8"?>\n',
+                  s,
+                  count=1,
+              )
 
-              # Keep the premium system consistent where legacy literals are visibly used.
+              # Shared premium palette cleanup for visible legacy literals.
               s = s.replace('android:background="#FFFFFF"', 'android:background="@color/premium_background"')
               s = s.replace('android:background="#ffffff"', 'android:background="@color/premium_background"')
               s = s.replace('android:background="#000000"', 'android:background="@color/premium_background"')
@@ -51,11 +64,11 @@ jobs:
               s = s.replace('android:textColor="#000000"', 'android:textColor="@color/premium_primary"')
               s = s.replace('android:background="@android:color/white"', 'android:background="@color/premium_surface"')
 
-              # Normalize repeated card geometry only; no IDs or behavior are changed.
+              # Consistent card geometry.
               s = re.sub(r'(app:cardCornerRadius=")(?:8|10|12|14|16|20|24)dp("\s*/?>)', r'\g<1>18dp\2', s)
               s = re.sub(r'(android:elevation=")(?:1|2|4|5|6|8|10)dp("\s*/?>)', r'\g<1>3dp\2', s)
 
-              # Improve back affordance accessibility while preserving existing IDs/drawables.
+              # Back affordance accessibility without changing IDs or behavior.
               for bid in ('back', 'back_button'):
                   pattern = rf'(<(?:ImageView|ImageButton)[^>]*android:id="@\+id/{bid}"[^>]*)(/?>)'
                   def add_cd(m):
@@ -69,37 +82,34 @@ jobs:
                   p.write_text(s, encoding='utf-8')
                   changed.append(str(p))
 
-          print(f'Changed {len(changed)} layout files')
+          print(f'Changed {len(changed)} requested layouts')
           for x in changed:
               print(x)
 
-      - name: Validate XML
+      - name: Validate requested XML
         shell: python
         run: |
-          from pathlib import Path
           import xml.etree.ElementTree as ET
-          bad=[]
-          for p in Path('app/src/main/res/layout').rglob('*.xml'):
-              if p.name.startswith('activity_add_'):
-                  continue
-              try:
-                  ET.parse(p)
-              except Exception as e:
-                  bad.append(f'{p}: {e}')
-          if bad:
-              print('\n'.join(bad))
-              raise SystemExit(1)
-          print('All non-admin layout XML files parse successfully.')
+          from pathlib import Path
+          files = [
+              Path('app/src/main/res/layout/activity_madrasa.xml'),
+              Path('app/src/main/res/layout/activity_primary.xml'),
+              Path('app/src/main/res/layout/activity_upazila_info.xml'),
+              Path('app/src/main/res/layout/activity_college.xml'),
+          ]
+          for p in files:
+              ET.parse(p)
+              print(f'OK: {p}')
 
       - name: Commit normalized layouts
         shell: bash
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add app/src/main/res/layout
+          git add app/src/main/res/layout/activity_madrasa.xml app/src/main/res/layout/activity_primary.xml app/src/main/res/layout/activity_upazila_info.xml app/src/main/res/layout/activity_college.xml
           if git diff --cached --quiet; then
-            echo 'No P2 layout changes required.'
+            echo 'No requested P2 layout changes required.'
             exit 0
           fi
-          git commit -m 'feat: apply P2 UX consistency polish [skip p2]'
+          git commit -m 'feat: polish requested P2 education layouts [skip p2]'
           git push origin HEAD:ui/premium-redesign
